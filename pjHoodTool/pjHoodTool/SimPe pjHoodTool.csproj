@@ -1,0 +1,135 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BEDA101-8294-40CF-838C-40523DBBCDA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pjHoodTool</RootNamespace>
+    <AssemblyName>pjHoodTool.plugin</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\fullsimpe-svn\__Debug\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\fullsimpe-svn\__Release\Plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cHoodTool.cs" />
+    <Compile Include="hHoodHelp.cs" />
+    <Compile Include="Localization.cs" />
+    <Compile Include="pfSDSC.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tHoodTool.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization.resx">
+      <DependentUpon>Localization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe FileHandler\SimPe FileHandlers.csproj">
+      <Project>{97551C0A-6295-4E32-8E15-A4FF456E65A6}</Project>
+      <Name>SimPe FileHandlers</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe HandlerCommon\SimPe HandlerCommon.csproj">
+      <Project>{A4CC48FD-9574-4F0B-B721-9E8C1B1E6A8A}</Project>
+      <Name>SimPe HandlerCommon</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Helper\SimPe Helper.csproj">
+      <Project>{59E3C353-1350-42D8-A045-CBBAD232F228}</Project>
+      <Name>SimPe Helper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe HGBH\SimPe HGBH.csproj">
+      <Project>{2A67C9C3-9577-4922-991F-291EAA6B4F2D}</Project>
+      <Name>SimPe HGBH</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Interfaces\SimPe Interfaces.csproj">
+      <Project>{74FCBBEC-105A-4006-A1FC-8EF4F80FD2D7}</Project>
+      <Name>SimPe Interfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Packages\SimPe Packages.csproj">
+      <Project>{1C6C45BF-FE19-4C23-B327-01F45B0F269C}</Project>
+      <Name>SimPe Packages</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Sims\SimPe Sims.csproj">
+      <Project>{9877B092-C8C0-4B84-B5A0-F9A68AA1C0E4}</Project>
+      <Name>SimPe Sims</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Splash\SimPe Splash.csproj">
+      <Project>{6F0D2F45-62FD-4BF5-95C0-46D66C981034}</Project>
+      <Name>SimPe Splash</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Toolbox\SimPe Toolbox.csproj">
+      <Project>{4B573801-C012-4C34-88A8-3D4CE694C905}</Project>
+      <Name>SimPe Toolbox</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Workspace Helper\SimPe Workspace Helper.csproj">
+      <Project>{45021667-BAD2-4ECA-8423-F4734F914CBB}</Project>
+      <Name>SimPe Workspace Helper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\pjseCoderPlugin-cvs\SimPe BHAV\SimPe pjse coder plugin.csproj">
+      <Project>{19BF4C91-3A16-41D2-A7F0-2DE5BD7E13CF}</Project>
+      <Name>SimPe pjse coder plugin</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>set helpdir=\pjHoodTool_Help
+if not exist "$(TargetDir)$(TargetName)\" mkdir "$(TargetDir)$(TargetName)"
+pushd $(ProjectDir)..\
+copy *.txt $(TargetDir)$(TargetName)\
+popd
+
+pushd $(TargetDir)$(TargetName)\
+echo $(TargetName)-$(ConfigurationName) &gt; version.txt
+echo yymmdd-hhmmss &gt;&gt; version.txt
+echo ___simperelease version="0"___ &gt;&gt; version.txt
+popd
+
+if not exist "$(TargetDir)$(TargetName)%25helpdir%25\" mkdir "$(TargetDir)$(TargetName)\%25helpdir%25"
+pushd $(TargetDir)$(TargetName)\%25helpdir%25\
+copy "$(ProjectDir)..\Redirect_Contents.htm" Contents.htm
+popd
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

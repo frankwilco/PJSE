@@ -1,0 +1,222 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E0A4A2C-1BAE-4659-9511-5C089FA4E154}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pj</RootNamespace>
+    <AssemblyName>pjBodyMeshTool.plugin</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Plugins\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Plugins\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="simpe.3idr, Version=1.0.2370.36230, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.commonhandler, Version=1.0.2302.1285, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.filehandler, Version=1.0.2302.1288, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.helper, Version=0.59.10.36224, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SimPe\simpe.helper.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.interfaces, Version=1.0.2370.36224, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\SimPe\simpe.interfaces.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.package, Version=1.0.2302.1285, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.scenegraph, Version=1.0.2437.22378, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="simpe.workspace, Version=1.0.2302.1286, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BodyMeshExtractor.cs" />
+    <Compile Include="BodyMeshHelp.cs" />
+    <Compile Include="BodyMeshLinker.cs" />
+    <Compile Include="BodyMeshTool.cs" />
+    <Compile Include="GetMeshName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Localization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GetMeshName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetMeshName.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization.resx">
+      <DependentUpon>Localization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>set base=$(SolutionName)-$(ConfigurationName)
+set src=$(SolutionName)-Source
+set mydate=%25date%25
+set dd=%25mydate:~0,2%25
+set mm=%25mydate:~3,2%25
+set yy=%25mydate:~6,4%25
+set mytime=%25time%25
+set h=%25mytime:~0,2%25
+set m=%25mytime:~3,2%25
+set s=%25mytime:~6,2%25
+set suffix=%25yy%25%25mm%25%25dd%25-%25h%25%25m%25
+
+set helpdir=S:\PJSE_etc\$(SolutionName)
+set help=$(ProjectName)_Help
+
+set tarv=
+set nsisv=/V3
+
+
+rem ConfigurationNames: Release Debug InProgress
+rem targets: help zip tarbz2 7z(z7) nsis src
+
+set helpDebug=no
+set helpInProgress=no
+
+set zipDebug=no
+set zipInProgress=no
+
+set tarbz2Release=no
+set tarbz2Debug=no
+set tarbz2InProgress=no
+
+set z7Release=no
+set z7Debug=no
+set z7InProgress=no
+
+set nsisInProgress=no
+
+set srcDebug=no
+set srcInProgress=no
+
+
+cd "$(SolutionDir)"
+
+
+rem -------------------------------------
+rem -------------------------------------
+rem  Create and populate the Plugins dir
+rem -------------------------------------
+if exist "Plugins\$(TargetName)" rmdir /s/q "Plugins\$(TargetName)"
+mkdir "Plugins\$(TargetName)"
+
+(echo $(TargetName)-$(ConfigurationName)
+echo %25suffix%25) &gt; "Plugins\$(TargetName)\version.txt"
+(pushd ..\SimPe\Data
+grep "simperelease version" release.nfo
+popd) &gt;&gt; "Plugins\$(TargetName)\version.txt"
+tar c LICENSE.txt CHANGES.txt | tar x%25tarv%25 -C "Plugins\$(TargetName)"
+
+rem -----------------------------------
+rem  Copy over help for Release builds
+rem -----------------------------------
+if x%25help$(ConfigurationName)%25==xno goto nohelp
+(cd /d %25helpdir%25
+tar c %25help%25) | tar x%25tarv%25 -C "Plugins\$(TargetName)"
+:nohelp:
+
+
+rem -------------------------------------
+rem -------------------------------------
+rem  Copy over to SimPe runtime
+rem -------------------------------------
+tar c Plugins | (cd ..\SimPe
+tar xv)
+
+
+
+rem -------------------------------------
+rem -------------------------------------
+rem  Create distributions
+rem -------------------------------------
+
+del "%25base%25*"
+
+
+if x%25zip$(ConfigurationName)%25==xno goto nozip
+7za a -tzip -r -mx9 "%25base%25-%25suffix%25.zip" Plugins
+:nozip:
+
+if x%25tarbz2$(ConfigurationName)%25==xno goto notarbz2
+tar cv Plugins | bzip2 &gt; "%25base%25-%25suffix%25.tar.bz2"
+:notarbz2:
+
+if x%25z7$(ConfigurationName)%25==xno goto no7z
+7za a -t7z -mx9 -ms "%25base%25-%25suffix%25.7z" Plugins
+:no7z:
+
+if x%25nsis$(ConfigurationName)%25==xno goto nonsis
+echo OutFile "%25base%25-%25suffix%25.exe" &gt; outfile.txt
+"%25PROGRAMFILES%25\nsis\makensis" %25nsisv%25 mknsis.nsi
+del outfile.txt
+:nonsis:
+
+if x%25src$(ConfigurationName)%25==xno goto nosrc
+cd "$(ProjectDir).."
+if exist "%25src%25" rmdir /s/q "%25src%25"
+del "%25src%25*"
+mkdir "%25src%25"
+
+tar c --exclude="%25src%25" --exclude=CVS --exclude=*.7z --exclude=*.zip --exclude=*.exe --exclude=*.tar.bz2 --exclude=.project --exclude=.metadata --exclude=bin --exclude=obj --exclude=Plugins --exclude=*.suo --exclude=*.csproj.user --exclude=*.bak --exclude=.#* . | tar x%25tarv%25 -C "%25src%25"
+7za a -tzip -r -mx9 "%25src%25-%25suffix%25.zip" "%25src%25"
+if exist "%25src%25" rmdir /s/q "%25src%25"
+:nosrc:
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

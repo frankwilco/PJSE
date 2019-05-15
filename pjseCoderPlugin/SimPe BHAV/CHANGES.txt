@@ -1,0 +1,4993 @@
+3 March 2009 20:49 Oops: check for ContainsKey in guid index rather than throwing an error
+  SimPe BHAV\
+    GUIDIndex.cs 1.7
+
+10 January 2009 15:58 Prompt before opening non-local package using banner button
+  pjse Localisation\
+    Localization.cs 1.17.4.12
+  SimPe BHAV\
+    BconForm.cs 1.25.4.8
+    BhavForm.cs 1.89.4.20
+    TPRPForm.cs 1.14.4.3
+    TrcnForm.cs 1.22.2.6
+
+10 January 2009 15:26 Try to make creating the GUID Index get the dialog in the right place at the end
+  * and tidy up the waiting bits
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.19
+    GUIDIndex.cs 1.4.6.3
+
+10 January 2009 15:24 Try to stop one duff TPRP/Trcn making them all look duff
+  SimPe BHAV\
+    TPRPWrapper.cs 1.7.6.4
+    TrcnWrapper.cs 1.14.2.7
+
+4 January 2009 12:56 Yet another oops in LDOC when setting value; fix Wiz0x02 and Wiz0x1c, too
+  SimPe BHAV\
+    BhavOperandWiz0x0002.cs 1.15.6.2
+    BhavOperandWiz0x001c.cs 1.7.6.3
+    LabelledDataOwner.cs 1.1.2.5
+
+3 January 2009 21:43 Yet another attempt at keeping the GUIDTool working; oops in LDOC when setting value
+  pjse filetable\
+    FileTable.cs 1.31.4.18
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.18
+    LabelledDataOwner.cs 1.1.2.4
+    ResourceChooser.cs 1.14.6.2
+
+3 January 2009 15:23 Fix checkbox nightmare in BhavOperandWizBhav
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.19.6.4
+    BhavOperandWizBhav.cs 1.10.6.5
+    BhavOperandWizBhav.Designer.cs 1.2.6.3
+    LabelledDataOwner.cs 1.1.2.3
+    LabelledDataOwner.Designer.cs 1.1.2.3
+
+1 January 2009 21:21 Rewrite of GUIDIndex (to make it more useful)
+  SimPe BHAV\
+    GUIDIndex.cs 1.4.6.2
+
+13 December 2008 20:59 Update GlobalStrings.package for pjOBJDTool changes
+  GlobalStrings.package 1.31.4.9
+
+29 November 2008 22:04 Import as Private (renamed); check receiving group is private
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.17
+    BhavForm.resx 1.49.4.8
+    ObjfForm.cs 1.25.4.3
+    TtabForm.cs 1.50.2.2
+
+29 November 2008 14:26 Import SemiGlobal BHAV
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.16
+    BhavForm.resx 1.49.4.7
+
+29 November 2008 14:24 Make a pjse.FileTable.Entry be a SimPe.Interfaces.Scenegraph.IScenegraphFileIndexItem
+  pjse filetable\
+    FileTable.cs 1.31.4.17
+
+28 November 2008 13:13 Add GLOB finder and string search to GUID Tool
+  pjse filetable\
+    FileTable.cs 1.31.4.16
+  pjse GUID Tool\
+    GUIDTool.cs 1.15.4.6
+    GUIDTool.resx 1.9.4.2
+  pjse Localisation\
+    Localization.resx 1.17.4.11
+
+27 November 2008 15:34 Make changes to nodes faster
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.15
+
+26 November 2008 17:45 GUID Tool: GLOB reference search should include references within the group
+  pjse GUID Tool\
+    GUIDTool.cs 1.15.4.5
+
+26 November 2008 10:10 Boolset: string format should lead with most significant bit not least!
+  * Also Boolset.ToString() should return the bitstring
+  pjse System Classes
+    Boolset.cs 1.2.6.1
+
+24 November 2008 17:04 GUID Tool: Oops: group 0xFFFFFFFF needs special handling
+  pjse GUID Tool\
+    GUIDTool.cs 1.15.4.4
+
+24 November 2008 16:20 Calls to BHAVs: passing Temps, not unknowns
+  pjse Localisation\
+    Localization.resx 1.17.4.10
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.14
+    BhavOperandWizBhav.cs 1.10.6.4
+    BhavOperandWizBhav.Designer.cs 1.2.6.2
+    BhavOperandWizBhav.resx 1.5.6.2
+    BhavOperandBhav.cs 1.22.6.3
+
+21 November 2008 21:05 M&G strings update
+  GlobalStrings.package 1.39
+
+21 November 2008 10:22 Wiz0x001c: Only use one bit for tree top byte
+  SimPe BHAV\
+    BhavOperandWiz0x001c.cs 1.14
+
+21 November 2008 09:19 Oops: clear top two bits in op[2] for RTBN before OR-ing in upper nybble of tree
+  SimPe BHAV\
+    BhavOperandWiz0x001c.cs 1.13
+
+20 November 2008 14:36 GUID Tool: Tuna's GLOB reference searcher
+  pjse GUID Tool\
+    GUIDTool.cs 1.22
+    GUIDTool.resx 1.13
+
+20 November 2008 08:29 RTBN fixes; use LDOC in Wiz0x0002; improve LDOC checkbox responsiveness; make LDOC FlagsFor work
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.24
+    BhavOperandWiz0x0002.cs 1.16
+    BhavOperandWiz0x0002.resx 1.8
+    BhavOperandWiz0x001c.cs 1.11
+    BhavOperandWiz0x0002.resx 1.7
+    LabelledDataOwner.cs 1.5
+
+18 November 2008 13:25 TTAB Form: add splitter and line number
+  SimPe BHAV\
+    TtabForm.cs 1.51
+    TtabForm.resx 1.25
+
+17 November 2008 13:44 GUID Tool: update to use consts
+  pjse GUID Tool\
+    GUIDTool.cs 1.21
+
+17 November 2008 13:42 Change "static readonly" to "const" to make wrapper types more accessible
+  SimPe BHAV\
+    BconWrapper.cs 1.17
+    BhavWrapper.cs 1.53
+    ObjfWrapper.cs 1.16
+    StrWrapper.cs 1.26
+    TPRPWrapper.cs 1.10
+    TrcnWrapper.cs 1.17
+    TtabWrapper.cs 1.34
+
+16 November 2008 11:10 GUID Tool: remove "objects.package only" and move stuff around
+  pjse GUID Tool\
+    GUIDTool.cs 1.20
+    GUIDTool.resx 1.12
+  SimPe BHAV\
+    GUIDChooser.Designer.cs 1.2
+
+11 November 2008 17:22 Relabel "Focus"; add a Please Wait whilst finding initial result set
+  pjse GUID Tool\
+    GUIDTool.cs 1.19
+    GUIDTool.resx 1.11
+
+11 November 2008 16:34 Oops: BhavOperandWizBhav Decimal and InstanceLabel checkboxes not firing
+  * Reduce flicker on change of InstanceLabel state
+  * Tidy up initial display in LabelledDataOwner tbVal
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.23
+    BhavOperandWizBhav.cs 1.14
+    LabelledDataOwner.cs 1.4
+
+10 November 2008 15:25 Search by SemiGlobal and from TTAB and OBJF calls to BHAVs 
+  pjse GUID Tool\
+    GUIDTool.cs 1.18
+    GUIDTool.resx 1.10
+    SimPe pjse GUID Tool.csproj 1.4
+
+10 November 2008 15:20 Add Objftype and Ttabtype to appropriate wrappers
+  SimPe BHAV\
+    ObjfWrapper.cs 1.15
+    TtabWrapper.cs 1.33
+
+10 November 2008 10:32 Enhance labelling and fix RTBN
+  * Enhance instance labelling (not just Consts, rename "UseAttrPicker" to "UseInstancePicker" and associated changes)
+  * Better tracking of changes to Decimal and UseInstancePicker settings
+  * Redo RTBN parsing / Wiz based on Tuna's findings
+  pjse Localisation\
+    Localization.resx
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.22
+    BhavOperandwiz0x001c.cs 1.10
+    BhavOperandwiz0x001c.resx 1.6
+    BhavOperandWizBhav.cs 1.13
+    BhavOperandWizBhav.Designer.cs 1.3
+    BhavOperandWizBhav.resx 1.6
+    BhavWizPrim.cs 1.53
+    LabelledDataOwner.cs 1.3
+    LabelledDataOwner.Designer.cs 1.3
+    Settings.cs 1.7
+
+8 November 2008 10:02 Fix "View" BHAV (make it fill form); change FileTable refresh messages again
+  pjse filetable\
+    FileTable.cs 1.31.4.15
+  SimPe BHAV\
+    BhavForm.resx 1.49.4.6
+
+1 November 2008 15:25 Hourglass for Label Maker; switch between BCON/BHAV and TRCN/TPRP; "Insert Unlinked" special button
+  SimPe BHAV\
+    BconForm.cs 1.25.4.7
+    BconForm.resx 1.15.4.2
+    BhavForm.cs 1.89.4.13
+    BhavForm.resx 1.49.4.5
+    BhavInstListControl.cs 1.46.6.1
+    BhavWrapper.cs 1.50.4.4
+    pjse banner.cs 1.1.4.3
+    pjse banner.Designer.cs 1.1.4.3
+    pjse banner.resx 1.1.2.1
+    TPRPForm.cs 1.14.4.2
+    TPRPForm.resx 1.10.4.2
+    TrcnForm.cs 1.22.2.5
+    TrcnForm.resx 1.14.2.3
+
+25 October 2008 21:13 Mostly make RTBN handle op[2] bit 6
+  * Also allow "early" start of Filetable (remove all static stuff, handle null in BhavWiz.readStr)
+  * Also split Ages STR# between Age prim and TTAB
+  * Also, finally give in and write a UI for a data owner
+  pjse filetable\
+    FileTable.cs 1.31.4.14
+  SimPe BHAV\
+   BhavOperandWiz.cs 1.19.6.2
+   BhavOperandWiz0x001c.cs 1.7.6.1
+   BhavOperandWiz0x001c.resx 1.4.6.1
+   BhavWiz.cs 1.56.6.5
+   BhavWizPrim.cs 1.51.4.1
+   LabelledDataOwner.cs 1.1.2.1
+   LabelledDataOwner.Designer.cs 1.1.2.1
+   LabelledDataOwner.resx 1.1.2.1
+   SimPe pjse coder plugin.csprog 1.6.4.3
+   TtabItemMotiveTableUI.cs 1.17.6.1
+ GlobalStrings.package 1.31.4.7
+
+25 October 2008 09:25 Try to get CRES processing somewhat more stable.
+  * This change gets rid of an apparent UI lock in .Net2 code by not trying to instantiate a new WaitingScreen
+  * window whilst trying to refresh the content of a ListBox (a potential race condition, I guess).
+  pjse filetable\
+    FileTable.cs 1.31.4.13
+
+20 October 2008 17:45 Remove cross-wrapper dependencies
+  pjse Localisation\
+    Localization.resx 1.17.4.9
+  SimPe BHAV\
+    BconForm.cs 1.25.4.6
+    BconWrapper.cs 1.12.4.3
+    BhavForm.cs 1.89.4.12
+    BhavOperandWizBhav.cs 1.10.6.2
+    BhavWiz.cs 1.56.6.4
+    BhavWizBhav.cs 1.22.6.2
+    BhavWrapper.cs 1.50.4.3
+    TPRPWrapper.cs 1.7.6.2
+    TrcnForm.cs 1.22.2.4
+    TrcnWrapper.cs 1.14.2.5
+
+11 October 2008 10:32 GUID Tool: more robust handling of expected hex
+  pjse GUID Tool\
+    GUIDTool.cs 1.15.4.2
+
+7 October 2008 15:46 Filetable: Ensure "Please wait..." gets removed, even if an error occurs
+  pjse filetable\
+    FileTable.cs 1.31.4.12
+
+7 October 2008 14:23 Keep resource labels in step
+  SimPe BHAV\
+    BconForm.cs 1.25.4.5
+    BconWrapper.cs 1.12.4.2
+    BhavWrapper.cs 1.50.4.2
+    ExtendedWrapper.cs 1.9.6.4
+    TrcnForm.cs 1.22.2.3
+    TrcnWrapper.cs 1.14.2.4
+
+5 October 2008 14:00 Filetable: Tiny cosmetic change to splash
+
+5 October 2008 12:40 Filetable: Refinements to splash handling
+  pjse filetable\
+    FileTable.cs 1.31.4.10
+
+4 October 2008 09:22 Filetable: Improved splash UI
+  pjse filetable\
+    FileTable.cs 1.31.4.9
+    SimPe pjse filetable.csproj 1.2.6.1
+
+27 September 2008 15:32 Extract button requested on View and Float windows
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.11
+    ExtractCurrent.cs 1.1.2.1
+    pjse banner.cs 1.1.4.2
+    pjse banner.Designer.cs 1.1.4.2
+    SimPe pjse coder plugin.csproj 1.6.4.2
+
+27 September 2008 13:36 Suppress warning (cut-n-paste error)
+  SimPe BHAV\
+    StrWrapper.cs 1.19.6.8
+
+19 September 2008 19:23 TokenOpsSingular, 0x1e5, swap Get/Set Property at Index operations
+  GlobalStrings.package 1.37
+
+12 September 2008 20:30 New SimulatorGlobal labels plus flag names for one of them
+  SimPe BHAV\
+    BhavWiz.cs 1.60
+  GlobalStrings.package 1.36
+
+9 September 2008 20:37 I've got to get this BCON/TRCN thing right eventually.  I even tested this one...
+  SimPe BHAV\
+    BconWrapper.cs 1.15
+
+8 September 2008 20:10 Oops: check for FileDescriptor null!
+  SimPe BHAV\
+    BconWrapper.cs 1.14
+
+8 September 2008 18:45 BCON wrapper to forget associated TRCN if its descriptor changes
+  SimPe BHAV\
+    BconWrapper.cs 1.13
+
+7 September 2008 21:55 Oops, forgot to remove event handler
+  SimPe BHAV\
+    BhavForm.cs 1.93
+
+7 September 2008 13:37 Move ResourceChooser settings out of Settings; remember form size
+  SimPe BHAV\
+    ResourceChooser.cs 1.16
+    Settings.cs 1.6
+
+7 September 2008 12:10 Add a tooltip to the BHAV Filename field to display the instance
+  SimPe BHAV\
+    BhavForm.cs 1.92
+
+1 September 2008 19:16 Add Valid EP Flags
+  SimPe BHAV\
+    BhavWiz.cs 1.59
+  GlobalStrings.package 1.35
+
+1 September 2008 19:14 Clean up filetable when resource index changes
+  pjse filetable\
+    FileTable.cs 1.34
+
+30 August 2008 11:23 Add GlobalStrings for Apartment Life
+  GlobalStrings.package 1.34
+  
+25 August 2008 13:58 Stop Career Editor crashing when deleting languages
+  * Take advantage of StrWrapper change in StrForm
+  SimPe BHAV\
+    StrForm.cs 1.43.4.2
+    StrWrapper.cs 1.19.6.7
+
+23 August 2008 20:14 Make ObjectPreview display EPs based on objd Required EP flags rather than anything else
+  * EPFlags1 flag 0 name changed.
+  GlobalStrings.package 1.31.4.3
+
+29 July 2008 19:36 Object Definition Editor: new System.Windows.Forms.LabelledBoolsetControl widget
+  * Make DataOwnerControl and ExtendedWrapper.OnWrapperChanged public
+  * Add new BhavStr entries (and also in GlobalStrings.package)
+  pjse System Classes\
+    LabelledBoolsetControl.cs 1.1.2.1
+    LabelledBoolsetControl.Designer.cs 1.1.2.1
+    LabelledBoolsetControl.resx 1.1.2.1
+    SimPe pjse System Classes.csproj 1.2.6.1
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.19.6.1
+    BhavWiz.cs 1.56.6.2
+    ExtendedWrapper.cs 1.9.6.3
+  GlobalStrings.package 1.31.4.3
+
+20 July 2008 09:26 New GlobalStrings.package from Inge
+  GlobalStrings.package 1.31.4.2
+
+15 July 2008 22:02 Oops... Stop things crashing when counting strings but don't start String editor crashing
+  SimPe BHAV\
+    StrWrapper.cs 1.19.6.6
+
+15 July 2008 21:40 Stop things crashing when counting strings
+  SimPe BHAV\
+    StrWrapper.cs 1.19.6.5
+
+12 July 2008 11:39 Stop String editor crashing when deleting strings
+  SimPe BHAV\
+    ExtendedWrapper.c 1.9.6.2
+    StrWrapper.cs 1.19.6.4
+
+28 June 2008 11:02 Add a setting for keeping package files open.
+  * This meant moving ISettings*.cs from Workspace Helper to Interfaces to avoid circular dependencies.
+  * (24 June 2008)
+  pjse update tool\
+    SimPe pjse update tool.csproj 1.3
+
+22 June 2008 13:00 - Add "View" mode button to banner; enable it for BHAV editor
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.9
+    BhavForm.resx 1.49.4.4
+    pjse banner.cs 1.1.4.1
+    pjse banner.Designer.cs 1.1.4.1
+
+22 June 2008 12:02 - Indicate "View" vs "Edit" in common title bar string; allow uncommitted editing in View mode
+  pjse Localisation\
+    Localization.resx 1.17.4.8
+  SimPe BHAV\
+    BconForm.cs 1.25.4.4
+    BhavForm.cs 1.89.4.8
+
+21 June 2008 14:05 - Change order of title bar and use exp.NameShort
+  pjse Localisation\
+    Localization.resx 1.17.4.7
+  SimPe BHAV\
+    BconForm.cs 1.25.4.3
+    BhavForm.cs 1.89.4.7
+
+21 June 2008 13:31 - Popup window titles for BHAV and BCON to contain more info
+  * Also latest GlobalStrings.package from Inge
+  pjse Localisation\
+    Localization.resx 1.17.4.6
+  SimPe BHAV\
+    BconForm.cs 1.25.4.2
+    BhavForm.cs 1.89.4.6
+    CompareButton.cs 1.1.2.2
+  GlobalStrings.package 1.31.4.1
+
+18 June 2008 14:59 - Compare feature generalised and added to BCON
+  pjse Localisation\
+    Localization.resx 1.17.4.5
+  SimPe BHAV\
+    BconForm.cs 1.25.4.1
+    BconForm.resx 1.15.4.1
+    BhavForm.cs 1.89.4.5
+    BhavForm.resx 1.49.4.3
+    CompareButton.cs 1.1.2.1
+    CompareButton.Designer.cs 1.1.2.1
+    CompareButton.resx 1.1.2.1
+    SimPe pjse coder plugin.csproj 1.6.4.1
+
+18 June 2008 10:50 - BHAV Compare feature (allows resource from other objects.package to be viewed)
+  * Also prevent potential null exception in Localization.cs
+  pjse Localisation\
+    Localization.cs 1.3.6.1
+    Localization.resx 1.17.4.4
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.4
+    BhavForm.resx 1.49.4.2
+
+15 June 2008 08:47 - Change prompt to save GUID index after creating it
+  pjse Localisation\
+    Localization.resx 1.17.4.3
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.3
+
+15 June 2008 08:44 - FileTable find by group and source (unused currently)
+  pjse filetable\
+    FileTable.cs 1.31.4.7
+
+10 June 2008 16:03 - Stop holding resources open.
+  pjse update tool\
+    UpdateInfo.cs 1.2.6.1
+    Version.cs 1.3.6.1
+  SimPe BHAV\
+    GUIDIndex.cs 1.4.6.1
+    StrWrapper.cs 1.19.6.3
+
+10 June 2008 15:47 - Oops: Local mode allows current package and globalstrings.package to load v2
+  pjse filetable\
+    FileTable.cs 1.31.4.6
+
+10 June 2008 12:00 - Local mode allows current package and globalstrings.package to load
+  pjse filetable\
+    FileTable.cs 1.31.4.5
+
+25 May 2008 14:31 - Default to loading filetable and GUID index at start up (clean install)
+  pjse filetable\
+    FileTable.cs 1.31.4.4
+  SimPe BHAV\
+    Settings.cs 1.4.6.1
+
+25 May 2008 18:53 - Support localmode in PJSE (oops, this version)
+  pjse filetable\
+    FileTable.cs 1.31.4.3
+
+25 May 2008 18:53 - Support localmode in PJSE
+  pjse filetable\
+    FileTable.cs 1.31.4.2
+  SimPe BHAV\
+    BhavWiz.cs 1.56.6.1
+    ObjfForm.cs 1.25.4.2
+    StrForm.cs 1.43.4.1
+    StrWrapper.cs 1.19.6.2
+
+24 May 2008 09:24 - Enhance (relax) handling of unknown BHAVs
+  pjse Localisation\
+    Localization.resx 1.17.4.2
+  SimPe BHAV\
+    BhavOperandWizBhav.cs 1.10.6.1
+    BhavWizBhav.cs 1.22.6.1
+
+18 May 2008 11:47 - Re-engineer command line system for enabling options.
+  * "-localmode" and "-noplugins" replaced with "-enable localmode" and "-enable noplugins".
+  * Added "-enable fileformat" for PJSE wrappers to use to tag filenames with formats, where known
+  SimPe BHAV\
+    BhavWrapper.cs 1.50.4.1
+    StrWrapper.cs 1.19.6.1
+    TPRPWrapper.cs 1.7.6.1
+    TrcnWrapper.cs 1.14.2.3
+    TtabWrapper.cs 1.31.6.1
+
+17 May 2008 18:07 - Prompt to save GUID Index after creating it
+  pjse Localisation\
+    Localization.resx 1.17.4.1
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.2
+
+17 May 2008 10:13 - Oops: fix from "enhance handling of overrides" - use "Maxis" in GUIDTool
+  pjse GUID Tool\
+    GUIDTool.cs 1.15.4.1
+
+10 May 2008 11:28 - Line up Action and Guardian input with their BHAV names
+  SimPe BHAV\
+    OjbfForm.cs 1.25.2.1
+    ObjfForm.cs 1.10.2.1
+
+10 May 2008 10:38 - Oops, remove prevention of saving non-4E TRCNs
+  SimPe BHAV\
+    TrcnWrapper.cs 1.14.2.2
+
+9 May 2008 18:33 - Disable editing of TPRP Version
+  SimPe BHAV\
+    TPRPForm.cs 1.14.4.1
+    TPRPForm.resx 1.10.4.1
+
+5 May 2008 18:22 - Allow all non-text-only TRCNs to be edited
+  SimPe BHAV\
+    TrcnForm.cs 1.23.2.2
+    TrcnForm.resx 1.14.2.2
+
+4 May 2008 08:51 - Enhance handling of overrides 
+  pjse filetable\
+    FileTable.cs 1.31.4.1
+  SimPe BHAV\
+    BhavForm.cs 1.89.4.1
+    BhavForm.resx 1.49.4.1
+    ExtendedWrapper.cs 1.9.6.1
+    ResourceChooser.cs 1.14.6.1
+
+3 May 2008 10:26 - Change button label and remove DEBUG mode stuff from TRCN form and wrapper
+  SimPe BHAV\
+    TrcnForm.cs 1.22.2.1
+    TrcnForm.resx 1.14.2.1
+    TrcnWrapper.cs 1.14.2.1
+
+26 April 2008 17:36 - Allow any non-TextOnly TRCN to be turned into a type 0x4E for editing
+  SimPe BHAV\
+    TrcnForm.cs 1.22
+    TrcnForm.resx 1.14
+
+26 April 2008 13:52 - In DEBUG mode, allow editing of all non-dodgy TRCN files
+  SimPe BHAV\
+    TrcnForm.cs 1.21
+    TrcnWrapper.cs 1.14
+
+26 April 2008 13:28 - Move lines in a TTAB
+  SimPe BHAV\
+    TtabForm.cs 1.50
+    TtabForm.resx 1.24
+
+20 April 2008 12:19 - Fix to GlobalStrings.package from Inge
+  GlobalStrings.package 1.31
+
+14 April 2008 20:15 - Handle zero entries in an Objf by fully populating it
+  * Also fix layout bug
+  SimPe BHAV\
+    ObjfForm.cs 1.25
+    ObjfForm.resx 1.10 
+
+13 April 2008 10:16 - Increase use of SimPe filetable
+  pjse filetable\
+    FileTable.cs
+
+12 April 2008 11:02 - Fix Problem with Paste
+  * Instruction(wrapper) fixed to clone static initialiser for Operands
+  * Also made Instruction(wrapper) public (like Clone() is)
+  * Also minor fixed layout and behaviour problem with Zero operands button
+  SimPe BHAV\
+    BhavForm.cs 1.89
+    BhavForm.resx 1.49
+    BhavWrapper.cs 1.50
+
+6 April 2008 19:28 - Don't pull the rug out from under the FileTable in Remove()
+  pjse filetable\
+    FileTable.cs 1.30
+
+6 April 2008 14:05 - Slightly hacky fix to get Entry filenames updating
+  pjse filetable\
+    FileTable.cs 1.29
+
+5 April 2008 21:04 - Make PJSE-Tools-RFT do SimPe.FileTable.Reload()
+  pjse filetable\
+    FileTable.cs 1.28
+
+5 April 2008 17:40 - FileTable change to catch adds, removes and TGI changes more reliably
+  pjse filetable\
+    FileTable.cs 1.27
+
+2 April 2008 20:15 - Refresh on SimPE FT Reloads; also major rewrite
+  * "AddMaxis()" and "IsIgnored()" fixed
+  * "CurrentPackage" processing amended
+  * "putLocalFirst()" now works for "fixed" if current package is fixed
+  pjse filetable\
+    FileTable.cs 1.26
+
+2 April 2008 20:10 - Replace header on PJSE plugins with banner component, RFT reloads SimPE FT
+  SimPe BHAV\
+    BconForm.cs 1.25
+    BconForm.resx 1.15
+    BhavForm.cs 1.88
+    BhavForm.resx 1.48
+    ObjfForm.cs 1.24
+    ObjfForm.resx 1.9
+    pjse banner.cs 1.1
+    pjse banner.Designer.cs 1.1
+    pjse banner.resx 1.1
+    SimPe pjse coder plugin.csproj 1.6
+    StrForm.cs 1.43
+    StrForm.resx 1.27
+    TPRPForm.cs 1.14
+    TPRPForm.resx 1.10
+    TrcnForm.cs 1.20
+    TrcnForm.resx 1.13
+    TtabForm.cs 1.49
+    TtabForm.resx 1.23
+
+2 April 2008 20:03 - Oops: Don't lose decimal line numbers after RFT
+  SimPe BHAV\
+    BhavInstListItemUI.cs 1.26
+
+2 April 2008 20:02 - Oops: Don't get caught by null references
+  SimPe BHAV\
+    BconWrapper.cs 1.12
+
+24 March 2008 16:05 - Add OpCode finder to GUIDTool
+  * Generally polish up the user interface while we're at it
+  pjse filetable\
+    FileTable.cs 1.25
+  pjse GUID Tool\
+    GUIDTool.cs 1.16
+    GUIDTool.resx 1.9
+    SimPe pjse GUID Tool.csproj 1.3
+  pjse Localisation\
+    Localization.resx 1.17
+
+24 March 2008 15:57 - Add GUIDChooser to pjse coder plugin
+  SimPe BHAV\
+    GUIDChoose.cs 1.1
+    GUIDChoose.Designer.cs 1.1
+    GUIDChoose.resx 1.1
+    SimPe pjse coder plugin.csproj
+
+24 March 2008 15:54 - Simulator Globals Game Edition flags extended
+  GlobalStrings.package 1.30
+
+22 March 2008 11:12 - Wiz0x0020 Test Object Type created
+  SimPe BHAV\
+    BhavOperandWiz0x0020.cs 1.1
+    BhavOperandWiz0x0020.resx 1.1
+    BhavWizPrim.cs 1.51
+    SimPe pjse coder plugin.csproj 1.4
+
+21 March 2008 12:47 - Back out changes at 11:35 (CHANGES.txt 1.222)
+  SimPe BHAV\
+    BhavForm.cs 1.87
+    BhavForm.resx 1.47
+
+21 March 2008 11:35 - Stop pop-up BHAV windows being "too big"
+  SimPe BHAV\
+    BhavForm.cs 1.86
+    BhavForm.resx 1.46
+
+16 March 2008 10:28 - Fix to PJSE FileTable when objects.package was first package opened
+  pjse filetable\
+    FileTable.cs 1.24
+
+15 March 2008 14:45 - Update Set To Next 0x23 to reference Temp 1 (not 0)
+  * also re-do CastAways changes to GlobalsStrings
+  GlobalStrings.package
+
+4 March 2008 09:17 - Put BCON/BHAV labels in current package, even if they already exist
+  SimPe BHAV\
+    BconForm.cs 1.24
+    BhavForm.cs 1.85
+
+2 March 2008 15:43 - Don't crash when duff TPRPs are met
+  pjse Localisation\
+    Localization.resx 1.1.4.33
+  SimPe BHAV\
+    TPRPForm.cs 1.6.2.15
+    TPRPWrapper.cs 1.5.2.5
+
+2 March 2008 10:58 - Don't crash in BhavOperandWizBhav when labelling params
+  SimPe BHAV\
+    BhavOperandWizBhav.cs 1.1.8.9
+
+1 March 2008 11:43 - Don't crash on viewing a BHAV in an unsaved package
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.45
+
+1 March 2008 11:42 - Freetime strings (and some fixes to Castaways)
+  GlobalStrings.package 1.10.8.33
+  UnusedBehaviousStrings.package 1.1.2.3
+
+29 February 2008 19:58 - Show file format in resource listing
+  SimPe BHAV\
+    BhavWrapper.cs 1.47.2.4
+    StrWrapper.cs 1.16.6.5
+    TPRPWrapper.cs 1.5.2.4
+    TrcnWrapper.cs 1.11.2.6
+
+29 February 2008 19:57 - New GlobalStrings.package from Castaways plus OBJf descs
+  SimPe BHAV\
+    ObjfForm.cs 1.13.2.13
+    ObjfForm.resx 1.4.6.5
+  GlobalStrings.package 1.10.8.31
+
+28 February 2008 21:47 - More ExtendedWrapper Re-factor bugfixing
+  SimPe BHAV\
+    BconForm.cs 1.15.2.16
+    BhavForm.cs 1.64.2.43
+    TPRPWrapper.cs 1.5.2.3
+    TtabItemMotiveTableUI.cs 1.10.12.9
+    TtabWrapper.cs 1.23.6.15
+
+24 February 2008 10:33 - TRCN editor - add helpful label for text scrape mode
+  pjse Localisation\
+    Localization.resx 1.1.4.32
+  SimPe BHAV\
+    TrcnForm.cs 1.11.2.18
+
+23 February 2008 10:04 - Help menu changes 23/2
+  * Rename menu entry, remove About and Check for updates, go directly to help file
+  pjse Localisation\
+    Localization.resx 1.1.4.31
+  SimPe BHAV\
+    WrapperFactory.cs 1.20.2.16
+
+17 February 2008 11:14 - Live TRCN updates
+  * TRCNs that don't read well aren't used for labelling and are dumped as text-only
+  * TrcnForm list view label field now resizes neatly
+  * Debug code removed and TrcnItem format read as agreed
+  * ExtendedWrapper now knows the Context for BCON, TRCN and TPRP as well as BHAV
+  SimPe BHAV\
+    BconWrapper.cs 1.10.4.2
+    ExtendedWrapper.cs 1.1.4.10
+    TrcnForm.cs 1.11.2.17
+    TrcnForm.resx 1.7.2.7
+    TrcnWrapper.cs 1.11.2.4
+
+13 February 2008 19:10 - TRCN debugging code
+  SimPe BHAV\
+    TrcnForm.cs 1.11.2.16
+    TrcnWrapper.cs 1.11.2.3
+
+10 February 2008 21:41 - Re-factor ExtendedWrapper to Generic, Str[lid] returns List<>
+  * Hits Career Editor in SimPe SVN
+  * Bcon items are no longer bare shorts
+  SimPe BHAV\
+    BconForm.cs 1.15.2.14
+    BconWrapper.cs 1.10.2.1
+    BhavInstListControl.cs 1.41.8.7
+    BhavInstListItemUI.cs 1.23.2.6
+    BhavWiz.cs 1.37.2.40
+    BhavWrapper.cs 1.47.2.2
+    ExtendedWrapper.cs 1.1.4.9
+    ObjfWrapper.cs 1.9.6.6
+    Str.cs 1.1.4.11
+    StrForm.cs 1.28.2.28
+    StrWrapper.cs 1.16.6.4
+    TPRPForm.cs 1.6.2.14
+    TPRPWrapper.cs 1.5.2.2
+    TrcnForm.cs 1.11.2.15
+    TrcnWrapper.cs 1.11.2.2
+    TtabForm.cs 1.31.2.31
+    TtabWrapper.cs 1.23.6.14
+
+26 January 2008 22:23 - Add decimal after hex TTAs line numbers in TTAB editor
+  * Also add a text label near the drop down to make it easier to see what happens
+  * And remember to add decimal after hex line numbers when adding new lines in STR# editor
+  SimPe BHAV\
+    StrForm.cs 1.28.2.27
+    TtabForm.cs 1.31.2.30
+    TtabForm.resx 1.15.8.12
+
+25 January 2008 20:51 - Updated GlobalStrings.package from Inge
+  GlobalStrings.package 1.10.8.31
+
+21 January 2008 20:10 - Rename PJSE Resource Finder to "Simantics..."
+  * Also populate dummy Finder.htm help file
+  pjse GUID Tool\
+    GUIDTool.resx 1.4.12.8
+  pjse Localisation\
+    Localization.resx 1.1.4.30
+  SimPe BHAV\
+    SimPe pjse coder plugin.csproj 1.1.2.3
+
+21 January 2008 19:41 - Add decimal after hex line numbers
+  * Also run debug version with SimPe\__Debug
+  SimPe BHAV\
+    BconForm.cs 1.15.2.13
+    BconForm.resx 1.9.2.6
+    BhavInstListItemUI.cs 1.23.2.5
+    pjse coder plugin.csproj 1.29.2.42
+    StrForm.cs 1.28.2.26
+    StrForm.resx 1.18.14.14
+    TPRPForm.cs 1.6.2.13
+    TPRPForm.resx 1.5.2.5
+    TrcnForm.cs 1.11.2.14
+    TrcnForm.resx 1.7.2.6
+
+19 January 2008 18:03 - Build-with-SimPe changes - Include the real help
+  Redirect_Contents.htm 1.1.2.2
+
+13 January 2008 16:30 - Build-with-SimPe changes
+  * Help redirect from a file (not echo statements)
+  * Set updater to manual by default (rather than prompt)
+  pjse update tool\
+    Settings.cs 1.1.4.3
+  SimPe BHAV\
+    SimPe pjse coder plugin.csproj 1.1.2.2
+  Redirect_Contents.htm 1.1.2.1
+
+6 January 2008 11:55 - Synchronise with disaSim2 24f (thanks Shy!)
+  * Also fix what gets packaged in the post-build script
+  pjse Localisation\
+    Localization.resx 1.1.4.29
+  SimPe BHAV\
+    BhavOperandWiz0x0032.cs 1.1.4.12
+    BhavOperandWiz0x0032.resx 1.1.4.4
+    BhavWizPrim.cs 1.34.2.35
+    pjse coder plugin.csproj 1.29.2.41
+  GlobalStrings.package 1.10.8.30
+  pjseTestData.package 1.17.2.18
+
+1 January 2008 14:45 - Build 7z not nsis
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.40
+
+1 January 2008 13:57 - Project files for working as part of SimPe Everything.sln
+  * Includes faking up the updater and redirecting help to the online version
+  pjse filetable\
+    SimPe pjse filetable.csproj 1.1.2.1
+  pjse GUID Tool\
+    SimPe pjse GUID Tool.csproj 1.1.2.1
+  pjse Localisation\
+    SimPe pjse localisation.csproj 1.1.2.1
+  pjse System Classes\
+    SimPe pjse System Classes.csproj 1.1.2.1
+  pjse update tool\
+    SimPe pjse update tool 1.1.2.1
+  SimPe BHAV\
+    SimPe pjse coder plugin.csproj 1.1.2.1
+
+23 December 2007 12:06 - Add Pet Trick string 
+  * don't build pdb files for Release
+  pjse System Classes\
+    pjse System Classes.csproj 1.1.2.2
+  pjse update tool\
+    pjse update tool.csproj 1.1.4.5
+  SimPe BHAV\
+    pjse coder plugins.csproj 1.29.3.39
+
+28 October 2007 12:12 - Wiz0x001b: Go to location wizard
+  * get rid of the box around [X] on BhavForm
+  * fix tab order in Wix0x002d, suppress warnings, tidy up form slightly
+  * persist selected tab in ResourceChooser
+  SimPe BHAV\
+    BhavForm.resx 1.30.2.20.4.1
+    BhavOperandWiz0x001b.cs 1.1.2.1
+    BhavOperandWiz0x001b.resx 1.1.2.1
+    BhavOperandWiz0x002d.cs 1.1.4.1.2.1
+    BhavOperandWiz0x002d.resx 1.1.4.1.2.1
+    BhavWizPrim.cs 1.34.2.33.2.1
+    pjse coder plugin.csproj 1.29.2.37.2.1
+    ResourceChooser.cs 1.6.2.11.4.1
+
+28 October 2007 10:50 - Wiz0x002d: Go to routing slot wizard
+  SimPe BHAV\
+    BhavOperandWiz0x002d.cs 1.1.2.1
+    BhavOperandWiz0x002d.resx 1.1.2.1
+    BhavWizPrim.cs 1.34.2.32.2.1
+    pjse coder plugin.csproj 1.29.2.36.2.1
+
+27 October 2007 13:27 - Add [X] to clear operands and some tooltips
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.42
+    BhavForm.resx 1.30.2.20
+
+27 October 2007 13:05 - Refactor BhavOperandWiz code
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.22
+    BhavOperandWiz0x0001.cs 1.1.8.9
+    BhavOperandWiz0x0002.cs 1.6.2.10
+    BhavOperandWiz0x0008.cs 1.1.4.2
+    BhavOperandWiz0x001c.cs 1.1.4.8
+    BhavOperandWiz0x001f.cs 1.1.4.9
+    BhavOperandWiz0x0024.cs 1.1.4.19
+    BhavOperandWiz0x0032.cs 1.1.4.11
+    BhavOperandWiz0x0033.cs 1.1.4.6
+    BhavOperandWiz0x006d.cs 1.1.4.8
+    BhavOperandWiz0x0076.cs 1.1.2.7
+    BhavOperandWizAnimate.cs 1.1.4.4
+    BhavOperandWizBhav.cs 1.1.8.8
+    BhavOperandWizDefault.cs 1.1.8.3
+    BhavOperandWizRaw.cs 1.1.14.5
+
+13 October 2007 13:58 - GUID Tool: restore help button (and link to new helpfile)
+  * Also change post-build script to copy Plugins folder once fully populated
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.8
+    GUIDTool.resx 1.4.12.7
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.36
+
+13 October 2007 09:13 - Oops: restore "local only" for group 0xffffffff
+  pjse filetable\
+    FileTable.cs 1.11.2.28
+
+7 October 2007 16:10 - Fix up form layout
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.8
+    GUIDTool.resx 1.4.12.6
+
+7 October 2007 12:17 - Fix up unneeded "copy locals"
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.35
+
+7 October 2007 11:43 - GUID Tool changes (allow "current package only")
+  * Also created "pjse System Classes" project for common support classes
+  * Also tidied up so all .dlls get written to main project bin folder
+  pjse filetable\
+    FileTable.cs 1.11.2.27
+    pjse filetable.csproj 1.3.10.7
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.7
+    GUIDTool.resx 1.4.12.5
+    pjse GUID Tool.csproj 1.6.10.7
+  pjse Localisation\
+    Localization.resx 1.1.4.27
+    pjse localisation.csproj 1.1.4.4
+  pjse System Classes\
+    .cvsignore 1.1.2.1
+    Boolset.cs 1.1.2.1 (was "SimPe BHAV\SystemClasses.cs" 1.1.2.4)
+    pjseMsgBox.cs 1.1.2.1
+    pjseMsgBox.Designer.cs 1.1.2.1
+    pjseMsgBox.resx 1.1.2.1
+    pjse System Classes.csproj 1.1.2.1
+  pjse System Classes\Properties\
+    AssemblyInfo.cs 1.1.2.1
+  pjse update tool\
+    pjse update tool.csproj 1.1.4.4
+  SimPe BHAV\
+    ExtendedWrapper.cs 1.1.4.8
+    pjse coder plugin.csproj 1.29.2.34
+    pjse coder plugins.sln 1.6.10.5
+    ResourceChooser.cs 1.6.2.11
+    SystemClasses.cs (deleted)
+
+30 September 2007 10:53 - Add NREF to GUIDTool
+  * Also persist form size
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.6
+    GUIDTool.resx 1.4.12.4
+
+29 September 2007 23:34 - GUIDTool extended to search other resource names
+  pjse filetable\
+    FileTable.cs 1.11.2.26
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.5
+    GUIDTool.resx 1.4.12.3
+  pjse Localisation\
+    Localization.resx 1.1.4.27
+
+29 September 2007 11:14 - ResourceChooser enhanced to spot "override" resources
+  * Also add substitutable localisable strings
+  * Also add "paste listing" to BhavForm
+  * Also support Boolset <-> string conversions
+  pjse Localisation\
+    Localization.cs 1.1.4.4
+    Localization.resx 1.1.4.26
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.41
+    BhavForm.resx 1.30.2.19
+    BhavOperandWizAnimate.cs 1.1.4.3
+    ObjfForm.cs 1.13.2.12
+    ResourceChooser.cs 1.6.2.10
+    ResourceChooser.resx 1.1.12.6
+    StrForm.cs 1.28.2.25
+    SystemClasses.cs 1.1.2.4
+    TtabForm.cs 1.31.2.28
+
+18 September 2007 12:47 - Progress Bar when creating GUID index
+  * Fix old typo for PetTraitFlags
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.37
+
+18 September 2007 11:41 - PersonData Attraction flags
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.36
+  GlobalsStrings.package 1.10.8.27
+
+15 September 2007 12:49 - Make target for SimPe/Plugins depend on ConfigurationName
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.33
+
+15 September 2007 12:02 - Add SimulatorGlobal GameEditionFlags
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.35
+  GlobalsStrings.package 1.10.8.26
+
+8 September 2007 21:07 - Don't display "import" if BHAV in same package
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.40
+
+8 September 2007 20:54 - ...and make Float title bar look like Popup title bar
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.39
+
+8 September 2007 20:44 - Only display override message when in popup mode
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.38
+
+8 September 2007 08:59 - Make path box for overriding BHAVs bigger (and tag title bar)
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.37
+    BhavForm.resx 1.30.2.18
+
+3 September 2007 19:26 - Enhance identification of overiding BHAVs (current package)
+  pjse filetable\
+    FileTable.cs 1.11.2.25
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.36
+
+2 September 2007 10:38 - Allow display of overridden BHAVs when viewing
+  * Also update GlobalStrings.package with Morague's plantsim on/off prim0001 entry.
+  pjse filetable\
+    FileTable.cs 1.11.2.23
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.35
+    BhavForm.resx 1.30.2.17
+    ExtendedWrapper.cs 1.1.4.7
+    ResourceChooser.cs 1.6.2.9
+  GlobalStrings.package 1.10.8.25
+
+2 September 2007 10:34 - Once again, fix changing Ttab formats
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.28
+    TtabWrapper.cs 1.23.6.13
+
+12 August 2007 15:03 - Add recursion for packages.txt using trailing "+"
+  pjse filetable\
+    FileTable.cs 1.11.2.22
+
+12 August 2007 15:00 - Stop ObjfWrapper loading filetable on SimPe startup
+  SimPe BHAV\
+    ObjfWrapper.cs 1.9.6.5
+
+28 July 2007 10:53 - Two more AllowedHeightFlags added
+  GlobalStrings.package 1.10.8.24
+
+21 July 2007 13:39 - AllowedHeightFlags added
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.34
+  GlobalStrings.package 1.10.8.23 
+
+11 July 2007 19:27 - Wiz0x0076: Record where discussion of Op02 flag took place
+  * Also tidy up Localisation
+  pjse Localisaton\
+    Localization.resx 1.1.4.25
+  SimPe BHAV\
+    BhavOperandWiz0x0076.cs 1.1.2.6
+    BhavWizPrim.cs 1.37.2.32
+
+11 July 2007 19:08 - Wiz0x0076: Op02 bit 2 is not the object flag really
+  SimPe BHAV\
+    BhavOperandWiz0x0076.cs 1.1.2.5
+    BhavWizPrim.cs 1.37.2.31
+
+11 July 2007 14:55 - Wiz0x0076: Op02 bit 2 is the object flag
+  * Also fix a missing localisation
+  * Also don't abuse data owner for object array owner
+  pjse Localisaton\
+    Localization.resx 1.1.4.24
+  SimPe BHAV\
+    BhavOperandWiz0x0076.cs 1.1.2.4
+    BhavWiz.cs 1.37.2.33
+    BhavWizPrim.cs 1.37.2.30
+
+9 July 2007 20:13 - Wiz0x0076: Draw a line under Operation
+  SimPe BHAV\
+    BhavOperandWiz0x0076.cs 1.1.2.3
+    BhavOperandWiz0x0076.resx 1.1.2.3
+
+8 July 2007 22:10 - Attack of BhavWiz.FromShort()
+  * Also fix tab order in Wiz0x6d
+  * Also fix spacing in Wiz0x76
+  * Also fix up some naming
+  SimPe BHAV\
+    BhavOperandWiz0x001c.cs 1.1.4.7
+    BhavOperandWiz0x001f.cs 1.1.4.8
+    BhavOperandWiz0x0024.cs 1.1.4.18
+    BhavOperandWiz0x0032.cs 1.1.4.10
+    BhavOperandWiz0x0033.cs 1.1.4.5
+    BhavOperandWiz0x006d.cs 1.1.4.7
+    BhavOperandWiz0x006d.resx 1.1.4.4
+    BhavOperandWiz0x0076.cs 1.1.2.2
+    BhavOperandWiz0x0076.resx 1.1.2.2
+    BhavOperandWizAnimate.cs 1.1.4.2
+    BhavOperandWizBhav.cs 1.1.8.7
+    BhavWiz.cs 1.37.2.32
+    BhavWizPrim.cs 1.37.2.32
+  GlobalStrings.package 1.10.8.22
+
+7 July 2007 21:24 - Wiz0x0076: Array Operation Wizard (first cut)
+  pjse Localisation\
+    Localization.resx 1.1.4.23
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.20
+    BhavOperandWiz0x0076.cs 1.1.2.1
+    BhavOperandWiz0x0076.resx 1.1.2.1
+    BhavWiz.cs 1.37.2.31
+    BhavWizPrim.cs 1.34.2.28
+    pjse coder plugin.csproj 1.29.2.31
+  GlobalStrings.package 1.10.8.21
+  pjseTestData.package 1.17.2.16
+
+2 July 2007 20:15 - Bugfix: Don't crash trying to build GUID index for objects.package
+  pjse filetable\
+    FileTable.cs 1.11.2.22
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.34
+    GUIDIndex.cs 1.1.4.4
+
+25 May 2007 13:20 - Oops: try compiling it first...
+  pjse update tool\
+    Checker.cs 1.1.4.5
+
+25 May 2007 13:06 - Most Update checker
+  * GUIDTool.cs, BhavForm.cs, StrForm.cs: MONO-compliant
+  * update tool: stop copying referenced DLLs local
+  pjse GUID Tool\
+    GUIDTools.cs 1.10.2.4
+  pjse update tool\
+    Checker.cs 1.1.4.4
+    pjse update tool.csproj 1.1.4.3
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.33
+    BhavOperandWizBhav.cs 1.28.2.24
+
+20 May 2007 19:13 - Bugfix: get a better idea of currentPackage in Popup mode
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.32
+
+17 May 2007 19:26 - Bugfix: DataOwnerControl needs to be told (ushort) sometimes
+  SimPe BHAV\
+    BhavOperandWizBhav.cs 1.1.8.5
+
+12 May 2007 09:51 - (Oops) Helps if you test a fix, really...
+  SimPe BHAV\
+    BhavOperandWiz0x006d.cs 1.1.4.6
+
+12 May 2007 09:14 - Bugfix: BlendIn/BlendOut inverted (off/on) in WizAnimate
+  SimPe BHAV\
+    BhavOperandWizAnimate.cs 1.1.4.2
+    BhavOperandWizAnimate.resx 1.1.4.2
+
+12 May 2007 09:11 - Bugfix: "Use Mesh - in Temp1" in Wiz0x006d (Change Material)
+  SimPe BHAV\
+    BhavOperandWiz0x006d.cs 1.1.4.5
+
+22 April 2007 18:21 - Use only Global.Latest objects.package
+  pjse filetable\
+    FileTable.cs 1.11.2.21
+
+24 March 2007 13:59 - Integrate Shy's disasim24e changes (and fix SkipPrompt link)
+  pjse update tool\
+    SkipPrompt.cs 1.1.2.3
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.17
+    BhavWiz.cs 1.37.2.30
+    BhavWizPrim.cs 1.34.2.27
+  GlobalStrings.package 1.10.8.20
+
+12 March 2007 15:45 - Change to post-build script: better control of distros built
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.20.2.31
+
+12 March 2007 14:55 - Import viewed BHAV to current package button
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.31
+    BhavForm.resx 1.30.2.16
+
+11 March 2007 19:59 - Make ResourceChooser sortable on ID or Name (and fix wiz btn)
+  SimPe BHAV\
+    BhavForm.resx 1.30.2.15
+    pjse coder plugin.csproj 1.20.2.30
+    ResourceChooser.cs 1.6.2.8
+    ResourceChooser.resx 1.1.12.5
+    Settings.cs 1.1.4.4
+
+10 March 2007 16:05 - Seasons: GlobalStrings.package update (and add PersonData Flags1 parsing)
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.28.2.1
+  GlobalStrings.package 1.10.8.18.2.2
+
+9 March 2007 17:47 - Seasons: GlobalStrings.package update (and fix for DataOwnerControl)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.19.2.1
+  GlobalStrings.package 1.10.8.18.2.1
+
+18 February 2007 13:41 - OpC 0x33: Further Parser and Wiz changes
+  SimPe BHAV\
+    BhavOperandWiz0x0033.cs 1.1.4.4
+    BhavWizPrim.cs 1.34.2.26
+  GlobalStrings.package 1.10.8.18
+  pjseTestData.package 1.17.2.16
+
+17 February 2007 18:20 - OpC 0x33: Parser and Wiz changes
+  SimPe BHAV\
+    BhavOperandWiz0x0033.cs 1.1.4.3
+    BhavWizPrim.cs 1.34.2.25
+  GlobalStrings.package 1.10.8.17
+  pjseTestData.package 1.17.2.15
+
+11 February 2007 11:04 - Wiz0x0033: Fix for operands 5-8; readonly DOC again
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.19
+    BhavOperandWiz0x0033.cs 1.1.4.2
+    BhavOperandWiz0x0033.resx 1.1.4.2
+
+04 February 2007 14:27 - Wiz0x0033: Write works (DataOwnerControl now writable, too)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.17.2.2
+    BhavOperandWiz0x0033.cs 1.1.2.2
+    BhavOperandWiz0x0033.resx 1.1.2.2
+  GlobalStrings.package 1.10.8.15.8.2
+
+03 February 2007 21:23 - Wiz0x0033: Save compiling version
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.17.2.1
+    BhavOperandWiz0x0024.cs 1.1.4.15.10.1
+    BhavOperandWiz0x0033.cs 1.1.2.1
+    BhavOperandWiz0x0033.resx 1.1.2.1
+    BhavWiz.cs 1.37.2.27.8.1
+    BhavWizPrim.cs 1.34.2.23.2.1
+    ObjfWrapper.cs 1.9.6.3.26.1
+    pjse coder plugin.csproj 1.29.2.28.2.1
+  GlobalStrings.package 1.10.8.15.8.1
+
+28 January 2007 13:58 - Wizardry: WizAnimate write (plus support bytes in DataOwnerControl)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.16.2.2
+    BhavOperandWizAnimate.cs 1.1.2.2
+    BhavOperandWizAnimate.resx 1.1.2.2
+
+27 January 2007 21:01 - Wizardry: WizAnimate (plus font fixes for 0x02/0x08, typo in DataOwnerControl)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.16.2.1
+    BhavOperandWiz0x0002.resx 1.2.2.4.2.1
+    BhavOperandWiz0x0008.resx 1.1.2.2
+    BhavOperandWizAnimate.cs 1.1.2.1
+    BhavOperandWizAnimate.resx 1.1.2.1
+    BhavWizPrim.cs 1.34.2.22.14.2
+    pjse coder plugin.csproj 1.29.2.27.2.2
+
+27 January 2007 09:28 - Wizardry: Clone 0x0002 -> 0x0008
+  SimPe BHAV\
+    BhavOperandWiz0x0008.cs 1.1.2.1
+    BhavOperandWiz0x0008.resx 1.1.2.1
+    BhavWizPrim.cs 1.34.2.22.14.1
+    pjse coder plugin.csproj 1.29.2.27.2.1
+
+6 January 2007 17:50 - TTAB: Simplify the append offset prompt
+  * PickANumber: Allow dialog title and prompt to be set
+  * TtabForm bug: TtabItem Flags not set when changing to/from Format 0x54
+  * TtabForm bug: UNK lbttab entries displaying inconsistently
+  SimPe BHAV\
+    PickANumber.cs 1.1.2.2
+    PickANumber.Designer.cs 1.1.2.2
+    PickANumber.resx.cs 1.1.2.2
+    TtabForm.cs 1.31.2.27
+
+6 January 2007 14:22 - TTAB: Add PickANumber wizard for choosing append offset
+    BhavOperandWiz.cs 1.7.14.16
+    PickANumber.cs 1.1.2.1
+    PickANumber.Designer.cs 1.1.2.1
+    PickANumber.resx.cs 1.1.2.1
+    pjse coder plugin.csproj 1.29.2.27
+    TtabForm.cs 1.31.2.26
+
+6 January 2007 10:51 - TTAB: keep append button visible in release
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.25
+
+28 November 2006 18:30 - Updater: Tweak the prompt; make "Includes" uppercase
+  pjse filetable\
+    FileTable.cs 1.11.2.20
+  pjse update tool\
+    Checker.cs 1.1.4.3
+    SkipPrompt.cs 1.1.2.2
+    SkipPrompt.Designer.cs 1.1.2.2
+    SkipPrompt.resx 1.1.2.2
+
+26 November 2006 17:10 - Updater: Allow for skipping updates
+  pjse Localisation\
+    Localization.resx 1.1.4.22
+  pjse update tool\
+    Checker.cs 1.1.4.2
+    pjse update tool.csproj 1.1.4.2
+    Settings.cs 1.1.4.2
+    SkipPrompt.cs 1.1.2.1
+    SkipPrompt.Designer.cs 1.1.2.1
+    SkipPrompt.resx 1.1.2.1
+  SimPe BHAV\
+    WrapperFactory.cs 1.20.2.15
+
+26 November 2006 09:53 - WizBhav: Set textbox length initially
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.14.6.3
+
+25 November 2006 20:49 - WizBhav: UI changes; clean up dataowner handling
+  pjse Localisation\
+    Localization.resx 1.1.4.20.2.1
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.14.6.2
+    BhavOperandWizBhav.cs 1.1.8.3.22.5
+    BhavOperandWizBhav.Designer.cs 1.1.2.4
+    BhavOperandWizBhav.resx 1.1.8.3.22.4
+
+25 November 2006 14:33 - WizBhav: Don't make the Decimal/Attr checkboxes disappear
+  SimPe BHAV\
+    BhavOperandWizBhav.cs 1.1.8.3.22.4
+
+25 November 2006 14:00 - WizBhav: Remove node version field; use radio buttons for format
+  SimPe BHAV\
+    BhavOperandWizBhav.cs 1.1.8.3.22.3
+    BhavOperandWizBhav.Designer.cs 1.1.2.3
+    BhavOperandWizBhav.resx 1.1.8.3.22.3
+
+24 November 2006 23:12 - WizBhav: Wrote the Bhav Operand Wizard
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.14.6.1
+    BhavOperandWizBhav.cs 1.1.8.3.22.2
+    BhavOperandWizBhav.Designer.cs 1.1.2.2
+    BhavOperandWizBhav.resx 1.1.8.3.22.2
+
+24 November 2006 14:04 - WizBhav: Create new Bhav Operand Wizard branch
+  SimPe BHAV\
+    BhavOperandWizBhav.cs 1.1.8.4
+    BhavOperandWiz.Designer.cs 1.1.2.1
+    BhavOperandWiz.resx 1.1.8.4
+    BhavWizBhav.cs 1.19.2.6
+    pjse coder plugin.csproj 1.29.2.26
+
+23 November 2006 09:35 - Add "includes" to pjse filetable; make r/c wider by default
+  pjse filetable\
+    FileTable.cs 1.11.2.19
+  SimPe BHAV\
+    ResourceChooser.resx 1.1.12.4
+
+19 November 2006 11:31 - Record build version of SimPE for PJSE Help About
+  pjse Localisation\
+    Localization.resx 1.1.4.20
+  pjse update tool\
+    Version.cs 1.1.4.2
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.25
+    WrapperFactory.cs 1.20.2.14
+
+18 November 2006 22:45 - Stick with Dizzy's "Latin" over "Latvian"
+  GlobalStrings.package 1.10.8.15
+
+18 November 2006 15:21 - Use STR# 0x01e6 for language names (from Dizzy)
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.27
+    StrForm.cs 1.28.2.23
+  GlobalStrings.package 1.10.8.14
+
+18 November 2006 11:47 - TTAB: oops, obey array bounds
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.24
+
+18 November 2006 11:20 - TTAB: Handle changing Format far better
+  SimPe BHAV\
+    SystemClasses.cs 1.1.2.3
+    TtabForm.cs 1.31.2.23
+    TtabItemMotiveTableUI.cs 1.10.12.8
+    TtabWrapper.cs 1.23.6.12
+
+12 November 2006 13:18 - Updater: Additions to (PJSE) Help->About; (oops) fix version check
+  pjse Localisation\
+    Localization.resx 1.1.4.18.2.4
+  pjse update tool\
+    Checker.cs 1.1.2.3
+    Version.cs 1.1.2.2
+  SimPe BHAV\
+    WrapperFactory.cs 1.20.2.11.8.4
+
+12 November 2006 12:41 - Updater: Agree update URL and hide TS except for Debug
+  pjse update tool\
+    Settings.cs 1.1.2.2
+
+12 November 2006 10:42 - Updater: Use version.txt (build ts); some tweaks
+  pjse Localisation\
+    Localization.resx 1.1.4.18.2.3
+  pjse update tool\
+    Checker.cs 1.1.2.2
+    pjse update tool.csproj 1.1.2.2
+    UpdateInfo.cs 1.1.2.2
+    Version.cs 1.1.2.1
+  SimPe BHAV\
+    BconForm.cs 1.15.2.11.2.2
+    BhavForm.cs 1.64.2.29.2.2
+    ObjfForm.cs 1.13.2.10.16.2
+    pjse coder plugin.csproj 1.29.2.22.2.3
+    StrForm.cs 1.28.2.21.2.2
+    TPRPForm.cs 1.6.2.11.2.2
+    TrcnForm.cs 1.11.2.12.2.2
+    TtabForm.cs 1.31.2.20.2.3
+    WrapperFactory.cs 1.20.2.11.8.3
+
+11 November 2006 21:27 - FeedReader branch: Auto-update for PJSE
+  pjse Localisation\
+    Localization.resx 1.1.4.18.2.2
+  pjse update tool\
+    .cvsignore 1.1.2.1
+    Checker.cs 1.1.2.1
+    pjse update tool.csproj 1.1.2.1
+    Settings.cs 1.1.2.1
+    UpdateInfo.cs 1.1.2.1
+  SimPe BHAV\
+    AtomReader.cs (deleted)
+    BconForm.cs 1.15.2.11.2.1
+    BhavForm.cs 1.64.2.29.2.1
+    GlobForm.cs (deleted)
+    GlobForm.resx (deleted)
+    GlobWrapper.cs (deleted)
+    ObjfForm.cs 1.13.2.10.16.1
+    pjse coder plugin.csproj 1.29.2.22.2.2
+    pjse coder plugins.sln 1.6.10.3.2.1
+    Settings.cs 1.1.4.3.10.2
+    StrForm.cs 1.28.2.21.2.1
+    TPRPForm.cs 1.6.2.11.2.1
+    TrcnForm.cs 1.11.2.12.2.1
+    TtabForm.cs 1.31.2.20.2.2
+    WrapperFactory.cs 1.20.2.11.8.2
+
+10 November 2006 19:27 - SimPe 0.59v/w: use SimPe Glob; use IUpdatablePlugin; mark as 4.0
+  pjse filetable\
+    AssemblyInfo.cs 1.1.12.3
+  pjse GUID Tool\
+    AssemblyInfo.cs 1.1.14.3
+  pjse Localisation\Properties\
+    AssemblyInfo.cs 1.1.4.3
+  SimPe BHAV\
+    AssemblyInfo.cs 1.1.34.3
+    BhavWiz.cs 1.27.2.26
+    ExtendedWrapper.cs 1.1.4.6
+    pjse coder plugin.csproj 1.29.2.23
+    ResourceChooser.cs 1.6.2.7
+    WrapperFactory.cs 1.20.2.12
+
+7 November 2006 21:29 - Fixes: TtabForm "None"; qualify Glob type
+  SimPe BHAV\
+    ResourceChooser.cs 1.6.2.6
+    TtabForm.cs 1.31.2.21
+
+7 November 2006 21:17 - FeedReader branch (does not work)
+  pjse Localisation\
+    Localization.resx 1.1.4.18.2.1
+  SimPe BHAV\
+    AtomReader.cs 1.1.2.1
+    pjse coder plugin.csproj 1.29.2.22.2.1
+    Settings.cs 1.1.4.3.10.1
+    WrapperFactory.cs 1.20.2.11.8.1
+
+5 November 2006 19:49 - Generate an nsis install
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.22
+  mknsis.nsi 1.1.2.1
+  
+4 November 2006 15:24 - C#2005: Make forms rescale correctly (second try)
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.29
+    BhavForm.resx 1.30.2.14
+    BhavOperandWiz0x001c.cs 1.1.4.6
+    BhavOperandWiz0x001c.resx 1.1.4.5
+    BhavOperandWiz0x001f.cs 1.1.4.7
+    BhavOperandWiz0x001f.resx 1.1.4.5
+    BhavOperandWiz0x0024.cs 1.1.4.15
+    BhavOperandWiz0x0024.resx 1.1.4.8
+    BhavOperandWiz0x0032.cs 1.1.4.9
+    BhavOperandWiz0x0032.resx 1.1.4.4
+    TtabAnimalMotiveWiz.cs 1.1.4.3
+    TtabAnimalMotiveWiz.Designer.cs 1.1.4.3
+    TtabAnimalMotiveWiz.resx 1.1.4.3
+    TtabItemMotiveTableUI.cs 1.10.12.7
+    TtabItemMotiveTableUI.resx 1.5.22.4
+    TtabMotiveGroupUI.cs 1.3.26.7
+    TtabSingleMotiveUI.cs 1.5.26.4
+
+4 November 2006 14:37 - Pets: TTAB changes: Enable Animal "Clear" button
+  SimPe BHAV\
+    TtabMotiveGroupUI.cs 1.3.26.7
+    TtabWrapper.cs 1.23.6.11
+
+4 November 2006 14:00 - Pets: TTAB changes: Compress on Serialize
+  SimPe BHAV\
+    TtabWrapper.cs 1.23.6.10
+
+4 November 2006 11:07 - C#2005: Make forms rescale correctly (I hope)
+  SimPe BHAV\
+    BconForm.cs 1.15.2.11
+    BconForm.resx 1.9.2.5
+    BhavForm.cs 1.64.2.28
+    BhavForm.resx 1.30.2.13
+    BhavOperandWiz.cs 1.7.14.14
+    BhavOperandWiz.resx 1.3.22.4
+    BhavOperandWiz0x0001.cs 1.1.8.8
+    BhavOperandWiz0x0001.resx 1.1.8.2
+    BhavOperandWiz0x0002.cs 1.6.2.9
+    BhavOperandWiz0x0002.resx 1.2.2.4
+    BhavOperandWiz0x001c.cs 1.1.4.5
+    BhavOperandWiz0x001c.resx 1.1.4.4
+    BhavOperandWiz0x001f.cs 1.1.4.6
+    BhavOperandWiz0x001f.resx 1.1.4.4
+    BhavOperandWiz0x0024.cs 1.1.4.14
+    BhavOperandWiz0x0024.resx 1.1.4.7
+    BhavOperandWiz0x0032.cs 1.1.4.8
+    BhavOperandWiz0x0032.resx 1.1.4.3
+    BhavOperandWiz0x006d.cs 1.1.4.4
+    BhavOperandWiz0x006d.resx 1.1.4.3
+    BhavOperandWizRaw.cs 1.1.14.4
+    BhavOperandWizRaw.resx 1.1.14.2
+    ResourceChooser.cs 1.6.2.5
+    ResourceChooser.resx 1.1.12.3
+    StrBig.cs 1.3.22.1
+    StrBig.resx 1.2.22.2
+    StrChooser.cs 1.1.14.4
+    StrChooser.resx 1.1.14.3
+    StrForm.cs 1.28.2.21
+    StrForm.resx 1.18.14.13
+    TPRPForm.cs 1.6.2.11
+    TPRPForm.resx 1.5.2.4
+    TrcnForm.cs 1.11.2.12
+    TrcnForm.resx 1.7.2.5
+    TtabForm.cs 1.31.2.20
+    TtabForm.resx 1.15.8.11
+
+1 Novemeber 2006 18:10 - Pets: TTAB changes: Expand out Flags2 (plus more strings)
+  SimPe BHAV\
+    SystemClasses.cs 1.1.2.1.12.1
+    TtabForm.cs 1.31.2.14.2.10
+    TtabForm.resx 1.15.8.5.2.9
+  GlobalStrings.package 1.10.8.11.2.2
+
+29 October 2006 21:57 - Pets: TTAB changes: Amend Flags handling for format 0x54
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.14.2.9
+    TtabForm.resx 1.15.8.5.2.8
+    TtabWrapper.cs 1.23.6.6.12.8
+
+29 October 2006 13:54 - Pets: TTAB changes: sort out fonts
+  SimPe BHAV\
+    TtabAnimalMotiveUI.cs 1.1.2.5
+    TtabAnimalMotiveUI.resx 1.1.2.4
+    TtabAnimalMotiveWiz.cs 1.1.2.5
+    TtabAnimalMotiveWiz.resx 1.1.2.5
+    TtabForm.cs 1.31.2.14.2.8
+    TtabForm.resx 1.15.8.5.2.7
+    TtabItemMotiveTableUI.cs 1.10.12.3.12.8
+    TtabItemMotiveTableUI.resx 1.5.22.1.22.4
+    TtabMotiveGroupUI.cs 1.3.26.3.12.7
+    TtabMotiveGroupUI.resx 1.4.52.4
+    TtabSingleMotiveUI.cs 1.5.26.1.12.8
+    TtabSingleMotiveUI.resx 1.10.12.3.12.5
+
+29 October 2006 10:49 - Pets: TTAB changes: Functioning plus/minus on popup (new)
+  SimPe BHAV\
+    TtabAnimalMotiveUI.cs 1.1.2.4
+    TtabAnimalMotiveWiz.cs 1.1.2.4
+    TtabAnimalMotiveWiz.Designer.cs 1.1.2.3
+    TtabAnimalMotiveWiz.resx 1.1.2.4
+    TtabSingleMotiveUI.cs 1.5.26.1.12.7
+
+29 October 2006 09:16 - Pets: TTAB changes: Functioning plus/minus on popup (sort of)
+  SimPe BHAV\
+    TtabAnimalMotiveWiz.cs 1.1.2.3
+    TtabAnimalMotiveWiz.resx 1.1.2.3
+
+28 October 2006 21:42 - Pets: TTAB changes: Non-functioning plus/minus on popup
+  SimPe BHAV\
+    TtabAnimalMotiveUI.cs 1.1.2.3
+    TtabAnimalMotiveUI.resx 1.1.2.3
+    TtabAnimalMotiveWiz.cs 1.1.2.2
+    TtabAnimalMotiveWiz.Designer.cs 1.1.2.2
+    TtabAnimalMotiveWiz.resx 1.1.2.2
+    TtabForm.cs 1.31.2.14.2.7
+    TtabForm.resx 1.15.8.5.2.6
+    TtabItemMotiveTableUI.cs 1.10.12.3.12.7
+    TtabItemMotiveTableUI.resx 1.5.22.1.22.3
+    TtabMotiveGroupUI.cs 1.3.26.3.12.6
+    TtabMotiveGroupUI.resx 1.4.52.4
+    TtabSingleMotiveUI.cs 1.5.26.1.12.6
+    TtabSingleMotiveUI.resx 1.10.12.3.12.4
+    TtabWrapper.cs 1.23.6.6.12.7
+
+28 October 2006 18:32 - Pets: TTAB changes: Popup for editing Pet Motives; fixes
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.19.2.2
+    TtabAnimalMotiveUI.cs 1.1.2.2
+    TtabAnimalMotiveWiz.cs 1.1.2.1
+    TtabAnimalMotiveWiz.Designer.cs 1.1.2.1
+    TtabAnimalMotiveWiz.resx 1.1.2.1
+    TtabForm.cs 1.31.2.14.2.6
+    TtabItemMotiveTableUI.cs 1.10.12.3.12.6
+    TtabMotiveGroupUI.cs 1.3.26.3.12.5
+    TtabSingleMotiveUI.cs 1.5.26.1.12.5
+    TtabSingleMotiveUI.resx 1.10.12.3.12.3
+    TtabWrapper.cs 1.23.6.6.12.6
+
+27 October 2006 19:14 - Pets: TTAB changes: Fully expand type 0x54 on read
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.14.2.5
+    TtabForm.resx 1.15.8.5.2.5
+    TtabWrapper.cs 1.23.6.6.12.5
+
+27 October 2006 18:41 - Pets: TTAB changes: fix some display issues
+  SimPe BHAV\
+    TtabAnimalMotiveUI.resx 1.1.2.2
+    TtabForm.cs 1.31.2.14.2.4
+    TtabForm.resx 1.15.8.5.2.4
+    TtabItemMotiveTableUI.cs 1.1.12.3.12.5
+    TtabSingleMotiveUI.resx 1.10.12.3.12.2
+
+24 October 2006 21:39 - Pets: TTAB changes - this one seems to work!
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.24.2.2
+    pjse coder plugin.csproj 1.29.2.19.2.1
+    TtabAnimalMotiveUI.cs 1.1.2.1
+    TtabAnimalMotiveUI.resx 1.1.2.1
+    TtabForm.cs 1.31.2.14.2.3
+    TtabForm.resx 1.15.8.5.2.3
+    TtabItemMotiveTableUI.cs 1.1.12.3.12.4
+    TtabMotiveGroupUI.cs 1.3.26.3.12.4
+    TtabSingleMotiveUI.cs 1.5.26.1.12.4
+    TtabWrapper.cs 1.23.6.6.12.4
+
+24 October 2006 18:52 - Pets: TTAB changes - back to non-compiling...
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.14.2.2
+    TtabForm.resx 1.15.8.5.2.2
+    TtabItemMotiveTableUI.cs 1.10.12.3.12.3
+    TtabMotiveGroupUI.cs 1.3.26.3.12.3
+    TtabMotiveGroupUI.resx 1.4.52.3
+    TtabSingleMotiveUI.cs 1.5.26.1.12.3
+    TtabWrapper.cs 1.23.6.6.12.3
+
+24 October 2006 13:05 - Pets: Update strings
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.24.2.1
+  GlobalStrings.package 1.10.8.11.2.1
+
+22 October 2006 18:32 - TTAB changes (Pets) - crashes on some TTABs
+  pjse Localisation\
+    Localization.resx 1.1.4.17.2.1
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.14.2.1
+    TtabForm.resx 1.15.8.5.2.1
+    TtabItemMotiveTableUI.cs 1.10.12.3.12.2
+    TtabItemMotiveTableUI.resx 1.5.22.1.22.2
+    TtabMotiveGroupUI.cs 1.3.26.3.12.2
+    TtabMotiveGroupUI.resx 1.4.52.2
+    TtabSingleMotiveUI.cs 1.5.26.1.12.2
+    TtabWrapper.cs 1.23.6.6.12.2
+
+21 October 2006 23:36 - Save TTAB changes (Pets) - non-compiling!
+  SimPe BHAV\
+    TtabItemMotiveTableUI.cs 1.10.12.3.12.1
+    TtabItemMotiveTableUI.resx 1.5.22.1.22.1
+    TtabMotiveGroupUI.cs 1.3.26.3.12.1
+    TtabMotiveGroupUI.resx 1.4.52.1
+    TtabSingleMotiveUI.cs 1.5.26.1.12.1
+    TtabSingleMotiveUI.resx 1.3.26.1.12.1
+    TtabWrapper.cs 1.23.6.6.12.1
+
+15 October 2006 13:28 - Amend to use SimPe.PathProvider
+  pjse filetable\
+    FileTable.cs 1.11.2.18
+
+14 October 2006 12:32 - Stop using BhavFuncs (0x7FE59FD0)
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.24
+    Str.cs 1.1.4.10
+  GlobalStrings.package 1.10.8.11
+
+17 September 2006 13:32 - Help: Remove from Tools->PJSE menu
+  SimPe BHAV\
+    WrapperFactory.cs 1.20.2.11
+
+17 September 2006 12:18 - Help: Removed help files (Inge to manage)
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.19
+  SimPe BHAV\PJSE_Help\* (removed)
+  SimPe BHAV\PJSE_Help\PJSE_HelpImages\* (removed)
+
+10 September 2006 13:15 - Filetable: search using hard-coded order for now
+  pjse filetable\
+    FileTable.cs 1.11.2.17
+
+9 September 2006 11:46 - Filetable: use only last-created objects.package
+  pjse filetable\
+    FileTable.cs 1.11.2.16
+
+7 September 2006 19:09 - Filetable: use GetExecutableFolder(index); change source pkgname
+  pjse filetable\
+    FileTable.cs 1.11.2.15
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.18
+
+12 August 2006 11:22 - BHAV: Fix: list all attributes labels (even empty ones); Help: fix PieMenus
+  SimPe BHAV\
+    BhavWiz.cs 1.27.2.23
+  SimPe BHAV\PJSE_Help\
+    PieMenus.htm 1.1.2.6
+  pjseTestData.package 1.17.2.14
+
+5 August 2006 17:11 - Help: mention Up and Down in TTAB editor; minor in BHAV.htm to match button text
+  SimPe BHAV\PJSE_Help\
+    BHAV.htm 1.1.2.4
+    PieMenus.htm 1.1.2.5
+
+5 August 2006 14:20 - Help: Full-screen BHAV edit; mention UTF-8 for Strings
+  SimPe BHAV\PJSE_Help\
+    BHAV.htm 1.1.2.3
+    Strings.htm 1.1.2.5
+
+5 August 2006 14:10 - BHAV: Full screen mode for editing: Unfloat button; special buttons on always
+  pjse Localisation\
+    Localization.resx 1.1.4.17
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.27
+    BhavForm.resx 1.30.2.12
+
+30 July 2006 18:07 - BHAV: Full screen mode for editing: fix the Close() problem
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.26
+
+30 July 2006 15:19 - Wiz0x32: Off-by-one error on start up
+  SimPe BHAV\
+    BhavOperandWiz0x0032.cs 1.1.4.7
+
+30 July 2006 12:12 - BHAV: Full screen mode for editing: minor fix (remove Float in View mode)
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.25
+
+29 July 2006 21:00 - BHAV: Full screen mode for editing
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.24
+    BhavForm.resx 1.30.2.11
+
+29 July 2006 20:59 - TTAB: Up and Down keys for Merola64
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.14
+    TtabForm.resx 1.15.8.5
+
+25 July 2006 16:55 - DataOwnerControl: value for Consts toggles to decimal (only in Wizards)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.13
+    BhavWiz.cs 1.37.2.22
+
+25 July 2006 15:07 - DataOwnerControl: various bugfixes, add label for Const values
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.12
+    BhavOperandWiz0x0002.cs 1.6.2.8
+    BhavOperandWiz0x0002.resx 1.2.2.3
+    BhavOperandWiz0x001c.cs 1.1.4.4
+    BhavOperandWiz0x001c.resx 1.1.4.3
+    BhavOperandWiz0x001f.cs 1.1.4.4
+    BhavOperandWiz0x0032.cs 1.1.4.5
+    BhavOperandWiz0x006d.cs 1.1.4.3
+    BhavWiz.cs 1.37.2.21
+
+25 July 2006 12:19 - Bugfix: 16 bit numbers should allow, err, 16 bit values...
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.11
+
+23 July 2006 08:53 - STR#: Add help for new buttons
+  SimPe BHAV\PJSE_Help
+    Strings.htm 1.1.2.4
+
+22 July 2006 18:45 - STR#: Add "Copy to all" button
+    StrForm.cs 1.28.2.20
+    StrForm.resx 1.18.14.12
+
+22 July 2006 16:41 - Fix: Change the way SemiGroup works (for semiglobal TTABs)
+  SimPe BHAV\
+    ExtendedWrapper.cs 1.1.4.5
+
+16 July 2006 20:08 - Wiz0x006d: Fix scope name in no strings popup (plus bits)
+  SimPe BHAV\
+    BhavOperandWiz0x006d.cs 1.1.2.4
+
+16 July 2006 19:39 - Wiz0x006d: Fixes to DataOwnerControl; fixes to Wiz0x006d
+  * Pass Decimal and UseAttrPicker checkboxes to DataOwnerControl
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.9.10.3
+    BhavOperandWiz0x0002.cs 1.6.2.6.2.1
+    BhavOperandWiz0x001c.cs 1.1.4.2.6.1
+    BhavOperandWiz0x001f.cs 1.1.4.3.2.1
+    BhavOperandWiz0x0032.cs 1.1.4.4.2.1
+    BhavOperandWiz0x006d.cs 1.1.2.3
+
+16 July 2006 16:03 - Wiz0x006d: Pretty much working
+  pjse Localisation\
+    Localization.resx 1.1.4.15.2.1
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.9.10.2
+    BhavOperandWiz0x006d.cs 1.1.2.2
+    BhavOperandWiz0x006d.resx 1.1.2.2
+    BhavWiz.cs 1.37.2.19.4.1
+    BhavWizPrim.cs 1.34.2.21.2.2
+
+16 July 2006 12:08 - Wiz0x006d: Check in user interface
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.9.10.1
+    BhavOperandWiz0x006d.cs 1.1.2.1
+    BhavOperandWiz0x006d.resx 1.1.2.1
+    BhavWizPrim.cs 1.34.2.21.2.1
+    pjse coder plugin.csproj 1.29.2.16.2.1
+
+15 July 2006 13:14 - STR#: Make the two reveal checkboxes into Settings
+  pjse Localisation\
+    Localization.resx 1.1.4.15
+  SimPe BHAV\
+    Settings.cs 1.1.4.3
+    StrForm.cs 1.28.2.19
+
+15 July 2006 12:13 - STR#: Language to text file export/import - use "<-Comment->" not "#" for comments
+  SimPe BHAV\
+    StrWrapper.cs 1.16.6.3
+
+15 July 2006 11:36 - STR#: Language to text file export/import
+  pjse Localisation\
+    Localization.resx 1.1.4.14
+  SimPe BHAV\
+    StrForm.cs 1.28.2.18
+    StrForm.resx 1.18.14.11
+    StrWrapper.cs 1.16.6.2
+
+14 July 2006 19:36 - Documentation updates, cosmetic "fix" to Wiz0x001f
+  SimPe BHAV\
+    BhavOperandWiz0x001f.cs 1.1.4.3
+    BhavOperandWiz0x001f.resx 1.1.4.3
+  SimPe BHAV\PJSE_Help\
+    BHAV.htm 1.1.2.2
+    PieMenus.htm 1.1.2.4
+
+9 July 2006 15:02 - Wiz0x001f: Added "write back" code
+  SimPe BHAV\
+    BhavOperandWiz0x001f.cs 1.1.2.2
+
+9 July 2006 13:43 - Wiz0x001f: Initial "readonly" user-interface
+  * Also made some sweeping changes to Settings stuff
+  pjse Localisation\
+    Localization.resx 1.1.4.12.2.1
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.22.2.1
+    BhavOperandWiz0x0002.cs 1.6.2.5.8.1
+    BhavOperandWiz0x001f.cs 1.1.2.1
+    BhavOperandWiz0x001f.resx 1.1.2.1
+    BhavOperandWiz0x0032.cs 1.1.4.3.2.1
+    BhavWizPrim.cs 1.34.2.20.2.1
+    pjse coder plugin.csproj 1.29.2.15.2.1
+    Settings.cs 1.1.2.1
+    WrapperFactory.cs 1.20.2.9.2.1
+
+9 July 2006 10:31 - ResolveGUIDs: Version 2: Add in "load at start up" option
+  * Plus tidy-ups to filetable
+  * Plug bugfix (oops) in Woz0x0032
+  pjse filetable\
+    FileTable.cs 1.11.2.12.4.5
+    FileTableForm.cs (removed)
+    FileTableForm.resx (removed)
+    pjse filetable.csproj 1.3.10.5.6.1
+  pjse Localisation\
+    Localization.resx 1.1.4.11.2.4
+  SimPe BHAV\
+    BhavOperandWiz0x0032.cs 1.1.4.2.2.1
+    GUIDIndex.cs 1.1.2.3
+    WrapperFactory.cs 1.20.2.8.6.1
+
+8 July 2006 14:47 - ResolveGUIDs: Version 2 front-end changes
+  * allow anyone to throw FileTable changed events...
+  * throw FileTable changed events on GUIDIndex create and load
+  * couple of fixes
+  * new Special Button
+  pjse filetable\
+    FileTable.cs 1.11.2.12.4.4
+  pjse Localisation\
+    Localization.resx 1.1.4.11.2.3
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.21.2.1
+    BhavForm.resx 1.30.2.9.2.1
+    GUIDIndex.cs 1.1.2.2
+
+8 July 2006 12:09 - ResolveGUIDs: Version 2 back-end changes (revert FileTable and options)
+  pjse filetable\
+    FileTable.cs 1.11.2.12.4.3
+  pjse Localisation\
+    Localization.resx 1.1.4.11.2.2
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.18.6.2
+    GUIDIndex.cs 1.1.2.1
+    pjse coder plugin.csproj 1.29.2.14.2.1
+
+8 July 2006 09:01 - ResolveGUIDs: Force complete GUID scan on RFT click
+  pjse filetable\
+    FileTable.cs 1.11.2.12.4.2
+
+4 July 2006 16:37 - ResolveGUIDs: First commit of something that works
+  * New configuration option to turn on/off resolving GUIDs
+  * New "ObjdEntry" extension to Entry class
+  * Updates to opcodes: 1f, 20, 2a, 32, 33, 79
+  * Update to opcode 7c to make it clear Want IDs aren't GUIDs
+  pjse filetable\
+    FileTable.cs 1.11.2.12.4.1
+  pjse Localisation\
+    Localization.resx 1.1.4.11.2.1
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.18.6.1
+    BhavWizPrim.cs 1.24.2.19.2.1
+    
+15 July 2006 17:22 - STR#: Add string descriptions to string item list -- add to help
+  SimPe BHAV\PJSE_Help
+    Strings.htm 1.1.2.3
+
+25 June 2006 09:39 - BHAV: Wiz0x0024 - bug fixed (TNSStyle selection disconnected)
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.13
+
+24 June 2006 21:23 - BHAV: Wiz0x0024 - bugs fixed (out of range on dropdowns)
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.12
+
+24 June 2006 18:15 - STR#: Fix bug with adding new strings (oops!)
+  SimPe BHAV\
+    StrForm.cs 1.28.2.17
+
+24 June 2006 18:08 - STR#: Rename checkbox labels for extra column headings
+  SimPe BHAV\
+    StrForm.cs 1.28.2.16
+    StrForm.resx 1.18.14.10
+
+24 June 2006 17:56 - STR#: Fix bug with column handling (cheat big time)
+  SimPe BHAV\
+    StrForm.cs 1.28.2.15
+
+24 June 2006 11:42 - STR#: Add string descriptions to string item list
+  SimPe BHAV\
+    StrForm.cs 1.28.2.14
+    StrForm.resx 1.18.14.9
+
+24 June 2006 10:13 - BHAV: Drop progress bar while waiting; use hex for Move box
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.21
+    BhavForm.resx 1.30.2.9
+    BhavInstListControl.cs 1.41.8.6
+
+17 June 2006 12:32 - Bugfix: "No current instruction" in BhavInstListControl.MoveInst
+  * plus change the text in the config editor for load at start up
+  pjse Localisation
+    Localization.resx 1.1.4.11
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.20
+
+4 June 2006 11:47 - Help updates
+  SimPe BHAV\PJSE_Help\
+    About.htm 1.1.2.5
+    Contents.htm 1.1.2.5
+    General.htm 1.1.2.2
+    ObjectFuncs.htm 1.1.2.3
+    Support.htm 1.1.2.3
+
+3 June 2006 16:52 - Wizards: Create wizard for opcode 0x32 (Add/Change Action String)
+  SimPe BHAV\
+    BhavOperandWiz0x0032.cs 1.1.2.1
+    BhavOperandWiz0x0032.resx 1.1.2.1
+    BhavWizPrim.cs 1.34.2.18.4.2
+    pjse coder plugin.csproj 1.29.2.13.2.2
+
+3 June 2006 12:23 - Wizards: Create wizard for opcode 0x1c (RTBN)
+  pjse Localisation\
+    Localization.resx 1.1.4.9.2.1
+  SimPe BHAV\
+    BhavOperandWiz0x001c.cs 1.1.2.1
+    BhavOperandWiz0x001c.resx 1.1.2.1
+    BhavOperandWiz0x0024.cs 1.1.4.10.4.1
+    BhavWizPrim.cs 1.34.2.18.4.1
+    pjse coder plugin.csproj 1.29.2.13.2.1
+    StrChooser.cs 1.1.14.2.4.1
+
+3 June 2006 08:40 - Filetable: add a Refresh Filetable (RFT) button to all editors
+  pjse filetable
+    FileTable.cs
+  SimPe BHAV\
+    BconForm.cs 1.15.2.10
+    BconForm.resx 1.9.2.4
+    BhavForm.cs 1.64.2.19
+    BhavForm.resx 1.30.2.8
+    ObjfForm.cs 1.13.2.10
+    ObjfForm.resx 1.4.6.4
+    StrForm.cs 1.28.2.13
+    StrForm.resx 1.18.14.8
+    TPRPForm.cs 1.6.2.10
+    TPRPForm.resx 1.5.2.3
+    TrcnForm.cs 1.11.2.11
+    TrcnForm.resx 1.7.2.4
+    TtabForm.cs 1.31.2.13
+    TtabForm.resx 1.15.8.3
+
+30 May 2006 19:38 - GUID Tool: Package as part of pjse coder plugins distribution
+  * Merge CHANGES.txt with SimPe BHAV\CHANGES.txt
+  pjse GUID Tool\
+    pjse GUID Tool.csproj 1.6.10.6
+  SimPe BHAV\
+    CHANGES.txt
+    pjse coder plugin.csproj 1.29.2.13
+    pjse coder plugins.sln 1.6.10.3
+
+29 May 2006 15:53 - GUID Tool: Working Asychronous version
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.2.2.2
+    GUIDTool.resx 1.4.12.1.2.1
+  pjse Localisation\
+    Localization.resx 1.1.4.8.2.2
+
+28 May 2006 20:37 - GUID Tool: Buggy Asychronous version
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.2.2.2.1
+  pjse Localisation\
+    Localization.resx 1.1.4.8.2.1
+
+1 May 2006 14:00 - GUID Tool: Resource renaming
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.16.4
+
+1 May 2006 10:33 - GUID Tool: Fix GUID Tool
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.16.3
+
+30 April 2006 14:29 - GUID Tool: Centralise localisation
+  pjse GUID Tool\
+    GUIDTool.cs 1.10.16.2
+    Localization.cs (deleted)
+    Localization.resx (deleted: merged into central resx file)
+    pjse GUID Tool.csproj 1.6.10.3.2.2
+
+26 April 2006 18:17 - GUID Tool: Enable localisation
+  pjse GUID Tool\
+    AssemblyInfo.cs 1.1.14.1.10.1
+    GUIDTool.cs 1.10.16.1
+    GUIDTool.resx 1.4.26.1
+    Localization.cs 1.1.2.1
+    Localization.resx 1.1.2.1
+    pjse GUID Tool.csproj 1.6.10.3.2.1
+
+26 April 2006 09:37 - GUID Tool: Change to .NET2
+  pjse GUID Tool\
+    pjse GUID Tool.csproj 1.6.10.2.2.1
+
+23 April 2006 13:55 - GUID Tool: Change post-build event to match pjse coder plugin
+  pjse GUID Tool\
+    pjse GUID Tool.csproj 1.6.10.2
+
+22 April 2006 12:06 - GUID Tool: Change post-build event to match pjse coder plugin
+  pjse GUID Tool\
+    pjse GUID Tool.csproj 1.6.10.1
+
+4 February 2006 11:41 - GUID Tool: Add sensible assembly info
+  pjse GUID Tool\
+    AssemblyInfo.cs 1.1.14.1
+
+27 December 2005 12:25 - GUID Tool: Move GUIDTool under PJSE menu
+  pjse GUID Tool\
+    GUIDTool.cs 1.10
+
+22 October 2005 17:04 - GUID Tool: Take advantage of changes to FileTable for ResourceChooser
+  pjse GUID Tool\
+    GUIDTool.cs 1.9
+
+16 October 2005 09:33 - GUID Tool: Change the help text (/sigh/)
+  pjse GUID Tool\
+    GUIDTool.cs 1.8
+
+16 October 2005 09:11 - GUID Tool: Add a help button
+  pjse GUID Tool\
+    GUIDTool.cs 1.7
+    GUIDTool.resx 1.5
+
+15 October 2005 19:04 - GUID Tool: Oops...  Maxlength on Name box was still 10
+  pjse GUID Tool\
+    GUIDTool.cs 1.6
+    GUIDTool.resx 1.5
+
+15 October 2005 18:59 - GUID Tool: Stop too many matches crashing the tool
+  pjse GUID Tool\
+    GUIDTool.cs 1.5
+    GUIDTool.resx 1.4
+
+12 October 2005 19:57 - GUID Tool: Change of name, cosmetic tidy-ups
+  pjse GUID Tool\
+    GUIDTool.cs 1.4
+    GUIDTool.resx 1.3
+
+11 October 2005 22:39 - GUID Tool: Add searching by OBJd filename
+  pjse GUID Tool\
+    GUIDTool.cs 1.3
+    GUIDTool.resx 1.2
+    pjse GUID Tool.csproj 1.5
+
+11 October 2005 21:28 - GUID Tool: FileTable: separate out to avoid problem dependencies
+  pjse GUID Tool\
+    pjse GUID Tool.csproj 1.4
+
+11 October 2005 19:34 - GUID Tool: Updated to use FileTable
+  pjse GUID Tool\
+    GUIDTool.cs 1.2
+    pjse GUID Tool.csproj 1.3
+
+8 October 2005 11:15 - GUID Tool: Build .7z archives, too
+  pjse GUID Tool\
+    pjse GUID Tool.csproj 1.2
+
+2 October 2005 17:08 - GUID Tool: Create new Tool - GUID to Group lookup
+  pjse GUID Tool\
+    .cvsignore 1.1
+    AssembleyInfo.cs 1.1
+    GUIDTool.cs 1.1
+    GUIDTool.resx 1.1
+    pjse GUID Tool.csproj 1.1
+  SimPe BHAV\
+    pjse coder plugins.sln 1.4
+
+28 May 2006 11:29 - Ttab: Oops: forgot to allow localisation of strings
+  pjse Localisation\
+    Localization.resx 1.1.4.8
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.12
+
+28 May 2006 11:20 - Ttab: Enhance TtabForm for changes to Ttab format
+  SimPe BHAV\
+    TtabForm.cs 1.31.2.11
+    TtabItemMotiveTableUI.cs 1.10.12.3
+    TtabWrapper.cs 1.23.6.6
+
+27 May 2006 20:43 - Ttab: bugfix for when ttab gets "bigger"
+  SimPe BHAV\
+    TtabWrapper.cs 1.23.6.5
+
+26 May 2006 21:57 - Fallback: Amend text of out of context message
+  pjse Localisation\
+    Localization.resx 1.1.4.7
+  SimPe BHAV\
+    Str.cs 1.1.4.9
+
+26 May 2006 20:32 - Fallback: Stop falling back out of context (and some other bits)
+  * Basically, if the requested group is zero, it means the scope and context mismatched (in GroupForScope)
+  * tiny reposition to "true" and "false" labels... doesn't really help
+  * popup to inform user no dialog strings at requested scope
+  * Where no scope is specified, use "Private" rather than "Context"
+  * Say "DialogStr" rather than the number in prim 0x24 parsing [Temp x]
+  * Don't bother with the number of ObjectAnims in prim 0x69 parsing [Param x]
+  pjse Localisation\
+    Localization.resx 1.1.4.6
+  SimPe BHAV\
+    BhavInstListItemUI.resx 1.3.34.3
+    BhavOperandWiz0024.cs 1.1.4.10
+    BhavWiz.cs 1.37.2.18
+    BhavWizPrim.cs 1.34.2.18
+    Str.cs 1.1.4.8
+
+21 May 2006 14:16 - Help: Just go to Contents.htm...
+  SimPe BHAV\
+    BconForm.cs 1.15.2.8
+    BhavForm.cs 1.64.2.17
+    ObjfForm.cs 1.13.2.9
+    StrForm.cs 1.28.2.12
+    TPRPForm.cs 1.6.2.8
+    TrcnForm.cs 1.11.2.9
+    TtabForm.cs 1.31.2.10
+
+21 May 2006 13:38 - Help: Just the help files...
+  SimPe BHAV\
+    BconForm.cs 1.15.2.8
+    BhavForm.cs 1.64.2.17
+    TPRPForm.cs 1.6.2.8
+    TrcnForm.cs 1.11.2.9
+    WrapperFactory.cs 1.20.2.8
+
+21 May 2006 12:15 - Help: New version of help
+  SimPe BHAV\
+    BconForm.cs 1.15.2.7
+    BhavForm.cs 1.64.2.16
+    TPRPForm.cs 1.6.2.7
+    TrcnForm.cs 1.11.2.8
+    WrapperFactory.cs 1.20.2.7
+  SimPe BHAV\PJSE_Help
+    About.htm 1.1.2.4
+    BCON.htm 1.1.2.1
+    BHAV.htm 1.1.2.1
+    Bhavs.htm 1.1.2.3
+    Constants.htm 1.1.2.3
+    Contents.htm 1.1.2.4
+    ObjectFuncs.htm 1.1.2.2
+    PieMenus.htm 1.1.2.2
+    Strings.htm 1.1.2.2
+    Support.htm 1.1.2.2
+    TPRP.htm 1.1.2.1
+    TRCN.htm 1.1.2.1
+
+21 May 2006 11:36 - FileTable: Use SimPe preferences system
+  pjse filetable\
+    FileTable.cs 1.11.2.11
+  pjse Localisation\
+    Localization.resx 1.1.4.5
+
+21 May 2006 11:34 - TRCN: Move buttons above unused input boxes
+  SimPe BHAV\
+    TrcnForm.cs 1.11.2.7
+    TrcnForm.resx 1.7.2.3
+
+20 May 2006 16:55 - Localisation: BhavWizPrim 0x7c, 0x7d, 0x7e (plus string re-use and fixes)
+  * no fallback on attr names
+  * more sensible name guess for Global string files (and catch dodgy Behaviour string files)
+  * central handling for array names - affects: 0x76, 0x7d
+  pjse Localisation\
+    Localization.resx 1.1.2.23
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.17
+    BhavWizPrim.cs 1.34.2.13.4.27
+    Str.cs 1.1.4.3.4.9
+
+20 May 2006 15:07 - Localisation: BhavWizPrim 0x78, 0x79, 0x7a, 0x7b (plus string re-use)
+  pjse Localisation\
+    Localization.resx 1.1.2.22
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.16
+    BhavWizPrim.cs 1.34.2.13.4.26
+
+20 May 2006 13:36 - Localisation: BhavWizPrim 0x77 (plus fixes, tweaks and string re-use)
+  * Slot() moved to BhavWiz.cs
+  pjse Localisation\
+    Localization.resx 1.1.2.22
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.16
+    BhavWizPrim.cs 1.34.2.13.4.25
+
+20 May 2006 11:53 - Localisation: BhavWizPrim 0x74, 0x75, 0x76 (plus tweaks and string re-use)
+  * stole BhavStr STR# 0x1ea for Ages (0x75) - also affected TTAB
+  pjse Localisation\
+    Localization.resx 1.1.2.21
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.15
+    BhavWizPrim.cs 1.34.2.13.4.24
+    TtabMotiveGroupUI.cs 1.3.40.3
+    TtabWrapper.cs 1.23.6.1.6.5
+  GlobalStrings.package 1.10.8.8.4.8
+
+20 May 2006 10:27 - Localisation: BhavWizPrim 0x71, 0x72, 0x73 (plus tweaks and string re-use)
+  * stole BhavStr STR# 0x1eb for Debug type (0x72)
+  pjse Localisation\
+    Localization.resx 1.1.2.20
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.14
+    BhavWizPrim.cs 1.34.2.13.4.23
+  GlobalStrings.package 1.10.8.8.4.7
+
+19 May 2006 23:30 - Localisation: BhavWizPrim 0x6f, 0x70 (plus tweaks and string re-use)
+  * stole BhavStr STR# 0x1ec for Effect start/stop type (0x70)
+  pjse Localisation\
+    Localization.resx 1.1.2.19
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.13
+    BhavWizPrim.cs 1.34.2.13.4.22
+  GlobalStrings.package 1.10.8.8.4.6
+
+19 May 2006 22:45 - Localisation: BhavWizPrim 0x6d, 0x6e (plus tweaks)
+  pjse Localisation\
+    Localization.resx 1.1.2.18
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.21
+
+19 May 2006 20:13 - Localisation: BhavWizPrim 0x6b, 0x6c (plus string re-use)
+  * stole BhavStr STR# 0x1ed for Stop Animation type (0x6c)
+  pjse Localisation\
+    Localization.resx 1.1.2.17
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.12
+    BhavWizPrim.cs 1.34.2.13.4.20
+  GlobalStrings.package 1.10.8.8.4.5
+
+14 May 2006 16:25 - Parsing: friendlier shortforms for dataowners
+  pjse Localisation\
+    Localization.resx 1.1.2.16
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.11
+
+14 May 2006 15:23 - Localisation: BhavWizPrim 0x6a (plus tweaks and string re-use)
+  pjse Localisation\
+    Localization.resx 1.1.2.15
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.19
+
+14 May 2006 14:21 - Strings: Improve information displayed (instance, scope, etc); further fallback changes
+  * plus more removal of "no event tree"
+  * 0x17, 0x1a, 0x1c, 0x22-3, 0x32, 0x69-b, 0x6d-f, 0x70, 0x72-4, 0x76, 0x7b, 0x7d-e
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.7.6.3
+    BhavWiz.cs 1.37.2.13.4.10
+    BhavWizPrim.cs 1.34.2.13.4.18
+    Str.cs 1.1.4.3.4.8
+    TtabForm.cs 1.31.2.6.4.5
+
+14 May 2006 10:08 - Localisation: BhavWizPrim 0x69; partial rework of group/scope/context
+  * plus fix 1a; don't say "no event tree", use "---" (0x22 amended); tiny tidy-up in Str.cs.
+  pjse Localisation\
+    Localization.resx 1.1.2.14
+  SimPe BHAV\
+    BhavWizBhav.cs 1.19.2.2.14.5
+    BhavWizPrim.cs 1.34.2.13.4.17
+    ExtendedWrapper.cs 1.1.4.4
+    Str.cs 1.1.4.3.4.7
+  pjseTestData.package 1.17.2.9.6.6
+
+13 May 2006 16:08 - Localisation: BhavWizPrim 0x33 (plus tweaks)
+  * flag missing strings in debug build
+  * 0x1a to use BhavStr 0xaa
+  * localise "prim" prefix (oops!)
+  * Move inventory type and token type to BhavStrings
+  pjse Localisation\
+    Localization.cs 1.1.2.2
+    Localization.resx 1.1.2.13
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.9
+    BhavWizPrim.cs 1.34.2.13.4.16
+  GlobalStrings.package 1.10.8.8.4.4
+  UnusedBehaviourStrings.package 1.1.2.2
+
+13 May 2006 10:03 - Localisation: BhavWizPrim 0x32 (plus tweaks)
+  pjse Localisation\
+    Localization.resx 1.1.2.12
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.15
+
+11 May 2006 16:29 - Localisation: BhavWizPrim 0x25, 0x2a, 0x2d, 0x2e, 0x30 (plus tweaks)
+  * Note: /late/ CVS commit as SourceForge unavailable
+  pjse Localisation\
+    Localization.resx 1.1.2.11
+    pjse localisation.csproj 1.1.2.4
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.14
+  GlobalStrings.package 1.10.8.8.4.3
+
+7 May 2006 17:28 - Localisation: BhavWizPrim 0x20, 0x21, 0x22, 0x23, 0x24 (plus tweaks)
+  pjse Localisation\
+    Localization.resx 1.1.2.10
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.7.6.2
+    BhavWiz.cs 1.37.2.13.4.8
+    BhavWizPrim.cs 1.34.2.13.4.13
+  GlobalStrings.package 1.10.8.8.4.2
+
+6 May 2006 18:44 - Remove "PFD.Invalid" checking (nothing to do with the PF being invalid)
+  pjse filetable\
+    FileTable.cs 1.11.2.7.4.4
+  SimPe BHAV\
+    Str.cs 1.1.4.3.4.6
+  pjseTestData.package 1.17.2.9.6.6
+
+6 May 2006 16:59 - Remove redundant 0x34 subclass
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.12
+
+5 May 2006 18:17 - Localisation: BhavWizPrim 0x1f; added dnMe() and dnStkOb() methods to BhavWiz
+  pjse Localisation\
+    Localization.resx 1.1.2.9
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.7
+    BhavWizPrim.cs 1.34.2.13.4.11
+  pjseTestData.package 1.17.2.9.6.5
+
+5 May 2006 16:57 - Localisation: BhavWizPrim 0x1c, 0x1d, 0x1e; changed dataOwner() again...
+  pjse Localisation\
+    Localization.resx 1.1.2.8
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13.4.6
+    BhavWizPrim.cs 1.34.2.13.4.10
+
+5 May 2006 10:55 - Localisation: change text for bhavnotfound, remove test locales
+  pjse Localisation\
+    Localization.resx 1.1.2.7
+    pjse localisation.csproj 1.1.2.3
+
+4 May 2006 19:50 - TTAB: Fix up bugs, as one does...
+  SimPe BHAV\
+    Str.cs 1.1.4.3.4.5
+    TtabForm.cs 1.31.2.6.4.4
+
+1 May 2006 22:19 - TTAB: Use Str managed wrappers (to simplify Localisation)
+  pjse Localisation\
+    Localization.resx 1.1.2.6
+  SimPe BHAV\
+    Str.cs 1.1.4.3.4.4
+    TtabForm.cs 1.31.2.6.4.3
+    TtabWrapper.cs 1.23.6.1.6.4
+  pjseTestData.package 1.17.2.9.6.4
+
+1 May 2006 13:57 - FileTable: Better tracking of Package Index updates (and label SGs in RC)
+  pjse filetable\
+    FileTable.cs 1.11.2.7.4.3
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.13.4.5
+    BhavWiz.cs 1.37.2.13.4.5
+    BhavWizBhav.cs 1.19.2.2.14.4
+    ResourceChooser.cs 1.6.2.2.6.2
+
+1 May 2006 13:57 - Localisation: BhavWizPrim 0x1b; resource renaming
+  pjse Localisation\
+    Localization.resx 1.1.2.5
+  SimPe BHAV\
+    BconForm.cs 1.15.2.4.4.3
+    BhavForm.cs 1.64.2.13.4.4
+    BhavWizBhav.cs 1.19.2.2.14.3
+    BhavWizPrim.cs 1.34.2.13.4.9
+    TtabWrapper.cs 1.23.6.1.6.3
+
+1 May 2006 12:36 - Localisation: BhavWizPrim 0x1a
+  pjse Localisation\
+    Localization.resx 1.1.2.4
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.8
+
+1 May 2006 11:11 - Localisation: BhavWizPrim 0x19
+  pjse Localisation\
+    Localization.resx 1.1.2.3
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.7
+
+1 May 2006 10:33 - Localisation: BhavWizPrim down to 0x18
+  pjse Localisation\
+    Localization.resx 1.1.2.2
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.6
+
+1 May 2006 09:43 - Correct localisation DLL name; adjust for SimPe_059c_qa; use ErrorNames where appropriate
+  pjse Localisation\
+    pjse localisation.csproj 1.1.2.2
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.5
+    pjse coder plugin.csproj 1.29.2.10.2.3
+  pjseTestData.package 1.17.2.9.6.3
+
+30 April 2006 20:10 - Centralise Localisation (plus retest everything in sight)
+  * BhavWizPrim down to 0x13
+  * readStr got heavily attacked
+  pjse filetable\
+    FileTable.cs 1.11.2.7.4.2
+    Localization.cs (deleted)
+    Localization.resx (deleted:  merged into central resx file)
+    pjse filetable.csproj 1.3.10.3.2.2
+  pjse Localisation\
+    .cvsignore 1.1.2.1
+    Localization.cs 1.1.2.1
+    Localization.resx 1.1.2.1
+    pjse localisation.csproj 1.1.2.1
+  pjse Localisation\Properties
+    AssembleyInfo.cs 1.1.2.1
+  SimPe BHAV\
+    BconForm.cs 1.15.2.4.4.2
+    BhavForm.cs 1.64.2.13.4.3
+    BhavInstListControl.cs 1.41.8.3.2.2
+    BhavInstListItemUI.cs 1.23.2.2.10.2
+    BhavOperandWiz.cs 1.7.14.7.6.2
+    BhavOperandWizRaw.cs 1.1.14.1.10.2
+    BhavWiz.cs 1.37.2.13.4.4
+    BhavWizBhav.cs 1.19.2.2.14.2
+    BhavWizPrim.cs 1.34.2.13.4.4
+    Localization.cs (deleted)
+    Localization.resx (deleted:  merged into central resx file)
+    ObjfForm.cs 1.13.2.6.4.2
+    ObjfWrapper.cs 1.9.6.2.4.1
+    pjse coder plugin.csproj 1.29.2.10.2.2
+    pjse coder plugin.sln 1.6.10.1.2.1
+    Str.cs 1.1.4.3.4.3
+    StrForm.cs 1.28.2.9.6.2
+    TPRPForm.cs 1.6.2.4.8.2
+    TrcnForm.cs 1.11.2.4.8.2
+    TtabForm.cs 1.31.2.6.4.2
+    TtabMotiveGroupUI.cs 1.3.40.2
+    TtabWrapper.cs 1.23.6.1.6.2
+    WrapperFactory.cs 1.20.2.4.6.2
+  pjseTestData.package 1.17.2.9.6.2
+
+30 April 2006 09:55 - Localisation: BhavWizPrim down to 0x13
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.13.4.3
+    Localization.resx 1.1.2.3
+
+29 April 2006 20:24 - Localisation: BhavWizPrim down to 0x0E, plus resulting changes
+  * Two new BhavStr entries (0x01, 0x09)
+  * Wiz0x0001 changed to use new BhavStr
+  * Special-cased "Me" and "Stack Object"
+  * language fallback separated from scope fallback (to allow "quiet" BhavStr localisation)
+  SimPe BHAV\
+    BhavOperandWiz0x0001.cs 1.1.8.5.6.2
+    BhavWiz.cs 1.37.2.13.4.3
+    BhavWizPrim.cs 1.34.2.13.4.2
+    Localization.resx 1.1.2.2
+    Str.cs 1.1.4.3.4.2
+  GlobalStrings.package 1.10.8.8.4.1
+  pjseTestData.package 1.17.2.9.6.1
+
+26 April 2006 20:24 - Parsing/Localisation fixes and tidy ups
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.13.4.2
+    BhavWiz.cs 1.37.2.13.4.2
+
+26 April 2006 19:22 - Enable localisation
+  * BhavWiz.cs: moved in class GS from GlobalStr.cs; added several DoidName helpers; much re-organisation
+  * Renamed "boolset" to "Boolset" to make it look more like a class than a primitive type
+  SimPe BHAV\
+    AssemblyInfo.cs 1.1.34.1.10.1
+    BconForm.cs 1.15.2.4.4.1
+    BhavForm.cs 1.64.2.13.4.1
+    BhavInstListControl.cs 1.41.8.3.2.1
+    BhavInstListItemUI.cs 1.23.2.2.10.1
+    BhavOperandWiz.cs 1.7.14.7.6.1
+    BhavOperandWiz.resx 1.3.22.2.10.1
+    BhavOperandWiz0x0001.cs 1.1.8.5.6.1
+    BhavOperandWiz0x0001.resx 1.1.22.1
+    BhavOperandWiz0x0002.cs 1.6.2.4.6.1
+    BhavOperandWiz0x0002.resx 1.2.2.1.12.1
+    BhavOperandWiz0x0024.cs 1.1.4.7.6.1
+    BhavOperandWiz0x0024.resx 1.1.4.5.10.1
+    BhavOperandWizBhav.cs 1.1.8.2.10.1
+    BhavOperandWizBhav.resx 1.1.8.2.10.1
+    BhavOperandWizDefault.cs 1.1.8.1.10.1
+    BhavOperandWizDefault.resx 1.1.22.1
+    BhavOperandWizRaw.cs 1.1.14.1.10.1
+    BhavOperandWizRaw.resx 1.1.28.1
+    BhavWiz.cs 1.37.2.13.4.1
+    BhavWizBhav.cs 1.19.2.2.14.1
+    BhavWizPrim.cs 1.34.2.13.4.1
+    GlobalStr.cs (deleted)
+    Localization.cs 1.1.2.1
+    Localization.resx 1.1.2.1
+    ObjfForm.cs 1.13.2.6.4.1
+    pjse coder plugin.csproj 1.29.2.10.2.1
+    ResourceChooser.cs 1.6.2.2.6.1
+    ResourceChooser.resx 1.1.12.1.10.1
+    Str.cs 1.1.4.3.4.1
+    StrChooser.cs 1.1.14.1.6.1
+    StrChooser.resx 1.1.14.1.10.1
+    StrForm.cs 1.28.2.9.6.1
+    SystemClasses.cs 1.1.16.1
+    TPRPForm.cs 1.6.2.4.8.1
+    TrcnForm.cs 1.11.2.4.8.1
+    TtabForm.cs 1.31.2.6.4.1
+    TtabMotiveGroupUI.cs 1.3.40.1
+    TtabSingleMotiveUI.cs 1.5.40.1
+    TtabSingleMotiveUI.resx 1.3.40.1
+    TtabWrapper.cs 1.23.6.1.6.1
+    WrapperFactory.cs 1.20.2.4.6.1
+
+26 April 2006 18:48 - Enable localisation
+  pjse filetable\
+    AssemblyInfo.cs 1.1.12.1.10.1
+    FileTable.cs 1.11.2.7.4.1
+    FileTableForm.cs 1.1.2.1.10.1
+    FileTableForm.resx 1.1.2.1.10.1
+    Localization.cs 1.1.2.1
+    Localization.resx 1.1.2.1
+    pjse filetable.csproj 1.3.10.3.2.1
+
+26 April 2006 09:37 - Change to .NET2; fix one warning
+  pjse filetable\
+    pjse filetable.csproj 1.3.10.2.8.1
+  SimPe BHAV\
+    BhavInstListControl.cs 1.41.8.2.8.1
+    pjse coder plugin.csproj 1.29.2.9.2.1
+    pjse coder plugin.sln 1.6.22.1
+
+23 April 2006 17:40 - Parsing: more friendly shortforms
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.13
+
+23 April 2006 14:34 - FileTable: Eliminate invalid and deleted entries from the filetable
+  pjse filetable\
+    FileTable.cs 1.11.2.7
+
+23 April 2006 13:59 - Parsing: another go at handling string fallback (does pick up deleting resources yet)
+  SimPe BHAV\
+    Str.cs 1.1.4.3
+
+23 April 2006 13:57 - Amend post-build event for speed (debug only builds .zip and installs plugin)
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.9
+
+23 April 2006 13:54 - FileTable: Issue FiletableRefresh events when the current package changes
+  pjse filetable\
+    FileTable.cs 1.11.2.6
+
+22 April 2006 12:12 - Oops: tidy up before building new ZIP file
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.8
+
+22 April 2006 12:08 - Amended post-build event to produce a source ZIP file
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.29.2.7
+
+19 April 2006 20:54 - Parsing: Sync with disaSim2 24c
+  SimPe BHAV\
+    BhavWizPrim.cs 1.24.2.13
+  GlobalStrings.package 1.10.8.8
+
+19 April 2006 20:32 - Parsing: Use this.bhavName(instance) method to get BHAV names
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.12
+    BhavWizPrim.cs 1.34.2.12
+
+19 April 2006 20:18 - Fix: Fix fix to ObjfWrapper()
+  SimPe BHAV\
+    ObjfWrapper.cs 1.9.6.2
+
+18 April 2006 22:01 - Fix: Better handling of missing BHAVs in ObjfForm and TtabForm (and fix ObjfWrapper())
+  SimPe BHAV\
+    BhavWiz.cs 1.27.2.11
+    ObjfForm.cs 1.13.2.6
+    ObjfWrapper.cs 1.9.6.1
+    TtabForm.cs 1.31.2.6
+
+16 April 2006 21:06 - Help: Add help for TRCNMaker and TPRPMaker (plus some other updates)
+  SimPe BHAV\PJSE_Help\
+    About.htm 1.1.2.3
+    Bhavs.htm 1.1.2.2
+    Constants.htm 1.1.2.2
+    Contents.htm 1.1.2.3
+
+16 April 2006 21:00 - FileTable: FamilyFunPack compatibility update
+  pjse filetable\
+    FileTable.cs 1.11.2.5
+
+16 April 2006 15:25 - BCON: TRCNMaker
+  SimPe BHAV\
+    BconForm.cs 1.15.2.4
+    BconForm.resx 1.9.2.3
+
+16 April 2006 14:45 - Parsing: Make string instance and SID numbers the "right" length
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.10
+
+16 April 2006 14:16 - Parsing: Tidy up BCON labelling
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.9
+
+16 April 2006 13:23 - BHAV: TPRPMaker (and a TPRPWrapper bugfix)
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.12.4.1
+    BhavForm.resx 1.30.2.6.6.1
+    TPRPWrapper.cs 1.5.12.1
+
+16 April 2006 10:48 - Parsing: don't put quotes around lists of non-literals (like expression operators)
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.8
+
+16 April 2006 10:14 - Parsing: put quotes around string literals
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.6.2.3
+
+15 April 2006 15:14 - Parsing: Pick up resource changes dynamically for readStr (and formatting fixes)
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.6.2.2
+    BhavWizPrim.cs 1.34.2.10.2.2
+    Str.cs 1.1.2.2
+
+14 April 2006 22:15 - Parsing: Rewrite readStr to perform fallback on all missing strings
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.6.4.1
+    BhavOperandWiz0x0001.cs 1.1.8.4.4.1
+    BhavOperandWiz0x0002.cs 1.6.2.3.4.1
+    BhavOperandWiz0x0024.cs 1.1.4.6.2.1
+    BhavWiz.cs 1.37.2.6.2.1
+    BhavWizPrim.cs 1.34.2.10.2.1
+    ExtendedWrapper.cs 1.1.4.2.4.1
+    GlobalStr.cs 1.17.2.2.4.1
+    ObjfForm.cs 1.13.2.4.2.1
+    pjse coder plugin.csproj 1.29.2.5.2.1
+    ResourceChooser.cs 1.6.2.1.4.1
+    Str.cs 1.1.2.1
+    StrChooser.cs 1.1.22.1
+    StrForm.cs 1.28.2.8.2.1
+    StrWrapper.cs 1.16.14.1
+    TtabForm.cs 1.31.2.4.2.1
+    TtabItemMotiveTableUI.cs 1.10.12.1.4.1
+    TtabWrapper.cs 1.23.14.1
+    WrapperFactory.cs 1.20.2.3.2.1
+  pjseTestData.package 1.17.2.7.4.1
+
+5 April 2006 18:53 - Str: Return of "Replace string"
+  SimPe BHAV\
+    StrForm.cs 1.28.2.7.2.1
+    StrForm.resx 1.18.14.6.2.1
+
+5 April 2006 18:51 - Bhav: Remove TPRP/TRCN missing nags
+  SimPe BHAV\
+    BhavWiz.cs 1.37.2.5.2.1
+  pjseTestData.package 1.17.2.7.2.3
+
+5 April 2006 18:34 - Help: use SimPe's ShowHelp/IHelp
+  SimPe BHAV\
+    BconForm.cs 1.15.2.2.2.1
+    BhavForm.cs 1.64.2.11.2.1
+    HelpContainer.cs (renamed to HelpHelper.cs)
+    HelpContainer.resx (deleted)
+    HelpHelper.cs 1.1.2.1
+    ObjfForm.cs 1.13.2.3.2.1
+    pjse coder.plugin.csproj 1.29.2.4.2.1
+    TPRPForm.cs 1.6.2.3.2.1
+    TrcnForm.cs 1.11.2.3.2.1
+    TtabForm.cs 1.31.2.3.2.1
+    WrapperFactory.cs 1.20.2.2.2.1
+
+5 April 2006 18:28 - GlobalStrings: PersonData 0x0064 string
+  GlobalStrings.package 1.10.8.6.2.1
+
+26 March 2006 12:39 - BhavWizPrim: Updates to Manage Inventory and test data
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.9.2.2
+  pjseTestData.package 1.17.2.7.2.2
+
+25 March 2006 16:44 - BhavWizPrim: disaSim2 24b sync up
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.9.2.1
+  pjseTestData.package 1.17.2.7.2.1
+
+25 March 2006 12:07 - Help: TTAs uses Str help; About doesn't link to filetype pages
+  SimPe BHAV\
+    StrForm.cs 1.28.2.7
+  SimPe BHAV\PJSE_Help\
+    About.htm 1.1.2.2
+
+25 March 2006 11:49 - Help: Added a Help menu option
+  SimPe BHAV\
+    WrapperFactory.cs 1.20.2.2
+
+25 March 2006 11:29 - Help: Updated!
+  SimPe BHAV\PJSE_Help\
+    Bhavs.htm 1.1.2.1
+    Constants.htm 1.1.2.1
+    Contents.htm 1.1.2.2
+    HelpLinks.htm (deleted)
+    ObjectFuncs.htm 1.1.2.2
+    Strings.htm 1.1.2.1
+  SimPe BHAV\PJSE_Help\PJSE_HelpImages
+    DownArrow.png 1.1.2.1
+    DropDown.png 1.1.2.1
+    FastRewind.png 1.1.2.1
+    Quotes.png 1.1.2.1
+    ScrollLeft.png 1.1.2.1
+    ScrollRight.png 1.1.2.1
+    Tools.png 1.1.2.1
+    UpArrow.png 1.1.2.1
+
+19 March 2006 19:36 - Str: Add str changes; new Make default; removed Replace string
+  SimPe BHAV\
+    StrForm.cs 1.28.2.6
+    StrForm.resx 1.18.14.6
+
+19 March 2006 13:34 - General tidy-ups
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.6
+    BhavOperandWiz0x0024.resx 1.1.4.5
+    BhavOperandWizBhav.cs 1.1.8.2
+    BhavOperandWizBhav.resx 1.1.8.2
+    ObjfForm.cs 1.13.2.3
+    ObjfForm.resx 1.4.6.3
+
+19 March 2006 12:41 - Str: Cursor to title automatically with mouse, too
+  SimPe BHAV\
+    StrForm.cs 1.28.2.5
+    StrForm.resx 1.18.14.5
+
+19 March 2006 11:36 - Str: Enable First button, cursor to title automatically, other tweaks
+  SimPe BHAV\
+    StrForm.cs 1.28.2.4
+    StrForm.resx 1.18.14.4
+
+19 March 2006 11:33 - TRCN: Handle empty file, handle strange files more forgivingly
+  SimPe BHAV\
+    TrcnForm.cs 1.11.2.3
+    TrcnWrapper.cs 1.11.2.1
+
+18 March 2006 18:06 - Str: New Next/Prev/First language icons
+  SimPe BHAV\
+    start.png 1.2.2.1
+    StrForm.cs 1.28.2.3
+    StrForm.resx 1.18.14.3
+
+18 March 2006 18:04 - Test data: Updated for add/change action string
+  pjseTestData.package 1.17.2.7
+
+18 March 2006 17:54 - BHAV: change Wiz and Raw icons
+  SimPe BHAV\
+    BhavForm.resx 1.30.2.6
+
+16 March 2006 16:12 - BHAV: Add a progress meter to show we've not died
+  SimPe BHAV\
+    BhavInstListControl.cs 1.41.8.2
+
+16 March 2006 08:22 - BHAV: fix 0x0032 change; more dialog strings (and some test data)
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.9
+  GlobalStrings.package 1.10.8.6
+  pjseTestData.package 1.17.2.6
+
+14 March 2006 22:38 - BHAV: Tidy up 0x0022 parsed output
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.8
+
+14 March 2006 18:41 - BHAV: Release Dialog Wizard, improvements to 0x0032 and 0x007e (Lua) parsing
+  SimPe BHAV\
+    BhavWizPrim.cs 1.34.2.7
+
+12 March 2006 19:48 - BHAV: Better support for 0x8009 BHAVs
+  SimPe BHAV\
+   BhavForm.cs 1.64.2.11
+   BhavForm.resx 1.30.2.5
+   BhavInstListControl.cs 1.41.8.1
+   BhavWrapper.cs 1.47.2.1
+
+12 March 2006 17:34 - BHAV: Wiz0x0024 enhanced even more (debug only)
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.5
+    BhavOperandWiz0x0024.resx 1.1.4.4
+
+12 March 2006 14:33 - BHAV: Wiz0x0024 enhanced (debug only), doid 6 to show instance only, fix 0x0032
+  SimPe BHAV\
+    BhavOperandWiz0x0024.cs 1.1.4.4
+    BhavOperandWiz0x0024.resx 1.1.4.3
+    BhavWiz.cs 1.37.2.5
+    BhavWizPrim.cs 1.34.2.6
+
+11 March 2006 13:14 - BHAV: fix for tuna's tweak
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.10
+
+11 March 2006 12:27 - OfB: Sync with disaSim2 24a and OfB LUA details, plus tweak for tuna
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.9
+    BhavWizBhav.resx (deleted)
+    BhavWizPrim.cs 1.34.2.5
+    BhavWizPrim.resx (deleted)
+    pjse coder plugin.csproj 1.29.2.4
+  GlobalStrings.package 1.10.8.4
+
+9 March 2006 13:56 - OfB GlobalStrings changed a little more
+  GlobalStrings.package 1.10.8.4
+
+9 March 2006 13:33 - BHAV: LongForm text wrapping, OfB Prim0x0032 change, OfB GlobalStrings change
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.8
+    BhavWizPrim.cs 1.34.2.4
+  GlobalStrings.package 1.10.8.3
+
+26 February 2006 17:07 - Wiz0x0001: Oops: initialise combobox...
+  SimPe BHAV\
+    BhavOperandWiz0x0001.cs 1.1.8.4
+
+26 February 2006 17:01 - BHAV: Back out T/F change as not liked; Wiz0x0001: say "no args" for no args
+  SimPe BHAV\
+    BhavInstListItemUI.cs 1.23.2.2
+    BhavInstListItemUI.resx 1.3.34.2
+    BhavOperandWiz0x0001.cs 1.1.8.3
+
+26 February 2006 16:14 - BHAV: True above False
+  SimPe BHAV\
+    BhavInstListItemUI.cs 1.23.2.1
+    BhavInstListItemUI.resx 1.3.34.1
+
+26 February 2006 15:46 - Wiz0x0001: Handle missing param descriptions
+  SimPe BHAV\
+    BhavOperandWiz0x0001.cs 1.1.8.2
+
+18 February 2006 20:43 - Filetable: oops: don't copy simpe.commonhandler local (plus tidies)
+  pjse filetable\
+    pjse filetable.csproj 1.3.10.2
+
+18 February 2006 15:27 - Filetable: use SimPePluginDataPath instead of SimPePluginPath
+  pjse filetable\
+    FileTable.cs 1.11.2.4
+
+18 February 2006 11:35 - Filetable: move LoadAtStart and Refresh onto Settings form
+  pjse filetable\
+    FileTable.cs 1.11.2.3
+    FileTableForm.cs 1.1.2.1
+    FileTableForm.resx 1.1.2.1
+    pjse filetable.csproj 1.3.2.1
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.7
+    BhavForm.cs 1.30.2.4
+
+13 February 2006 20:03 - BHAV: Oops: Unlose "Close" button, hide Load FT at Start up - in View mode
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.6
+
+11 February 2006 13:00 - BHAV: Remove unused strings from GlobalStrings.package (and comment)
+  SimPe BHAV\
+    GlobalStr.cs 1.17.2.2
+  GlobalsStrings.package 1.10.8.2
+  pjseTestData.package 1.17.2.5
+  UnusedBehaviourStrings.package 1.1.2.1
+
+11 February 2006 10:22 - FileTable: integrate with SimPe's 'ignore' feature
+  pjse filetable\
+    FileTable.cs 1.11.2.2
+
+10 February 2006 21:41 - FileTable: make load at start up configurable
+  pjse filetable\
+    FileTable.cs 1.11.2.1
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.5
+    BhavForm.resx 1.30.2.3
+
+10 February 2006 20:31 - Help: More helpful "missing helpfiles" message
+  SimPe BHAV\
+    HelpContainer.cs 1.2.28.2
+
+5 February 2006 09:26 - Help: A few fixes; DialogWiz: not in Release plus fix string chooser
+  SimPe BHAV\
+    BconForm.cs 1.15.2.2
+    BconForm.resx 1.9.2.3
+    BhavForm.cs 1.64.2.4
+    BhavForm.resx 1.30.2.2
+    BhavOperandWiz.cs 1.7.14.6
+    BhavOperandWiz.resx 1.3.22.2
+    BhavOperandWiz0x0024.cs 1.1.4.3
+    BhavWizPrim.cs 1.34.2.3
+    ObjfForm.cs 1.13.2.2
+    ObjfForm.resx 1.4.6.2
+    StrForm.cs 1.28.2.2
+    StrForm.resx 1.18.14.2
+    TPRPForm.cs 1.6.2.3
+    TPRPForm.resx 1.5.2.2
+    TrcnForm.cs 1.11.2.2
+    TrcnForm.resx 1.7.2.2
+    TtabForm.cs 1.31.2.3
+    TtabForm.resx 1.15.8.3
+
+4 February 2006 18:04 - Help: Bundle initial help files and add help button
+  * Note: HelpContainer used - probably rename it at some stage
+  * Also tagged up various popups to make them obviously PJSE ones
+  * Also made DialogWizard a release-available tool
+  SimPe BHAV\PJSE_Help\
+    About.htm 1.1.2.1
+    Contents.htm 1.1.2.1
+    HelpLinks.htm 1.1.2.1
+    PieMenus.htm 1.1.2.1
+    Support.htm 1.1.2.1
+  SimPe BHAV\
+    BconForm.cs 1.15.2.1
+    BconForm.resx 1.9.2.1
+    BhavForm.cs 1.64.2.3
+    BhavForm.resx 1.30.2.1
+    BhavWizPrim.cs 1.34.2.2
+    HelpContainer.cs 1.2.28.1
+    ObjfForm.cs 1.13.2.1
+    ObjfForm.resx 1.4.6.1
+    pjse coder plugin.csproj 1.29.2.2
+    ResourceChooser.cs 1.6.2.1
+    ResourceChooser.resx 1.1.12.1
+    StrBig.cs 1.3
+    StrBig.resx 1.2.22.1
+    StrChooser.cs 1.1
+    StrChooser.resx 1.1.14.1
+    StrForm.cs 1.28.2.1
+    StrForm.resx 1.18.14.1
+    TPRPForm.cs 1.6.2.2
+    TPRPForm.resx 1.5.2.1
+    TrcnForm.cs 1.11.2.1
+    TrcnForm.resx 1.7.2.1
+    TtabForm.cs 1.31.2.2
+    TtabForm.resx 1.15.8.2
+    TtabItemMotiveTableUI.cs 1.10.12.1
+    TtabItemMotiveTableUI.resx 1.5.22.1
+    WrapperFactory.cs 1.20.2.1
+
+4 February 2006 15:03 - Wiz0x0024 landing onto PreRelease
+  * Opportunity taken to refactor loads of code as usual
+  * BhavWiz has a Wizard() method to return the Operand Wizard (or null)
+  * ABhavOperandWiz moved to BhavOperandWiz - more obvious place!
+  * ExtendedWrapper moved to ExtendedWrapper.cs - more obvious place!
+  * OpCode 0x0002 flagnames moved to BhavWiz.cs
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.2
+    BhavOperandWiz.cs 1.7.14.5
+    BhavOperandWiz.resx 1.3.4.1
+    BhavOperandWiz0x0001.cs 1.1.2.1
+    BhavOperandWiz0x0002.cs 1.6.2.2.2.1
+    BhavOperandWiz0x0024.cs 1.1.4.1
+    BhavOperandWiz0x0024.resx 1.1.4.1
+    BhavOperandWizBhav.cs 1.1.24.2
+    BhavOperandWizBhav.resx 1.1.24.1
+    BhavOperandWizDefault.cs 1.1.2.1
+    BhavOperandWizProvider.cs (deleted)
+    BhavOperandWizRaw.cs 1.1.4.1
+    BhavWiz.cs 1.37.4.1
+    BhavWizPrim.cs 1.34.6.3
+    ExtendedWrapper.cs 1.1.4.1
+    GlobalStr.cs 1.17.4.1
+    pjse coder plugin.csproj 1.29.4.1
+  GlobalsStrings.package 1.10.4.1
+  pjseTestData.package 1.17.4.1
+
+4 February 2006 11:43 - Add sensible assembly info
+  pjse filetable\
+    AssemblyInfo.cs 1.1.14.1
+  pjse GUID Tool\
+    AssemblyInfo.cs 1.1.14.1
+
+4 February 2006 10:33 - TPRP: remember open tab; TTAB: disable menu option button
+  SimPe BHAV\
+    TPRPForm.cs 1.6.2.1
+    TtabForm.cs 1.31.2.1
+    TtabForm.cs 1.15.2.1
+
+4 February 2006 10:31 - BHAV: BCON shortform change; motive shortform change; ">>" active in read-only
+  SimPe BHAV\
+    BhavForm.cs 1.64.2.1
+    BhavWiz.cs 1.37.2.3
+  pjseTestData.package 1.17.2.3
+
+19 January 2006 20:56 - Wiz0x0002: oops - no negative decimals allowed
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.4
+
+15 January 2006 19:43 - Wiz0x0002: Fix flag updating (oops)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.3
+    BhavOperandWiz0x0002.cs 1.6.2.2
+
+15 January 2006 19:14 - Wiz0x0002: Fix Const/Const[Temp] validation and refactor for reuse some more
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.2
+    BhavWiz.cs 1.37.2.2
+
+15 January 2006 13:18 - Wiz0x0002: Fix Decimal check-box bug
+  * Move DataOwnerControl to BhavOperandWiz.cs for later reuse
+  * ExpandBCONtoString added to BhavWiz.cs
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.7.14.1
+    BhavOperandWiz0x0002.cs 1.6.6.1
+    BhavOperandWiz0x0002.resx 1.2.6.2
+    BhavWiz.cs 1.37.2.1
+
+14 January 2006 11:15 - BhavWizBhav: BHAV calling fixes: P_in < P_out, Zero padding, unk over 8
+  SimPe BHAV\
+    BhavWizBhav.cs 1.19.2.2
+  pjseTestData.package 1.17.2.2
+
+14 January 2006 09:53 - BhavWizBhav: BHAV calling fixes: NV 0, byte 12 handling
+  SimPe BHAV\
+    BhavWizBhav.cs 1.19.2.1
+  pjseTestData.package 1.17.2.1
+
+8 January 2006 15:21 - BhavWiz: ExpandBCON rewrite plus OperandWiz changes
+  * BhavOperandWiz0x0002, BhavWizPrim: also changed way flagnames handled (again)
+  SimPe BHAV\
+    BhavOperandWiz0x0002.cs 1.6
+    BhavWiz.cs 1.37
+    BhavWizPrim.cs 1.34
+  pjseTestData.package 1.17
+
+8 January 2006 15:19 - BhavWizBhav: BHAV calling conventions
+  SimPe BHAV\
+    BhavWizBhav.cs 1.19
+    pjse coder plugin.csproj 1.29
+    SystemClasses.cs 1.1
+
+8 January 2006 15:17 - FileTable: Support folders in packages.txt
+  pjse filetable\
+    FileTable.cs 1.11
+
+31 December 2005 09:41 - BHAV: Wiz0x0002: Allow AttrPicker to be turned off
+  SimPe BHAV\
+    BhavOperandWiz0x0002.cs 1.5
+    BhavOperandWiz0x0002.resx 1.2
+
+30 December 2005 12:17 - BHAV: Wiz0x0002 enhanced, dataOwners tidied
+  * Wiz0x0002: Decimal mode sticky, new pickers (param, local, attribute). some code moved into BhavWiz
+  * BhavWiz: Many "consistency" changes (still don't like attr labels)
+  * BhavWiz: dataowners 0x16 and 0x32 use Param
+  * BhavWiz: Consts (0x1a, 0x2f) reformatted
+  * BhavWiz: STR#, BCON, TRCN and TPRP reading rewritten; added GetAttrNames
+  * BhavWizBhav: Use new TPRP access via BHAV
+  * BhavWizPrim: dataOwner/readStr usage amended, clone flagname array before returning, added comments
+  * BhavWrapper: provides link to TPRP
+  * TPRPWrapper: Fixed bugs with finding/adding labels
+  SimPe BHAV\
+    BhavOperandWiz0x0002.cs 1.4
+    BhavWiz.cs 1.36
+    BhavWizBhav.cs 1.18
+    BhavWizPrim.cs 1.33
+    BhavWrapper.cs 1.47
+    GlobalStr.cs 1.17
+    TPRPWrapper.cs 1.5
+    TrcnWrapper.cs 1.11
+  pjseTestData.package 1.16
+
+27 December 2005 19:24 - BHAV: Label BHAV parameters
+  SimPe BHAV\
+    BhavWiz.cs 1.35
+    BhavWizBhav.cs 1.17
+
+27 December 2005 19:05 - FileTable: Can't use same handler as wrapper in BhavInstListItemUI
+  SimPe BHAV\
+    BhavInstListItemUI.cs 1.23
+
+27 December 2005 19:03 - ResourceChooser: Oops: Handle un-saved (new) packages
+  SimPe BHAV\
+    ResourceChooser.cs 1.6
+
+27 December 2005 19:02 - FileTable: Remember to remove old entries and close the file
+  SimPe BHAV\
+    FileTable.cs 1.10
+
+27 December 2005 12:38 - Trivial code/comment changes
+  SimPe BHAV\
+    BconForm.cs 1.15
+    BhavForm.cs 1.64
+    ObjfForm.cs 1.13
+    StrForm.cs 1.28
+    TPRPForm.cs 1.6
+    TrcnForm.cs 1.11
+    TtabForm.cs 1.31
+
+27 December 2005 12:31 - FileTable: Respond to FiletableRefresh events
+  SimPe BHAV\
+    BhavForm.cs 1.62
+    BhavInstListItemUI.cs 1.22
+
+27 December 2005 12:28 - FileTable: Add Refresh menu option and Event
+  pjse filetable\
+    FileTable.cs 1.9
+
+25 December 2005 09:35 - BHAV: Remember state of Special Buttons checkbox
+  SimPe BHAV\
+    BhavForm.cs 1.62
+
+24 December 2005 20:53 - Refactoring BCON, TPRP, TRCN forms mostly to match STR# (part 3 - bugfixes)
+  SimPe BHAV\
+    BconForm.cs 1.14
+    BconForm.resx 1.9
+    TPRPForm.cs 1.5
+    TPRPForm.resx 1.5
+    TrcnForm.cs 1.9
+    TrcnForm.resx 1.7
+  pjseTestData.package 1.15
+
+24 December 2005 19:07 - Refactoring BCON, TPRP, TRCN forms mostly to match STR# (part 2)
+  SimPe BHAV\
+    BconForm.cs 1.13
+    BconForm.resx 1.8
+    TrcnForm.cs 1.9
+    TrcnForm.resx 1.6
+
+24 December 2005 18:03 - Refactoring BCON, TPRP, TRCN forms mostly to match STR# (part 1)
+  SimPe BHAV\
+    BconForm.cs 1.12
+    BconForm.resx 1.7
+    StrForm.cs 1.27
+    TPRPForm.cs 1.4
+    TPRPForm.resx 1.4
+    TPRPWrapper.cs 1.4
+    TrcnForm.cs 1.8
+    TrcnForm.resx 1.5
+    TrcnWrapper.cs 1.10
+
+19 December 2005 18:44 - TPRP: oops: Post-landing bug fix
+  SimPe BHAV\
+    TPRPForm.cs 1.3
+    TPRPForm.resx 1.3
+    TPRPWrapper.cs 1.3
+
+19 December 2005 15:53 - TPRP Landing
+  * Fix field length for ArgC and LocalC on BHAV form
+  * Provide wizard support for picking Param and Local variables
+  * Include names of Params and Locals in parsed output
+  * Pre-empt possible bug in TRCN form?
+  SimPe BHAV\
+    BhavForm.resx 1.30
+    BhavOperandWiz0x0002.cs 1.3
+    BhavWiz.cs 1.34
+    pjse coder plugin.csproj 1.28
+    TPRPForm.cs 1.2
+    TPRPForm.resx 1.2
+    TPRPWrapper.cs 1.2
+    TrcnForm.cs 1.6
+    WrapperFactory.cs 1.20
+  pjseTestData.package 1.14
+
+17 December 2005 13:47 - BCON/TRCN: oops!  AND != OR
+  SimPe BHAV\
+    BconWrapper.cs 1.10
+
+17 December 2005 13:22 - BCON/TRCN: better fix - keep the flag bit
+  SimPe BHAV\
+    BconForm.cs 1.11
+    BconForm.resx 1.6
+    BconWrapper.cs 1.9
+    TrcnWrapper.cs 1.9
+
+17 December 2005 12:02 - BCON/TRCN: fix for syberspunk re Global BCON 0x0100
+  SimPe BHAV\
+    BconForm.cs 1.10
+    BconForm.resx 1.5
+    BconWrapper.cs 1.8
+    TrcnWrapper.cs 1.8
+
+14 December 2005 22:09 - Ignore "ID" in TRCN, just use line number (Maxoid Monkey strikes back)
+  SimPe BHAV\
+    BconForm.cs 1.9
+    BconForm.resx 1.4
+    BhavWiz.cs 1.33
+    TrcnForm.cs 1.6
+    TrcnForm.resx 1.4
+    TrcnWrapper.cs 1.7
+
+11 December 2005 14:47 - Drop OBJD from PJSE scope
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.27
+    PjseObjdForm.cs (deleted)
+    PjseObjdForm.resx (deleted)
+    PjseObjdWrapper.cs (deleted)
+    WrapperFactory.cs 1.18
+
+10 December 2005 11:33 - (Mostly) BCON Cosmetic changes
+  SimPe BHAV\
+    BconForm.cs 1.8
+    BconfForm.resx 1.3
+    BhavForm.resx 1.29
+    TrcnForm.resx 1.3
+
+4 December 2005 13:40 - TRCN/BCON bug fixes
+  SimPe BHAV\
+    BconForm.cs 1.7
+    BconWrapper.cs 1.7
+    TrcnForm.cs 1.5
+    pjseTestData.package 1.13
+
+4 December 2005 09:59 - TRCN: Look up by ID
+  SimPe BHAV\
+    BconForm.cs 1.6
+    BhavWiz.cs 1.32
+    TrcnWrapper.cs 1.6
+
+3 December 2005 17:37 - BHAV: copy listing, slight changes
+  SimPe BHAV\
+    BhavForm.cs 1.61
+
+3 December 2005 14:41 - handle MarkForDelete; BHAV: copy listing; Use pjse.filetable for resource cross-references
+  pjse filetable\
+    FileTable.cs 1.8
+  SimPe BHAV\
+    BconWrapper.cs 1.6
+    BhavForm.cs 1.60
+    BhavOperandWiz0x0002.cs 1.2
+    TrcnWrapper.cs 1.5
+    TtabWrapper.cs 1.23
+
+3 December 2005 13:05 - TRCN Landing: Use labels in BhavWiz, use wrappers
+  SimPe BHAV\
+    BhavWiz.cs 1.31
+    pjse coder plugin.csproj 1.26
+    WrapperFactory.cs 1.17
+  pjseTestData.package 1.12
+
+3 December 2005 13:02 - TRCN Landing: New TRCN form and wrapper
+  SimPe BHAV\
+    TrcnForm.cs 1.4
+    TrcnForm.resx 1.2
+    TrcnItem.cs (deleted)
+    TrcnWrapper.cs 1.4
+
+3 December 2005 12:54 - TRCN Landing: New BCON form and wrapper
+  SimPe BHAV\
+    BconForm.cs 1.5
+    BconForm.resx 1.2
+    BconItem.cs (deleted)
+    BconWrapper.cs 1.5
+
+27 November 2005 19:04 - Objf: Pedantry...
+  SimPe BHAV\
+    ObjfForm.cs 1.12
+    ObjfForm.resx 1.4
+
+27 November 2005 19:03 - PJSE: ExtendedWrapper now implements IMultiplePackedFileWrapper
+  SimPe BHAV\
+    BhavWiz.cs 1.30
+    BhavWrapper.cs 1.46
+    ObjfWrapper.cs 1.9
+    StrWrapper.cs 1.16
+    TtabWrapper.cs 1.22
+
+26 November 2005 14:53 - PJSE: Extend ExtendedWrapper to include ICollection; fix TtabItem.Clone()
+  SimPe BHAV\
+    BhavWiz.cs 1.29
+    BhavWrapper.cs 1.45
+    ObjfWrapper.cs 1.8
+    StrWrapper.cs 1.15
+    TtabWrapper.cs 1.21
+    WrapperFactory.cs 1.16
+
+22 November 2005 18:21 - Filetable: read packages from packages.txt
+  pjse filetable\
+    FileTable.cs 1.7
+
+22 November 2005 18:19 - Bhav: No semiglobal cache
+  SimPe BHAV\
+    BhavWiz.cs 1.28
+
+20 November 2005 20:24 - Add page suppression flags to ResourceChooser (not used)
+  SimPe BHAV\
+    ResourceChooser.cs 1.5
+
+20 November 2005 20:23 - Objf: Put primitive names in OBJf (and TTAB) opcode descriptions
+  SimPe BHAV\
+    ObjfForm.cs 1.11
+    TtabForm.cs 1.30
+
+20 November 2005 20:22 - Bhav: ArgC and LocalC in hex
+  SimPe BHAV\
+    BhavForm.cs 1.59
+    BhavForm.resx 1.27
+
+20 November 2005 15:37 - Objf: Put BHAV names in ObjfItem list
+  SimPe BHAV\
+    ObjfForm.cs 1.10
+    ObjfForm.resx 1.3
+
+20 November 2005 15:36 - Show blank pages in Resource Chooser
+  SimPe BHAV\
+    ResourceChooser.cs 1.4
+
+20 November 2005 14:56 - PJSE-ify Objf, remove BhavBaseItem and OpcodeProvider
+  SimPe BHAV\
+    BhavBaseItem.cs (deleted)
+    BhavWrapper.cs 1.44
+    ObjfForm.cs 1.9
+    ObjfForm.resx 1.2
+    ObjfItem.cs (deleted - incorporated into ObjfWrapper)
+    ObjfWrapper.cs 1.7
+    pjse coder plugin.csproj 1.25
+    TtabForm.cs 1.29
+    TtabForm.resx 1.15
+    TtabWrapper.cs 1.20
+    WrapperFactory.cs 1.15
+
+20 November 2005 14:45 - Bhav: Split OperandUI from Parsing bits, fix Run Functional Tree
+  SimPe BHAV\
+    BhavOperandWiz0x0001.cs 1.1 (was BhavWizPrim0x0001)
+    BhavOperandWiz0x0001.resx 1.1 (was BhavWizPrim0x0001)
+    BhavOperandWiz0x0002.cs 1.1 (was BhavWizPrim0x0002)
+    BhavOperandWiz0x0002.resx 1.1 (was BhavWizPrim0x0002)
+    BhavOperandWizBhav.cs 1.1 (from BhavWizBhav)
+    BhavOperandWizBhav.resx 1.1 (from BhavWizBhav)
+    BhavWizBhav.cs 1.16
+    BhavWizPrim.cs 1.32
+    BhavWizPrim0x0001.cs (renamed)
+    BhavWizPrim0x0001.resx (renamed)
+    BhavWizPrim0x0002.cs (renamed)
+    BhavWizPrim0x0002.resx (renamed)
+
+19 November 2005 18:39 - Bhav: Back out 1.26 fallback change
+  SimPe BHAV\
+    BhavWiz.cs 1.27
+
+19 November 2005 18:03 - Bhav: decimal input in Wiz0x0002
+  SimPe BHAV\
+    BhavWizPrim0x0002.cs 1.13
+    BhavWizPrim0x0002.resx 1.2
+  pjseTestData.package 1.11
+
+19 November 2005 18:01 - Bhav: Fall back only on missing file, not missing string
+  SimPe BHAV\
+    BhavWiz.cs 1.26
+
+19 November 2005 13:48 - Bhav: Scrollbar on decoded operands (and : before Temp)
+  SimPe BHAV\
+    BhavForm.resx 1.26
+    BhavWiz.cs 1.25
+
+19 November 2005 13:19 - Bhav: Fix: BCON:Temp for out-of-context values was duff, as was Wiz
+  SimPe BHAV\
+    BhavWiz.cs 1.24
+    BhavWizPrim0x0002.cs 1.12
+  pjseTestData.package 1.10
+
+18 November 2005 22:59 - Bhav: Better Attribute label handling
+  SimPe BHAV\
+    BhavWiz.cs 1.23
+
+17 November 2005 20:45 - Bhav: Minor changes to BCON parsing; improve fallback; tiny Dialog and ObjAnims changes
+  SimPe BHAV\
+    BhavWiz.cs 1.22
+    BhavWizPrim.cs 1.31
+
+13 November 2005 19:21 - Bhav: Release BhavWizPrim.cs into public domain
+  SimPe BHAV\
+    BhavOperandWizDefault.cs 1.1
+    BhavOperandWizDefault.resx 1.1
+    BhavWizPrim.cs 1.30
+    pjse coder plugin.csproj 1.24
+  LICENSE.txt 1.4
+
+13 November 2005 12:50 - Bhav: Fix flag handling in Prim0x0002
+  SimPe BHAV\
+    BhavWizPrim0x0002.cs 1.11
+
+13 November 2005 12:50 - Bhav: fix: 0x001b wrap location/direction indices; text change
+  SimPe BHAV\
+    BhavWizPrim.cs 1.29
+
+12 November 2005 16:14 - Bhav: readStr format fix
+  SimPe BHAV\
+    BhavWiz.cs 1.21
+
+12 November 2005 15:40 - Bhav: Finish parsing (71..78, 7a..7e); readStr and sundry format changes
+  SimPe BHAV\
+    BhavWiz.cs 1.20
+    BhavWizPrim.cs 1.27
+    GlobalStr.cs 1.15
+
+11 November 2005 20:49 - Bhav: More parsing: 69, 6a, 6b, 6c, 6e, 6f
+  SimPe BHAV\
+    BhavWiz.cs 1.19
+    BhavWizPrim.cs 1.27
+    GlobalStr.cs 1.15
+  pjseTestData.package 1.9
+
+8 November 2005 19:44 - Bhav: Formatting changes
+  SimPe BHAV\
+    BhavWiz.cs 1.18
+    BhavWizPrim.cs 1.26
+
+7 November 2005 22:35 - Bhav: Fix comments
+  SimPe BHAV\
+    BhavWizPrim.cs 1.25
+
+7 November 2005 22:22 - Bhav: Lots of parsing: 03, 0e, 11..14, 16, 17, 19, 1a, 1d, 1e, 20..23, 25, 2e, 30
+  SimPe BHAV\
+    BhavWizPrim.cs 1.24
+    GlobalStr.cs 1.14
+  GlobalsStrings.package 1.9
+
+6 November 2005 19:54 - Bhav: Sundry cosmetic changes
+  SimPe BHAV\
+    BhavWiz.cs 1.17
+    BhavWizPrim.cs 1.23
+    BhavWizPrim0x0001.cs 1.5
+    BhavWizPrim0x0002.cs 1.10
+
+6 November 2005 11:03 - Bhav: Parse 31 (no parms!), fix breakpoint (no parms), GRS global, effect headline scope
+  SimPe BHAV\
+    BhavWizPrim.cs 1.22
+
+6 November 2005 11:01 - Bhav: Fix off-by-one error in caller's param counting
+  SimPe BHAV\
+    BhavWizBhav.cs 1.14
+
+6 November 2005 10:59 - Bhav: BCON and STR readers brought in line and tidied
+  SimPe BHAV\
+    BhavWiz.cs 1.16
+
+5 November 2005 17:50 - Bhav: Parse 33 (inventory), 70 (effect), plus fixes to 0b, 0c
+  SimPe BHAV\
+    BhavWizPrim.cs 1.21
+    GlobalStr.cs 1.13
+
+5 November 2005 13:31 - Bhav: More parsing, fix to ChangeMaterial, code reformatting
+  * My/Stack Object's attributes and semi attributes labelled (experimental)
+  * Parse: 07 (refresh), 0b (distance), 0c (direction), 0f (breakpoint)
+  SimPe BHAV\
+    BhavWiz.cs 1.15
+    BhavWizPrim.cs 1.20
+    BhavWizPrim0x0001.cs 1.4
+    BhavWizPrim0x0002.cs 1.9
+
+2 November 2005 20:22 - Bhav: Sync with disaSim2-23d; fix typo in Find Location For 0x0010
+  SimPe BHAV\
+    BhavWizPrim.cs 1.19
+
+1 November 2005 19:30 - Bhav: Tidy up STR# display a bit
+  SimPe BHAV\
+    BhavWizPrim.cs 1.18
+
+1 November 2005 19:25 - Bhav: Oops, forgot to handle null Wrapper for not found BHAVs
+  SimPe BHAV\
+    BhavWizBhav.cs 1.13
+
+31 October 2005 20:38 - Bhav: Bug fix for ExtendedWrapper semi-global handling
+  SimPe BHAV\
+    BhavForm.cs 1.58
+    BhavWiz.cs 1.14
+    BhavWizBhav.cs 1.12
+    BhavWizPrim.cs 1.17
+
+30 October 2005 17:24 - Bhav: OpCodes 0x1b, 0x2d and 0x79
+  SimPe BHAV\
+    BhavWiz.cs 1.13
+    BhavWizPrim.cs 1.16
+    GlobalStr.cs 1.12
+
+30 October 2005 15:05 - Bhav: ExtendedWrapper merge
+  pjse filetable\
+    FileTable.cs 1.6
+  SimPe BHAV\
+    BhavForm.cs 1.57
+    BhavInstListControl.cs 1.41
+    BhavInstListItemUI.cs 1.21
+    BhavWiz.cs 1.12
+    BhavWizBhav.cs 1.11
+    BhavWizPrim.cs 1.15
+    BhavWrapper.cs 1.43
+    ObjfItem.cs 1.8
+    ObjfWrapper.cs 1.6
+    ResourceChooser.cs 1.3
+    TtabForm.cs 1.28
+    TtabWrapper.cs 1.19
+
+22 October 2005 20:23 - Bhav: FIX: Flagname numbering start at 1, not 0 but strings start at 0
+  SimPe BHAV\
+    BhavWizPrim0x0002.cs
+
+22 October 2005 19:53 - Bhav: Fixups to GlobalStr and Dialog primitive
+  SimPe BHAV\
+    BhavWiz.cs 1.11
+    BhavWizPrim.cs 1.14
+    GlobalStr.cs 1.11
+
+22 October 2005 18:09 - FileTable: Dirty hack for inability to compare filenames
+  pjse filetable\
+    FileTable.cs 1.5
+  SimPe BHAV\
+    ResourceChooser.cs 1.2
+
+22 October 2005 17:02 - ResourceChooser: Amendments to use single chooser returning FileTable.Entry
+  SimPe BHAV\
+    BhavForm.cs 1.56
+    BhavInstListControl.cs 1.40
+    BhavOpCodeWiz.cs (deleted)
+    BhavOpCodeWiz.resx (deleted)
+    Chooser.cs (deleted)
+    ObjfForm.cs 1.8
+    pjse coder plugin.csproj 1.22
+    ResourceChooser.cs 1.1
+    ResourceChooser.resx 1.1
+    StrForm.cs 1.26
+    TtabForm.cs 1.27
+    WrapperFactory.cs 1.14
+
+22 October 2005 16:58 - FileTable: Tweaks plus support for ResourceChooser (caching filenames)
+  pjse filetable\
+    FileTable.cs 1.4
+
+22 October 2005 10:56 - Bhav: Tweaks to change material
+  SimPe BHAV\
+    BhavWizPrim.cs 1.13
+    GlobalStr.cs 1.10
+  pjseTestData.package 1.7
+
+22 October 2005 09:38 - Bhav: Merge with disaSim2-23b
+  SimPe BHAV\
+    BhavWiz.cs 1.10
+    BhavWizPrim.cs 1.12
+    BhavWizPrim0x0002.cs 1.7
+    GlobalStr.cs 1.9
+  GlobalStrings.package 1.7
+
+21 October 2005 19:59 - GlobalStr: make LoadData more robust
+  SimPe BHAV\
+    GlobalStr.cs 1.8
+
+17 October 2005 19:53 - FileTable: Make it its own plugin, use IListener
+  pjse filetable\
+    FileTable.cs 1.3
+    pjse filetable.csproj 1.2
+  SimPe BHAV\
+    WrapperFactory.cs 1.13
+
+16 October 2005 16:48 - Bhav: state scope for mesh group and material strings
+  SimPe BHAV\
+    BhavWizPrim.cs 1.11
+
+16 October 2005 16:46 - FileTable: work around for SimPe 0.49s
+  pjse filetable\
+    FileTable.cs 1.2
+
+16 October 2005 15:07 - Bhav: Change GlobalStr to only handle behaviour strings; unuseds; OpCode 0x006d
+  SimPe BHAV\
+    BhavOpCodeWiz.cs 1.13
+    BhavWiz.cs 1.9
+    BhavWizBhav.cs 1.10
+    BhavWizPrim.cs 1.10
+    BhavWizPrim0x0001.cs 1.3
+    BhavWizPrim0x0002.cs 1.6
+    GlobalStr.cs 1.7
+    ObjfItem.cs 1.7
+    TtabItemMotiveTableUI.cs 1.10
+
+12 October 2005 17:58 - Bhav: "not yet translated" for to-do primitives
+  SimPe BHAV\
+    BhavWizPrim.cs 1.9
+
+11 October 2005 21:26 - FileTable: separate out to avoid problem dependencies
+  pjse filetable\
+    .cvsignore 1.1
+    AssemblyInfo.cs 1.1
+    FileTable.cs 1.1
+    pjse filetable.csproj 1.1
+  SimPe BHAV\
+    FileTable.cs (moved to pjse filetable\)
+    pjse coder plugin.csproj 1.21
+    pjse cover plugins.sln 1.5
+
+11 October 2005 19:33 - FileTable landing
+  SimPe BHAV\
+    BhavForm.cs 1.55
+    BhavOpCodeWiz.cs 1.12
+    BhavWiz.cs 1.8
+    BhavWizBhav.cs 1.9
+    BhavWizPrim.cs 1.8
+    BhavWrapper.cs 1.42
+    FileTable.cs 1.2
+    GlobalStr.cs 1.6
+    pjse coder plugin.csproj 1.20
+    WrapperFactory.cs 1.12
+
+8 October 2005 11:52 - Bhav: Better updating, we hope
+  SimPe BHAV\
+    BhavForm.cs 1.54
+
+8 October 2005 11:41 - Bhav: Extra ")" on parsed expressions
+  SimPe BHAV\
+    BhavWizPrim0x0002.cs 1.5
+
+8 October 2005 11:17 - Build .7z archives, too
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.19
+  .cvsignore 1.4
+
+2 October 2005 11:06 - Bhav: Make BhavWiz a better Instruction wrapper (and use as such)
+  SimPe BHAV\
+    BhavForm.cs 1.53
+    BhavInstListControl.cs 1.39
+    BhavWiz.cs 1.7
+    BhavWizBhav 1.8
+    TtabForm.cs 1.26
+
+1 October 2005 10:58 - Str: Add "Replace string" dialogue (quick hack version)
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.18
+    StrChooser.cs 1.1
+    StrChooser.resx 1.1
+    StrForm.cs 1.25
+    StrForm.resx 1.18
+
+30 September 2005 19:38 - Bhav: Cosmetic change to Push Interaction
+  SimPe BHAV\
+    BhavWizPrim.cs 1.7
+
+30 September 2005 18:49 - Bhav: Several more primitives translated from DisaSim2 (and other odd bits)
+  SimPe BHAV\
+    BhavWiz.cs 1.6
+    BhavWizPrim.cs 1.6
+    BhavWizPrim0x0001.cs 1.2
+    BhavWizPrim0x0002.cs 1.4
+    GlobalStr.cs 1.5
+  GlobalStrings.package 1.5
+  pjseTestData.package 1.5
+
+29 September 2005 16:25 - Bhav: Add "Caller's" to "params", change "..." to "Caller's params"
+  SimPe BHAV\
+    BhavWizBhav.cs 1.7
+
+29 September 2005 15:53 - Bhav: Instruction() defaults to no operands, tweak Param display
+  SimPe BHAV\
+    BhavWiz.cs 1.5
+    BhavWizBhav.cs 1.6
+    BhavWrapper.cs 1.41
+
+29 September 2005 14:35 - Bhav: Make the TTAB form links not crash most of the time
+  SimPe BHAV\
+    TtabForm.cs 1.24
+
+29 September 2005 13:35 - Bhav: Various fixups
+  * whitespace to space in bhav instruction list items
+  * suppress operands (-1) when casting ushorts to BhavWiz
+  * allow to load Bhavs when invoking instruction in a null parent
+  * amend SetToNext formatting
+  * allow viewing BHAVs from TtabForm
+  SimPe BHAV\
+    BhavInstListItemUI.cs 1.20
+    BhavWiz.cs 1.4
+    BhavWizBhav.cs 1.5
+    BhavWizPrim.cs 1.5
+    TtabForm.cs 1.24
+    TtabForm.resx 1.14
+  GlobalStrings.package 1.4
+  pjseTestData.package 1.4
+
+29 September 2005 10:47 - Bhav: Random and Set to Next primitives parsed, first cut
+  SimPe BHAV\
+    BhavWizPrim.cs 1.3
+  pjseTestData.package 1.2
+
+29 September 2005 09:38 - Bhav: Dialog primitive - make shortform text longer
+  SimPe BHAV\
+    BhavWizPrim.cs 1.2
+  pjseTestData.package 1.1
+
+28 September 2005 20:40 - Bhav: Dialog primitive first cut
+  SimPe BHAV\
+    BhavWiz.cs 1.3
+    BhavWizBhav.cs 1.4
+    BhavWizBhav.resx 1.1
+    BhavWizPrim.cs 1.2
+    BhavWizPrim0x0002.cs 1.3
+    GlobalStr.cs 1.4
+    pjse coder plugin.csproj 1.16
+  GlobalStrings.package 1.3
+  pjseTestData.package 1.1
+
+27 September 2005 10:01 - Bhav: BCON parsing fixups
+  SimPe BHAV\
+    BhavWiz.cs 1.2
+    BhavWizPrim0x0002.cs 1.2
+
+27 September 2005 09:23 - Bhav: BhavWizBhav - Merge ShortName and Longname
+  SimPe BHAV\
+    BhavWizBhav.cs 1.3
+
+26 September 2005 21:17 - Bhav: Shorten Bhav short forms
+  SimPe BHAV\
+    BhavWizBhav.cs 1.2
+
+26 September 2005 20:15 - Bhav: Allow Sort in popup'd form
+  SimPe BHAV\
+    BhavForm.cs 1.52
+
+26 September 2005 19:56 - Bhav: Rename stuff to preserve sanity (and a couple of bug fixes)
+  SimPe BHAV\
+    BhavForm.cs 1.51
+    BhavInstListControl.cs 1.38
+    BhavInstListItemUI.cs 1.19
+    BhavNameWizProvider.cs (split between BhavWiz.cs, BhavWizBhav.cs and BhavWizPrim.cs)
+    BhavNameWizProviders.cs (split into BhavWizPrim.cs and BhavWizBhav.cs)
+    BhavOpCodeWiz.cs 1.11
+    BhavOperandWizRaw.cs 1.1 (renamed from BhavPrimWizRaw.cs)
+    BhavOperandWizRaw.resx 1.1 (renamed from BhavPrimWizRaw.resx)
+    BhavPrimWiz0x0001.cs (renamed to BhavWizPrim0x0001.cs)
+    BhavPrimWiz0x0001.resx (renamed to BhavWizPrim0x0001.resx)
+    BhavPrimWiz0x0002.cs (renamed to BhavWizPrim0x0002.cs)
+    BhavPrimWiz0x0002.resx (renamed to BhavWizPrim0x0002.resx)
+    BhavPrimWizDefault.cs (merged into BhavWizPrim.cs)
+    BhavPrimWizDefault.resx (merged into BhavWizPrim.cs)
+    BhavPrimWizRaw.cs (renamed to BhavOperandWizRaw.cs)
+    BhavPrimWizRaw.resx (renamed to BhavOperandWizRaw.resx)
+    BhavWiz.cs 1.1 (renamed from BhavNameWizProvider.cs)
+    BhavWizBhav.cs 1.1 (created from BhavNameWizProvider.cs and BhavNameWizProviders.cs)
+    BhavWizPrim.cs 1.1 (created from BhavNameWizProvider.cs and BhavPrimWizDefault.cs)
+    BhavWizPrim.resx 1.1 (created from BhavPrimWizDefault.cs)
+    BhavWizPrim0x0001.cs (renamed from BhavPrimWiz0x0001.cs)
+    BhavWizPrim0x0001.resx (renamed from BhavPrimWiz0x0001.resx)
+    BhavWizPrim0x0002.cs (renamed from BhavPrimWiz0x0002.cs)
+    BhavWizPrim0x0002.resx (renamed from BhavPrimWiz0x0002.resx)
+    ObjfItem.cs 1.6
+    pjse coder plugin.csproj 1.16
+    TtabForm.cs 1.23
+
+26 September 2005 16:45 - Bhav: Reorganise format for instruction display
+  SimPe BHAV\
+    BhavForm.cs 1.50
+    BhavNameWizProvider.cs 1.12
+    BhavNameWizProviders.cs 1.10
+    BhavOperandWiz.cs 1.7
+    BhavOperandWizProvider.cs 1.4
+    BhavPrimWiz0x0001.cs 1.7
+    BhavPrimWiz0x0002.cs 1.9
+    BhavPrimWiz0x0002.resx 1.6
+    BhavPrimWizDefault.cs 1.4
+    BhavPrimWizDefault.resx 1.3
+  GlobalStrings.package 1.2
+
+25 September 2005 18:41 - Bhav: Cosmetic changes for Inge; bug fix for SemiGlobals calling SemiGlobals
+  SimPe BHAV\
+    BhavForm.cs 1.49
+    BhavForm.resx 1.25
+    BhavNameWizProviders.cs 1.9
+    BhavOperandWiz.cs 1.6
+
+24 September 2005 22:31 - Bhav: Mostly sorting out SemiGlobals... (Parsing text moved around, too)
+  SimPe BHAV\
+    BhavForm.cs 1.48
+    BhavForm.resx 1.24
+    BhavInstListControl.cs 1.37
+    BhavInstListItemUI.cs 1.18
+    BhavNameWizProvider.cs 1.11
+    BhavNameWizProviders.cs 1.8
+    BhavOpCodeWiz.cs 1.10
+    BhavPrimWiz0x0001.cs 1.6
+    BhavPrimWiz0x0001.resx 1.3
+    BhavPrimWiz0x0002.cs 1.8
+    BhavPrimWiz0x0002.resx 1.5
+
+24 September 2005 09:49 - Bhav: Find GLOB correctly, lose BHAVFilename (plus some minor display tweaks)
+  SimPe BHAV\
+    BhavForm.cs 1.47
+    BhavNameWizProvider.cs 1.10
+    ObjfItem.cs 1.5
+    TtabForm.cs 1.22
+
+23 September 2005 16:30 - Bhav: Use FileTable for accessing multiple .package files
+  SimPe BHAV\
+    BhavNameWizProvider.cs 1.9
+    BhavNameWizProviders.cs 1.7
+    BhavOpCodeWiz.cs 1.9
+    BhavOpCodeWiz.resx 1.5
+    BhavWrapper.cs 1.40
+    ObjfForm.cs 1.7
+    ObjfItem.cs 1.4
+    TtabForm.cs 1.21
+    TtabWrapper.cs 1.18
+
+23 September 2005 16:00 - Bhav: learn how to remove delegates
+  SimPe BHAV\
+    BhavForm.cs 1.46
+    BhavInstListControl.cs 1.36
+    BhavInstListItemUI.cs 1.17
+
+21 September 2005 18:20 - Bhav: missed a check for BasePackage not found
+  SimPe BHAV\
+    BhavNameWizProvider.cs 1.8
+
+21 September 2005 17:34 - Bhav: BhavNameWizProvider rewrite
+  * Remove BhavNameWizProvider class, move code into ABhavNameWiz class
+  * Allow cast from Instruction to ABhavNameWiz
+  * Remove redundant .ctors and isXXX methods
+  * Amend ToString() slightly and wrap BCON values as [=x] rather than (x)
+  * Move stuff in from Wiz0x0002 that should be here (not all of it, though)
+  * Rewrite BHAV Loader
+  * BhavForm: fix: llopenbhav link disabled when no instruction
+  * BhavPrimWiz0x0001: Allow cast from operand0
+  * BhavPrimWiz0x0002: Move stuff into BhavNameWizProvider and the internal form (maybe move more later)
+  * BhavPrimWiz0x0002: Allow cast from operands
+  * BhavPrimWiz0x0002: Rewrite flag naming to use a hashtable
+  * plus general changes for GlobalStr change
+  SimPe BHAV\
+    BhavForm.cs 1.45
+    BhavInstListControl.cs 1.35
+    BhavNameWizProvider.cs 1.7
+    BhavNameWizProviders.cs 1.6
+    BhavPrimWiz0x0001.cs 1.5
+    BhavPrimWiz0x0002.cs 1.7
+    ObjfItem.cs 1.3
+    TtabWrapper.cs 1.17
+
+21 September 2005 17:27 - GlobalStr: Remove pointless GStr wrappers - use GStr+SF instead
+  SimPe BHAV\
+    GlobalStr.cs 1.3
+    TtabItemMotiveTableUI.cs 1.9
+
+21 September 2005 17:22 - Glob: Make mine work like Quaxi's for now (debug build only)
+  SimPe BHAV\
+    GlobForm.cs 1.5
+
+21 September 2005 17:21 - Bhav: Construct Instruction() just from opcode (plus addr1/addr2 fix)
+  SimPe BHAV\
+    BhavWrapper.cs 1.39
+
+21 September 2005 17:19 - Bhav: Handle truncated pastes (e.g. typing "0" to quickly zero the params)
+  SimPe BHAV\
+    BhavPrimWizRaw.cs 1.3
+
+20 September 2005 18:38 - Bhav: oops, draw relative to the right thing!
+  SimPe BHAV\
+    BhavInstListControl.cs 1.34
+
+20 September 2005 16:34 - Bhav: bugfix: leaking Window handles like mad (plus stuff)
+  SimPe BHAV\
+    BhavForm.cs 1.44
+    BhavForm.resx 1.23
+    BhavInstListControl.cs 1.33
+    BhavInstListControl.resx 1.6
+    BhavInstListItem.UI.cs 1.15
+    BhavNameWizProvider.cs 1.6
+    BhavNameWizProviders.cs 1.5
+
+20 September 2005 09:21 - Bhav: bugfix: 0x8003 not loading
+  SimPe BHAV\
+    BhavWrapper.cs 1.38
+
+19 September 2005 23:04 - Bhav: more parsing: Rearrange GlobalStr and use it widely
+  SimPe BHAV\
+    BhavNameWizProvider.cs 1.5
+    BhavNameWizProviders.cs 1.4
+    BhavOpCodeWiz.cs 1.8
+    BhavOpCodeWiz.resx 1.4
+    BhavPrimWiz0x0001.cs 1.4
+    BhavPrimWiz0x0002.cs 1.6
+    BhavPrimWiz0x0002.resx 1.4
+    GlobalStr.cs 1.2
+    TtabItemMotiveTableUI.cs 1.8
+
+19 September 2005 16:25 - Bhav: more parsing: snarf strings into their own .package and use that
+  SimPe BHAV\
+    BhavNameWizProvider.cs 1.4
+    GlobalStr.cs 1.1
+    pjse coder plugin.csproj 1.15
+    TtabItemMotiveTableUI.cs 1.7
+  GlobalStrings.package 1.1
+
+18 September 2005 19:34 - Bhav: more parsing, mostly data owners - work in progress
+  SimPe BHAV\
+    BhavNameWizProvider.cs 1.3
+    BhavNameWizProviders.cs 1.3
+    BhavOpCodeWiz.cs 1.7
+    BhavPrimWiz0x0001.cs 1.3
+    BhavPrimWiz0x0002.cs 1.5
+    BhavPrimWizDefault.cs 1.3
+    BhavPrimWizRaw.cs 1.2
+
+17 September 2005 18:25 - Bhav: up the wrapper version number to 3
+  SimPe BHAV\
+    BhavWrapper.cs 1.37
+
+17 September 2005 18:23 - Bhav: Use BhavNameWizProvider to load BHAV for appending
+  SimPe BHAV\
+    BhavInstListControl.cs 1.32
+
+17 September 2005 18:08 - Bhav: Make Wiz0x0002 boxes wide enough
+  SimPe BHAV\
+    BhavPrimWiz0x0002.cs 1.4
+    BhavPrimWiz0x0002.resx 1.3
+
+17 September 2005 18:07 - Bhav: Use "Node version" name
+  SimPe BHAV\
+    BhavForm.cs 1.43
+    BhavForm.resx 1.22
+    BhavWrapper.cs 1.36
+
+17 September 2005 17:18 - Land OpcodeDecoder branch at long last (not that it's finished)
+  SimPe BHAV\
+    BhavForm.cs 1.42
+    BhavForm.resx 1.21
+    BhavInstListItemUI.cs 1.14
+    BhavInstructionName.cs (becomes BhavNameWizProvider(s))
+    BhavNameWizProvider.cs 1.1
+    BhavNameWizProviders.cs 1.1
+    BhavOpCodeWiz.cs 1.6
+    BhavOperandWizProvider 1.3
+    BhavPrimWiz0x0001.cs 1.1
+    BhavPrimWiz0x0001.resx 1.1
+    BhavPrimWiz0x0002.cs 1.2
+    BhavPrimWizDefault.cs 1.1
+    BhavPrimWizDefault.resx 1.1
+    BhavWrapper.cs 1.35
+    ImportSemi.cs (deleted)
+    ImportSemi.resx (deleted)
+    ImportSemiTool.cs (deleted)
+    ObjfItem.cs 1.2
+    ObjfWrapper.cs 1.4
+    pjse coder plugin.csproj 1.14
+    TtabWrapper.cs 1.16
+
+17 September 2005 14:08 - Bhav: Partially merge in OperandWiz and add WizRaw
+  SimPe BHAV\
+    BhavForm.cs 1.41
+    BhavForm.resx 1.20
+    BhavInstruction.cs (renamed BhavPrimWiz0x0002.cs)
+    BhavInstruction.resx (renamed BhavPrimWiz0x0002.resx)
+    BhavOperandWiz.cs 1.5
+    BhavOperandWizProvider.cs 1.2
+    BhavPrimWiz0x0002.cs 1.2
+    BhavPrimWiz0x0002.resx 1.2
+    BhavPrimWizRaw.cs 1.1
+    BhavPrimWizRaw.resx 1.1
+    pjse coder plugin.csproj 1.12
+
+16 September 2005 23:15 - Bhav: Urf, get instructions right too!
+  SimPe BHAV\
+    BhavWrapper.cs 1.35
+
+16 September 2005 19:22 - Bhav: ...and tidy up the display so it fits Inge's screen
+  SimPe BHAV\
+    BhavForm.cs 1.39
+    BhavForm.resx 1.19
+
+16 September 2005 17:59 - Bhav: Oh yes - display "Header Flag"
+  SimPe BHAV\
+    BhavForm.cs 1.38
+    BhavForm.resx 1.18
+    BhavWrapper.cs 1.33
+
+15 September 2005 21:54 - Bhav: Night Life compatibility
+  SimPe BHAV\
+    BhavForm.cs 1.38
+    BhavForm.resx 1.17
+    BhavWrapper.cs 1.32
+
+7 September 2005 17:57 - Bhav: Change hourglass behaviour
+  SimPe BHAV\
+    BhavInstListControl.cs 1.31
+
+5 September 2005 22:02 - Bhav: items arraylist WrapperChanged tidy-up (undo that hacking)
+  SimPe BHAV\
+    BhavInstListControl.cs 1.30
+    BhavWrapper.cs 1.31
+
+5 September 2005 21:04 - Bhav: Send WrapperChanged only once for Sort() and only if it changed
+  SimPe BHAV\
+    BhavWrapper.cs 1.30
+
+4 September 2005 11:03 - Slightly more forgiving handling of missing default TTAs entries
+  SimPe BHAV\
+    StrForm.cs 1.24
+    TtabForm.cs 1.20
+
+3 September 2005 19:47 - Bhav: repaint the list when we change Bhav (hackity, hackity, hack)
+  SimPe BHAV\
+    BhavInstListControl.cs 1.29
+
+3 September 2005 14:07 - Bhav: stop repainting the list unless it's changed length (hacky)
+  SimPe BHAV\
+    BhavInstListControl.cs 1.28
+
+3 September 2005 13:48 - Str: Oops - Add String Appending to Release
+  SimPe BHAV\
+    StrForm.cs 1.23
+
+3 September 2005 13:00 - Str: Handle 0xFE data type
+  SimPe BHAV\
+    StrForm.cs 1.22
+    StrWrapper.cs 1.14
+
+3 September 2005 11:37 - TTAB: Hack the UI to give just one pie string field
+  SimPe BHAV\
+    TtabForm.cs 1.19
+    TtabForm.resx 1.13
+
+3 September 2005 09:22 - Str: Handle 0x012C instance STR# file in group 0x7FBD8997
+  SimPe BHAV\
+    StrForm.cs 1.21
+    StrWrapper.cs 1.13
+
+29 August 2005 13:38 - TTAB: Dropdown list to pick TTAs string
+  SimPe BHAV\
+    TtabForm.cs 1.18
+    TtabForm.resx 1.12
+
+28 August 2005 17:24 - Typo in BHAV Wrapper
+  SimPe BHAV\
+    BhavWrapper.cs 1.29
+
+28 August 2005 15:22 - Labelling adjustments
+  SimPe BHAV\
+    BhavForm.cs 1.37
+    BhavForm.resx 1.16
+    StrForm.resx 1.17
+    
+
+28 August 2005 14:59 - Further StrForm tweaks (including some pedantry)
+  SimPe BHAV\
+    StrForm.cs 1.20
+    StrForm.resx 1.16
+
+28 August 2005 14:30 - Reorganise StrForm (new layout, up/down buttons, enable default lang)
+  SimPe BHAV\
+    StrForm.cs 1.19
+    StrForm.resx 1.15
+
+28 August 2005 14:28 - Wrap StrBig textbox
+  SimPe BHAV\
+    StrBig.cs 1.3
+    StrBig.resx 1.2
+
+28 August 2005 14:26 - Merola's Delete to End of Bhav
+  SimPe BHAV\
+    BhavForm.cs 1.36
+    BhavForm.resx 1.15
+    BhavInstListControl.cs 1.27
+
+27 August 2005 12:44 - Make "done" pjse wrappers into ICollections
+  SimPe BHAV\
+    BhavForm.cs 1.35
+    BhavInstListControl.cs 1.26
+    BhavInstListItem.cs 1.13
+    BhavWrapper.cs 1.28
+    StrWrapper.cs 1.12
+    TtabWrapper.cs 1.15
+
+21 August 2005 14:55 - Str: don't focus Title on row selection after all
+  SimPe BHAV\
+    StrForm.cs 1.18
+    StrForm.resx 1.14
+
+21 August 2005 14:46 - Show the Append button in Bhav in all builds
+  SimPe BHAV\
+    BhavForm.cs 1.34
+
+21 August 2005 14:00 - Str: Fix off-by-one bug, focus Title on row selection
+  SimPe BHAV\
+    StrForm.cs 1.17
+    StrForm.resx 1.13
+
+21 August 2005 12:31 - Str: StrForm tidy up, Str wrapper made enumerable
+  SimPe BHAV\
+    StrForm.cs 1.16
+    StrWrapper 1.11
+
+21 August 2005 10:57 - Str: New Str form
+  SimPe BHAV\
+    StrForm.cs 1.15
+    StrForm.resx 1.12
+
+21 August 2005 08:20 - Bhav: Re-parent instructions on Add
+  SimPe BHAV\
+    BhavWrapper.cs 1.27
+
+17 August 2005 19:08 - Refresh view of local BHAVs every time; fix Target/Addr per format handling
+  SimPe BHAV\
+    BhavOpCodeWiz.cs 1.5
+    BhavWrapper.cs 1.26
+
+17 August 2005 19:05 - Only show the Append button in Bhav in Debug/InProgress builds
+  SimPe BHAV\
+    BhavForm.cs 1.33
+
+14 August 2005 12:05 - Only show the Append button in Str and Ttab in Debug/InProgress builds
+  SimPe BHAV\
+    StrForm.cs 1.14
+    TtabForm.cs 1.17
+
+14 August 2005 10:48 - Replace TTAB "Unk" labels - with thanks to the DatGen team
+  SimPe BHAV\
+    TtabForm.cs 1.16
+    TtabForm.resx 1.11
+    TtabWrapper.cs 1.14
+
+13 August 2005 21:23 - Better Str string list resizing
+  SimPe BHAV\
+    StrForm.cs 1.13
+    StrForm.resx 1.11
+
+13 August 2005 21:21 - Dropdown list of known BHAV File format codes
+  SimPe BHAV\
+    BhavForm.cs 1.32
+    BhavForm.resx 1.14
+
+13 August 2005 14:07 - Fix Unserialize Instruction for 0x8005 format BHAV file
+  SimPe BHAV\
+    BhavWrapper.cs 1.25
+
+13 August 2005 14:04 - Add Append function to StrForm and TtabForm (TtabWrapper rewritten a bit)
+  SimPe BHAV\
+    StrForm.cs 1.12
+    StrForm.resx 1.10
+    StrWrapper.cs 1.10
+    TtabForm.cs 1.15
+    TtabForm.resx 1.10
+    TtabWrapper.cs 1.13
+
+13 August 2005 14:00 - Remove unneeded resize handlers
+  SimPe BHAV\
+    TtabItemMotiveTableUI.cs 1.6
+    TtabItemMotiveTableUI.resx 1.5
+
+13 August 2005 13:56 - Add Local file chooser (for Append)
+  SimPe BHAV\
+    Chooser.cs 1.1
+    Chooser.resx 1.1
+    pjse coder plugin.csproj 1.11
+
+13 August 2005 13:55 - Minor tweaks to popup forms
+  SimPe BHAV\
+    BhavOpCodeWiz.cs 1.4
+    BhavOpCodeWiz.resx 1.3
+    BhavOperandWiz.cs 1.4
+    BhavOperandWiz.resx 1.3
+    StrBig.cs 1.2
+
+12 August 2005 21:15 - BHAV Editor version 2
+  * New special actions panel:
+  * - Append BHAVs - allows an existing local BHAV to be appended to this one
+  * - Insert via True/False; Pescado's Delete; Inge's InitLinker
+  * OpCodeWiz flags for selecting pages (used also in ObjfForm, TtabForm)
+  * switch connector highlights
+  * unselected line highlights in grey
+  SimPe BHAV\
+    BhavForm.cs 1.31
+    BhavForm.resx 1.13
+    BhavInstListControl.cs 1.25
+    BhavInstListItemUI.cs 1.12
+    BhavWrapper.cs 1.24
+    ObjfForm.cs 1.6
+    TtabForm.cs 1.14
+
+12 August 2005 16:50 - Add big edit box to Str
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.10
+    StrBig.cs 1.1
+    StrBig.resx 1.1
+    StrForm.cs 1.11
+    StrForm.resx 1.9
+
+12 August 2005 10:43 - Label the input boxes in Str (oops!)
+  SimPe BHAV\
+    StrForm.cs 1.10
+    StrForm.resx 1.8
+
+12 August 2005 10:13 - Label default language in Str (plus minor TtabWrapper reorgs)
+  SimPe BHAV\
+    StrForm.cs 1.8, 1.9
+    StrForm.resx 1.6, 1.7
+    StrWrapper.cs 1.9
+    TtabWrapper.cs 1.12
+
+7 August 2005 19:42 - Make "Clear Lang" display language name
+  SimPe BHAV\
+    StrForm.cs 1.7
+    StrForm.resx 1.5
+
+6 August 2005 23:45 - Promote StrWrapper to Release
+  SimPe BHAV\
+    StrWrapper.cs 1.8
+    WrapperFactory.cs 1.11
+
+6 August 2005 20:23 - Cosmetic fix (field stays highlighted); better unknown format handling
+  SimPe BHAV\
+    BhavForm.cs 1.30
+    BhavWrapper.cs 1.23
+
+6 August 2005 18:25 - Updates to the Str plugin (lots and lots of fixes)
+  SimPe BHAV\
+    StrForm.cs 1.6
+    StrForm.resx 1.4
+    StrWrapper.cs 1.7
+
+5 August 2005 19:25 - Fix null pointer on creating new Str resource
+  SimPe BHAV\
+    StrWrapper.cs 1.6
+
+5 August 2005 19:24 - Drop ImportSemi from build
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.9
+    WrapperFactory.cs 1.10
+
+1 August 2005 22:40 - Ooops... four byte header fields for TTAB
+  SimPe BHAV\
+    TtabWrapper.cs 1.11
+
+1 August 2005 22:23 - BHAV and TTAB - improve Create Resource support
+  SimPe BHAV\
+    BhavWrapper.cs 1.22
+    TtabForm.cs 1.13
+    TtabWrapper.cs 1.10
+
+31 July 2005 18:24 - Allow any value for "format" properly but default to 0x8007
+  SimPe BHAV\
+    BhavWrapper.cs 1.21
+
+31 July 2005 17:50 - Replace the Str plugin
+  SimPe BHAV\
+    NewStrForm.cs (deleted)
+    NewStrForm.resx (deleted)
+    pjse coder plugin.csproj 1.8
+    StrForm.cs 1.5
+    StrForm.resx 1.3
+    StrListViewer.cs (deleted)
+    StrListViewer.resx (deleted)
+    StrWrapper.cs 1.5
+
+31 July 2005 17:47 - Allow any value for "format"
+  SimPe BHAV\
+    BhavWrapper.cs 1.20
+
+30 July 2005 00:28 - Update for Simpe_043g_qa release
+  SimPe BHAV\
+    BconForm.cs 1.4
+    BhavForm.cs 1.29
+    GlobForm.cs 1.4
+    NewStrForm.cs 1.3
+    ObjfFrom.cs 1.5
+    PjseObjdForm.cs 1.4
+    StrForm.cs 1.4
+    TrcnForm.cs 1.3
+    TtabForm.cs 1.12
+
+27 July 2005 18:43 - Scrollbar on item names, fix motive formatting, promote TTAB to Release
+  SimPe BHAV\
+    TtabForm.resx 1.9
+    TtabSingleMotiveUI.cs 1.5
+    WrapperFactory.cs 1.9
+
+24 July 2005 20:58 - Four-digit motive fields, relabel Unks, scrollbar and help fixes
+  SimPe BHAV\
+    TtabForm.resx 1.8
+    TtabItemMotiveTableUI.cs 1.5
+    TtabItemMotiveTableUI.resx 1.4
+    TtabMotiveGroupUI.resx 1.4
+    TtabSingleMotiveUI.cs 1.4
+    TtabSingleMotiveUI.resx 1.3
+
+24 July 2005 20:52 - Enable non-modal usage
+  SimPe BHAV\
+    HelpContainer.cs 1.2
+    HelpContainer.resx 1.2
+
+24 July 2005 19:35 - Update field validation handling
+  SimPe BHAV\
+    TtabForm.cs 1.10
+    TtabForm.resx 1.6
+    TtabWrapper.cs 1.8
+
+24 July 2005 19:33 - Add Help to TTAB editor
+  SimPe BHAV\
+    HelpContainer.cs 1.1
+    HelpContainer.resx 1.1
+    pjse coder plugin.csproj 1.7
+    TtabItemMotiveTableUI.cs 1.4
+    TtabItemMotiveTableUI.resx 1.3
+
+23 July 2005 18:12 - Update field handling and naming - second attempt
+  SimPe BHAV\
+    TtabForm.cs 1.10
+    TtabForm.resx 1.6
+    TtabWrapper.cs 1.8
+
+23 July 2005 17:44 - Update field handling and naming
+  SimPe BHAV\
+    TtabForm.cs 1.9
+    TtabForm.resx 1.5
+    TtabWrapper.cs 1.7
+
+23 July 2005 15:22 - Editable FileName (and some more Bhav-like bits internally)
+  SimPe BHAV\
+    TtabForm.cs 1.8
+    TtabForm.resx 1.4
+
+23 July 2005 14:02 - Remove "highlights"; validation to match BHAV editor
+  SimPe BHAV\
+    TtabItemMotveTableUI.cs 1.3
+    TtabMotiveGroupUI.cs 1.3
+    TtabMotiveGroupUI.resx 1.3
+    TtabSingleMotiveUI.cs 1.3
+    TtabSingleMotiveUI.resx 1.3
+
+23 July 2005 12:23 - Tidy up display, swap Adult and Toddler motives
+  SimPe BHAV\
+    TtabForm.cs 1.7
+    TtabForm.resx 1.3
+    TtabWrapper.cs 1.6
+
+23 July 2005 11:42 - Nicer validation; change a couple of labels
+  SimPe BHAV\
+    BhavForm.cs 1.28
+    BhavForm.resx 1.12
+
+10 July 2005 16:26 - Disable Cancel on Commit; fix Target TextChanged handling
+  SimPe BHAV\
+    BhavForm.cs 1.27
+
+10 July 2005 15:14 - Revert to updating wrapper on TextChanged
+  SimPe BHAV\
+    BhavForm.cs 1.26
+
+10 July 2005 14:24 - User-interface tweaks (format and select field on validated)
+  SimPe BHAV\
+    BhavForm.cs 1.25
+    BhavWrapper.cs 1.19
+
+17 July 2005 12:25 - Bug fix: Strange behaviour with Validated()
+  * Completely changes the way changes are tracked across the wrapper/GUI
+  * BhavForm: cosmetic work (e.g. UpdateInstPanel, order of methods), currentInst returns
+  * BhavInstListControl: large scale changes, plus some cosmetics (wait cursors), lose findUI
+  * BhavWrapper: specific sender in WrapperChanged events, wrappedByteArray has Instruction parent
+  SimPe BHAV\
+    BhavForm.cs 1.24
+    BhavInstListControl.cs 1.24
+    BhavInstListItemUI.cs 1.11
+    BhavWrapper.cs 1.18
+
+10 July 2005 14:53 - Apply OpcodeDecoder-branch fixes to HEAD (5 of n)
+  SimPe BHAV\
+    BhavOperandWiz.cs 1.3
+    BhavOperandWiz.resx 1.2
+    WrapperFactory.cs 1.8
+
+10 July 2005 13:55 - Apply OpcodeDecoder-branch fixes to HEAD (4 of n)
+  SimPe BHAV\
+    ObjfForm.cs 1.4
+    PjseObjdForm.cs 1.3
+    StrWrapper.cs 1.4
+    TtabForm.cs 1.6
+
+10 July 2005 13:32 - Apply OpcodeDecoder-branch fixes to HEAD (3 of n)
+  SimPe BHAV\
+    BhavOpCodeWiz.cs 1.2
+    BhavOpCodeWiz.resx 1.2
+
+10 July 2005 13:29 - Apply OpcodeDecoder-branch fixes to HEAD (2 of n)
+  SimPe BHAV\
+    BhavForm.cs 1.23
+
+10 July 2005 13:27 - Apply OpcodeDecoder-branch fixes to HEAD (1 of n)
+  SimPe BHAV\
+    BhavInstListControl.cs 1.23
+
+10 July 2005 11:35 - Ensure WrapperChanged raised in yet more places (all done?)
+  SimPe BHAV\
+    BhavForm.cs 1.22
+    BhavInstruction.cs 1.2
+    BhavOperandWiz.cs 1.2
+    BhavWrapper.cs 1.17
+
+10 July 2005 10:33 - Ensure WrapperChanged raised in more places (still some missing)
+  SimPe BHAV\
+    BhavHeader.cs (deleted)
+    BhavWrapper.cs 1.16
+    Instruction.cs (deleted)
+
+01 July 2005 10:21 - Write languages in numerical order
+  SimPe BHAV\
+    StrWrapper.cs 1.3
+
+01 July 2005 09:20 - Make sure BackColor = System.Drawing.SystemColors.Control
+  SimPe BHAV\
+    BhavForm.cs 1.21
+
+30 June 2005 23:45 - Make sure BackColor = System.Drawing.SystemColors.Control
+  SimPe BHAV\
+    BconForm.cs 1.3
+    GlobForm.cs 1.3
+    ObjfForm.cs 1.3
+    StrForm.cs 1.3
+    TrcnForm.cs 1.2
+    TtabForm.cs 1.5
+
+30 June 2005 13:51 - STR#/OBJD Landing
+  (refer to changes below since 27 June 2005 10:00)
+
+30 June 2005 09:39 - Don't know whether the German strings are right, so removed them
+  SimPe BHAV\
+    BconForm.de.resx (deleted)
+    BconForm.de-DE.resx (deleted)
+    BhavForm.de.resx (deleted)
+    BhavForm.de-DE.resx (deleted)
+    GlobForm.de.resx (deleted)
+    GlobForm.de-DE.resx (deleted)
+    ObjfForm.de.resx (deleted)
+    ObjfForm.de-DE.resx (deleted)
+    StrForm.de.resx (deleted)
+    StrForm.de-DE.resx (deleted)
+    TtabForm.de.resx (deleted)
+    TtabForm.de-DE.resx (deleted)
+
+30 June 2005 09:39 - Make Release build build (oops)
+  SimPe BHAV\
+    StrForm.cs 1.1.2.3
+
+28 June 2005 17:45 - Implement Inge's requests
+  SimPe BHAV\
+    StrForm.cs 1.1.2.2
+    StrForm.resx 1.1.2.2
+
+28 June 2005 13:37 - STR#/TTAs and OBJD integration
+  SimPe BHAV\
+    BhavInstListControl.cs 1.21.2.1
+    BhavWrapper.cs 1.14.2.1
+    NewStrForm.cs 1.1.2.1
+    NewStrForm.resx 1.1.2.1
+    pjse coder plugin.csproj 1.5.2.1
+    PjseObjdForm.cs 1.1.2.1
+    PjseObjdForm.resx 1.1.2.1
+    PjseObjdWrapper.cs 1.1.2.1
+    StrForm.cs 1.1.2.1
+    StrForm.de.resx 1.1.2.1
+    StrForm.de-DE.resx 1.1.2.1
+    StrForm.resx 1.1.2.1
+    StrWrapper.cs 1.1.2.1
+    TtabForm.cs 1.4.2.1
+    TtabWrapper.cs 1.4.2.1
+    WrapperFactory.cs 1.6.2.1
+
+27 June 2005 10:00 - Rename "Inge" configuration to "InProgress"
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.5
+    pjse coder plugins.sln 1.3
+    WrapperFactory.cs 1.6
+
+27 June 2005 00:12 - Amend BhavForm to use Validating/Validated rather than TextChanged
+  SimPe BHAV\
+    BhavForm.cs 1.20
+    BhavForm.resx 1.11
+    BhavWrapper.cs 1.14
+
+26 June 2005 17:24 - Add "Inge" configuration; Inge & Debug enable all wrappers
+  SimPe BHAV\
+    pjse coder plugin.csproj 1.4
+    pjse coder plugins.sln 1.2
+    WrapperFactory.cs 1.5
+
+26 June 2005 14:33 - BugFix: Instruction group readonly/add disabled incorrectly
+  SimPe BHAV\
+    BhavForm.cs 1.19
+    BhavForm.resx 1.10
+
+26 June 2005 13:34 - Changes since Initial_Plugin
+  Add tar.bz2 to .cvsignore
+  Add in BHAV editor leaves added line selected
+  Reverted to having BHAV flow lines "outside" for both self and next links
+  Improved "nesting" of flow lines
+  Fixed a bug with pre-8007 format BHAV true/false/error targets
+  Moved CHANGES.txt to source directory
+  Automated build of distribution files (zip and tar.bz2)
+  SimPe binary directory renamed to remove version number
+  Amended WrapperFactory to advertise only the BHAV plugin (for now)
+
+  .cvsignore 1.3
+  SimPe BHAV\
+    .cvsignore 1.3
+    BhavInstListControl.cs 1.21
+    BhavWrapper.cs 1.13
+    CHANGES.txt 1.1
+    pjse coder plugin.csproj 1.2, 1.3
+    WrapperFactory.cs 1.4
+
+
+25 June 2005 21:21 - Changes since Final_Standalone
+  All folders except "SimPe BHAV" deleted
+  MSVS Solution now in SimPe BHAV folder
+  Solution name changed to "pjse coder plugins"
+  Project name changed to "pjse coder plugin"
+  Target name changed to "pjse.coder.plugin"
+  References changed to point to Quaxi's SimPe binaries
+  Minor code changes to compile cleanly against latest SimPe (*Wrapper.cs)
+  .cvsignore files updated to ignore planned distribution files
+  
+  .cvsignore 1.2
+  SimPe BHAV\
+    .cvsignore 1.2
+    BconWrapper.cs 1.4
+    BhavForm.cs 1.19
+    BhavWrapper.cs 1.12
+    GlobWrapper.cs 1.3
+    ObjfWrapper.cs 1.3
+    pjse coder plugin.csproj 1.1
+    pjse coder plugins.sln 1.1
+    SimPe BHAV.csproj (renamed)
+    TrcnWrapper.cs 1.3
+    TtabWrapper.cs 1.4
+    WrapperFactory.cs 1.3
+
+25 June 2005 17:38 - Typo stopping JoinIndex being copied on add
+  SimPe BHAV\TtabForm.cs 1.4
+
+25 June 2005 17:05 - Main TTAB Landing
+  SimPe BHAV\
+    ImportSemi.cs 1.2
+    SimPe BHAV.csproj 1.8
+    TtabForm.cs 1.3
+    TtabForm.resx 1.2
+    TtabItem.cs (deleted)
+    TtabItemMotiveTableUI.cs 1.2
+    TtabItemMotiveTableUI.resx 1.2
+    TtabMotiveGroupUI.cs 1.2
+    TtabMotiveGroupUI.resx 1.2
+    TtabSingleMotive.cs 1.2
+    TtabSingleMotive.resx 1.2
+    TtabWrapper.cs 1.3
+
+25 June 2005 17:00 - (TTAB Landing) Flag BHAV wrapper changed even on internal changes
+  SimPe BHAV\
+    BhavWrapper.cs 1.11
+
+25 June 2005 16:36 - Change identity of BHAV plugin dll
+  SimPe BHAV\
+    BconWrapper.cs 1.3
+    BhavWrapper.cs 1.10
+    GlobWrapper.cs 1.2
+    ObjfWrapper.cs 1.2
+    SimPe BHAV.csproj 1.7
+    TrcnWrapper.cs 1.2
+    TtabWrapper.cs 1.2
+
+25 June 2005 15:55 - Add to add exact, unrenumbered copy of current ttabitem
+  SimPe BHAV\
+    TtabForm.cs 1.2.4.4
+    TtabForm.resx 1.1.4.5
+
+24 June 2005 20:24 - Move Add and Delete buttons (and make buttons work)
+  SimPe BHAV\
+    TtabForm.cs 1.2.4.3
+    TtabForm.resx 1.1.4.4
+    TtabWrapper.cs 1.1.4.4
+
+24 June 2005 17:40 - Put the copy buttons in the right place, add Clear, add row highlights
+  SimPe BHAV\
+    TtabItemMotiveTableUI.cs 1.1.2.4
+    TtabItemMotiveTableUI.resx 1.1.2.4
+    TtabMotiveGroupUI.cs 1.1.2.4
+    TtabMotiveGroupUI.resx 1.1.2.4
+    TtabSingleMotiveUI.cs 1.1.2.4
+
+24 June 2005 17:35 - Rename TtabItem indices to remind me of the order.
+  SimPe BHAV\TtabWrapper.cs 1.1.4.3
+
+22 June 2005 19:19 - More TTAB Grid Changes
+  SimPe BHAV\
+    TtabForm.resx 1.1.4.3
+    TtabItemMotiveTableUI.cs 1.1.2.3
+    TtabItemMotiveTableUI.resx 1.1.2.3
+    TtabMotiveGroupUI.cs 1.1.2.3
+    TtabMotiveGroupUI.resx 1.1.2.3
+
+21 June 2005 19:38 - TTAB Grid Changes again
+  SimPe BHAV\
+    ImportSemi.cs 1.1.2.1
+    TtabForm.cs 1.2.4.2
+    TtabForm.resx 1.1.4.2
+    TtabItemMotiveTableUI.cs 1.1.2.2
+    TtabItemMotiveTableUI.resx 1.1.2.2
+    TtabMotiveGroupUI.cs 1.1.2.2
+    TtabMotiveGroupUI.resx 1.1.2.2
+    TtabSingleMotiveUI.cs 1.1.2.2
+    TtabSingleMotiveUI.resx 1.1.2.2
+    TtabWrapper.cs 1.1.4.2
+
+20 June 2005 17:31 - Branched for TTAB Grid Changes
+  SimPe BHAV\
+    BhavWrapper.cs 1.9.2.1
+    SimPe BHAV.csproj 1.6.2.1
+    TtabForm.cs 1.2.4.1
+    TtabForm.resx 1.1.4.1
+    TtabItem.cs (deleted)
+    TtabItemMotiveTableUI.cs 1.1.2.1
+    TtabItemMotiveTableUI.resx 1.1.2.1
+    TtabMotiveGroupUI.cs 1.1.2.1
+    TtabMotiveGroupUI.resx 1.1.2.1
+    TtabSingleMotiveUI.cs 1.1.2.1
+    TtabSingleMotiveUI.resx 1.1.2.1
+    TtabWrapper.cs 1.1.4.1
+
+18 June 2005 17:15 - BHAV Add fixes
+  SimPe BHAV\
+    BhavInstListControl.cs 1.20
+    BhavWrapper.cs 1.9
+
+18 June 2005 15:56 - Suppress some minor warnings
+  SimPe Extended Filehandlers\
+    ExtObjdWrapper.cs 1.3
+    NrefWrapper.cs 1.2
+  SimPe Sims2CommunityPack\Sims2CommunityPack.cs 1.2
+
+18 June 2005 13:42 - Remove unused filesystem entries
+  SimPe BHAV\SimPe BHAV.csproj 1.6
+
+18 June 2005 13:09 - Always select line zero
+  SimPe BHAV\BhavInstListControl.cs 1.19
+
+
+18 June 2005 12:48 - Make add on last line leave highlight alone
+  SimPe BHAV\
+    BhavForm.cs 1.17
+    BhavInstListControl.cs 1.18
+    BhavWrapper.cs 1.8
+
+12 June 2005 21:35 - Prevent deletion of line zero using DEL key (plus missed non-greying of lines)
+  SimPe BHAV\
+    BhavInstListControl.cs 1.17
+    BhavInstListItemUI.cs 1.10
+
+12 June 2005 15:33 - Prevent deletion of line zero.
+  SimPe BHAV\BhavForm.cs 1.16
+
+12 June 2005 11:28 - New way of displaying lines not targeted within BHAV
+  SimPe BHAV\
+    BhavForm.cs 1.15
+    BhavInstListControl.cs 1.16
+    BhavInstListItemUI.cs 1.9
+
+11 June 2005 18:27 - Don't redraw so much (unlinked lines) (plus cosmetic fix)
+  SimPe BHAV\
+    BhavInstListControl.cs 1.15
+    BhavInstListControl.resx 1.5
+
+11 June 2005 17:22 - Add 16bit decimals for Op0/1, Op2/3, dynamic form layout for "header" fields, rename tbArgc
+  SimPe BHAV\
+    BhavForm.cs 1.14
+    BhavForm.resx 1.9
+
+11 June 2005 17:17 - Update indication of unlinked lines when Targets changed and resize off-BHAV target glyphs
+  SimPe BHAV\
+    BhavInstListControl.cs 1.14
+    BhavInstListItemUI.cs 1.8
+
+11 June 2005 17:13 - Remove unused "internalchg" variable
+  SimPe BHAV\BhavWrapper.cs 1.7
+
+11 June 2005 13:47 - Remove GraphItems, SimPe Cache and 3DView from pjse
+  SimPe\PLJones SimAntics Editor.sln 1.4
+
+11 June 2005 11:50 - Reorganise BHAV Editor UI
+  SimPe BHAV\
+    BhavForm.cs 1.13
+    BhavForm.resx 1.8
+    BhavInstListItemUI.cs 1.6
+
+11 June 2005 09:10 - (From late on 5 June) Minor connector tweaks and colour changes
+  SimPe BHAV\BhavInstListControl.cs 1.13
+
+5 June 2005 18:19 - Fix DEL and redo how connectors get drawn
+  SimPe BHAV\BhavInstListControl.cs 1.12
+
+5 June 2005 18:17 - Don't colour broken links Fuschia
+  SimPe BHAV\BhavInstListItemUI.cs 1.6
+
+4 June 2005 20:35 - Eliminate InstructionItem; draw lines true/false to next; eliminate BMPs
+  SimPe BHAV\
+    BhavInstListControl.cs 1.11
+    BhavInstListItemUI.cs 1.5
+    BhavInstListItemUI.resx 1.3
+
+4 June 2005 20:25 - Change "move ... lines up/down" to "Up / Down ... lines" with separate links
+  SimPe BHAV\
+    BhavForm.cs 1.12
+    BhavForm.resx 1.7
+
+4 June 2005 16:00 - move true/false over near the link lines
+  SimPe BHAV\
+    BhavInstListItemUI.cs 1.4
+    BhavInstListItemUI.resx 1.4
+
+30 May 2005 16:07 - cosmetic changes to BCON/BHAV source
+  SimPe BHAV\
+    BconForm.cs 1.2
+    BconWrapper.cs 1.2
+    BhavForm.cs 1.11
+    BhavWrapper.cs 1.6
+    SimPe BHAV.csproj 1.5
+
+30 May 2005 16:04 - remove 'SimPe FileHandler' and 'SimPe GenericHandlers' but keep MMAT
+  SimPe\
+    Form1.cs 1.7
+    OpcodeProvider.cs 1.2
+    PLJones SimAntics Editor.csproj 1.3
+    PLJones SimAntics Editor.sln 1.3
+  SimPe Commandline\SimPe Commandline.csproj 1.3
+  SimPe Extended Filehanders\
+    CpfForm.cs 1.1 (moved)
+    CpfForm.de.resx 1.1 (moved)
+    CpfForm.de-DE.resx 1.1 (moved)
+    CpfForm.resx 1.1 (moved)
+    CpfItem.cs 1.1 (moved)
+    CpfWrapper.cs 1.1 (moved)
+    ExtObjdForm.cs 1.2
+    ExtObjdForm.resx 1.2
+    ExtObjdUI.cs (deleted)
+    ExtObjdWrapper.cs 1.2
+    FixGuid.cs 1.1 (moved)
+    NrefForm.cs 1.1 (moved)
+    NrefForm.de.resx 1.1 (moved)
+    NrefForm.de-DE.resx 1.1 (moved)
+    NrefForm.resx 1.1 (moved)
+    NrefWrapper.cs 1.1 (moved)
+    ObjdForm.cs 1.1 (moved)
+    ObjdForm.de.resx 1.1 (moved)
+    ObjdForm.de-DE.resx 1.1 (moved)
+    ObjdForm.resx 1.1 (moved)
+    ObjdWrapper.cs 1.1 (moved)
+    SimPe Extended Filehanders.csproj 1.2
+  SimPe Packages\SimPe Packages.csproj 1.2
+  SimPe Sims2CommunityPack\SimPe Sims2CommunityPack.csproj 1.2
+
+29 May 2005 16:27 - Stop GLOB editor causing an error
+  SimPe BHAV\GlobForm.cs 1.2
+
+28 May 2005 20:52 - Removed unwanted filetypes #1
+  SimPe\
+    Form1.cs 1.6
+    OpcodeProvider.cs 1.1 (moved)
+    PLJones SimAntics Editor.csproj 1.2
+    PLJones SimAntics Editor.sln 1.2
+    SimCommonPackage.cs 1.1 (moved)
+    TypeRegistry.cs 1.1 (moved)
+  SimPe CommandLine\
+    Commandline.cs 1.2
+    SimPe Commandline.csproj 1.2
+  SimPe FileHandler\
+    PictureWrapper.cs 1.2
+    SimPe FileHandlers.csproj 1.2
+    SimRelinkForm.cs 1.2
+
+28 May 2005 10:34 - fix to DrawConnectors() when iconised, "CurrentInst"->"SelectedInst", reorder bits in BHAV editor source
+  SimPe BHAV\
+    BhavInstListControl.cs 1.10
+
+28 May 2005 10:32 - Rename "CurrentInst" to "SelectedInst" in BHAV editor source
+  SimPe BHAV\
+    BhavForm.cs 1.10
+
+28 May 2005 10:31 - Rebranding
+  SimPe\Form1.cs 1.5
+
+28 May 2005 10:19 - Regress 1.3 to 1.2 of Registry change
+  SimPe Helper\Registry.cs 1.4
+
+24 May 2005 22:33 - Synchronise with SimPe
+  SimPe 3IDR\PackedFileForm.cs 1.2
+  SimPe GenericBase\Generic.cs 1.2
+  SimPe GenericHandlers\STRFile.cs 1.2
+  SimPe Helper\
+    LocalizedEnums.cs 1.2
+    PropertyObjectBuilder.cs 1.2
+  SimPe Interfaces\IScenegraphFileIndex.cs 1.2
+  SimPe Packages\HeaderData.cs 1.2
+  SimPe Scenegraph\FileIndex.cs 1.2
+
+24 May 2005 22:21 - Fix writing non-8007 BHAVs
+  SimPe BHAV\
+    BhavWrapper 1.5
+
+24 May 2005 22:20 - Highlight unlinked lines
+  SimPe BHAV\
+    BhavInstListControl.cs 1.8
+    BhavInstListItemUI.cs 1.3
+
+24 May 2005 22:20 - Alt-C for Commit in BHAV editor
+  SimPe BHAV\
+    BhavForm.resx 1.5
+
+21 May 2005 21:17 - Fix sort order in BHAV editor
+  SimPe BHAV\
+    BhavWrapper 1.4
+
+21 May 2005 21:16 - Don't draw false->next connectors in BHAV editor
+  SimPe BHAV\
+    BhavInstListControl.cs 1.8
+
+21 May 2005 21:16 - Stop validation errors zeroing other fields in BHAV editor
+  SimPe BHAV\
+    BhavForm.cs 1.9
+
+21 May 2005 18:50 - Add hotkeys to open files
+  SimPe\
+    Form1.cs 1.4
+    Form1.resx 1.4
+
+21 May 2005 18:48 - Alt-S for Sort in BHAV editor
+  SimPe BHAV\
+    BhavForm.cs 1.8
+    BhavForm.resx 1.5
+
+21 May 2005 18:47 - Stop "delete" with nothing selected in BHAV editor
+  SimPe BHAV\
+    BhavInstListControl.cs 1.7
+
+21 May 2005 16:41 - Synchronise with SimPe
+  SimPe Toolbox Scanner\
+    ScannerForm.cs 1.2
+    ScannerSkins.cs 1.2
+
+21 May 2005 16:40 - Synchronise with SimPe
+  SimPe RCOL\
+    cAnimResourceConst.cs 1.2
+    cGeometryDataContainer.cs 1.2
+    cGcmdcElements.cs 1.2
+    fGeometryDataContainer.cs 1.2
+    fGeometryDataContainer.resx 1.2
+    fShapeRefNode.cs 1.3
+    fShapeRefNode.resx 1.3
+    GeneralRcolWrapper.cs 1.2
+    RcolWrapper.cs 1.2
+    SimPe RCOL.csproj 1.2
+  SimPe Scenegraph\
+    PreviewForm.cs 1.2
+    SimPe Scenegraph.csproj 1.2
+
+21 May 2005 16:39 - Synchronise with SimPe
+  SimPe Helper\
+    Registry.cs 1.3
+    SimPe Helper.csproj 1.2
+
+21 May 2005 16:38 - Synchronise with SimPe
+  SimPe\
+    .cvsignore 1.2
+    InstalledPlugins.cs 1.2
+    InstalledPlugins.resx 1.2
+    OptionForm.cs 1.2
+    OptionForm.de-DE.resx 1.2
+    OptionForm.resx 1.2
+
+21 May 2005 16:37 - Synchronise with SimPe
+  3DView\Panel 3D.cs 1.2
+
+21 May 2005 11:00 - wrapper handles "changed" in BHAV editor and merge in BhavInst.cs
+  SimPe BHAV\
+    SimPe BHAV.csproj 1.4
+
+21 May 2005 10:59 - wrapper handles "changed" in BHAV editor and merge in BhavInst.cs
+  SimPe BHAV\
+    BhavForm.cs 1.7
+    BhavInstListControl.cs 1.6
+    BhavWrapper 1.3
+
+21 May 2005 10:51 - Rebranding
+  SimPe\
+    AssemblyInfo.cs 1.3
+    Form1.cs 1.3
+    Form1.resx 1.3
+    GetUpdate.cs 1.2
+
+18 May 2005 20:46 - Operand and OpCode Wizards only update on OK/Use in BHAV editor
+  SimPe BHAV\
+    BhavForm.cs 1.6
+    ObjfForm.cs 1.2
+    SimPe BHAV.csproj 1.3
+    TtabForm.cs 1.2
+    WrapperFactory.cs 1.2
+
+17 May 2005 22:57 - Sort fixed, better highlighting, change delete handling, relabel View Global (in BHAV editor)
+  SimPe BHAV\
+    BhavForm.cs 1.5
+    BhavForm.resx 1.4
+    BhavInstListControl.cs 1.5
+    BhavInstListItemUI.cs 1.2
+    BhavWrapper 1.2
+
+17 May 2005 18:17 - Synchronise with SimPe
+  SimPe RCOL\
+    cAnimResourceConst.cs 1.2
+    fShapeRefNode.cs 1.2
+    fShapeRefNode.resx 1.2
+
+15 May 2005 23:20 - Instruction list keyboard handling in BHAV editor
+  SimPe BHAV\
+    BhavForm.cs 1.4
+    BhavForm.resx 1.3
+    BhavInstListControl.cs 1.4
+    BhavInstListControl.resx 1.4
+    SimPe BHAV.csproj 1.2
+
+15 May 2005 09:04 - Remove (non-functional) context menu
+  SimPe BHAV\
+    BhavInstListControl.cs 1.3
+    BhavInstListControl.resx 1.3
+
+15 May 2005 08:59 - restore internalchg flag in BHAV editor source
+  SimPe BHAV\
+    BhavForm.cs 1.3
+    BhavForm.resx 1.2
+
+14 May 2005 19:42 - BHAV Editor source reorganisation
+  SimPe BHAV\
+    BhavForm.cs 1.2
+    BhavInstListControl.cs 1.2
+    BhavInstListControl.resx 1.2
+
+14 May 2005 19:16 - Rebranding
+  SimPe\
+    AssemblyInfo.cs 1.2
+    Form1.cs 1.2
+    Form1.resx 1.2
+  SimPe Helper\Registry.cs 1.2
+
+14 May 2005 10:43 - Exclude simpe.s2cp.xml from CVS
+  SimPe Sims2CommunityPack\.cvsignore

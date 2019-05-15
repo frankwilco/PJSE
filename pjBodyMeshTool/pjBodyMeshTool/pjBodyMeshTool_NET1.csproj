@@ -1,0 +1,193 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{EC7D6523-C216-4954-BE22-665826AE2566}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "pjBodyMeshTool_NET1.plugin"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = 'set base=$(TargetName)-$(ConfigurationName)&#xd;&#xa;set src=$(TargetName)-Source&#xd;&#xa;set mydate=%date%&#xd;&#xa;set dd=%mydate:~0,2%&#xd;&#xa;set mm=%mydate:~3,2%&#xd;&#xa;set yy=%mydate:~6,4%&#xd;&#xa;set mytime=%time%&#xd;&#xa;set h=%mytime:~0,2%&#xd;&#xa;set m=%mytime:~3,2%&#xd;&#xa;set s=%mytime:~6,2%&#xd;&#xa;set suffix=%yy%%mm%%dd%-%h%%m%&#xd;&#xa;set tarv=&#xd;&#xa;&#xd;&#xa;cd "$(ProjectDir)"&#xd;&#xa;&#xd;&#xa;if exist Plugins rmdir /s/q Plugins&#xd;&#xa;mkdir Plugins&#xd;&#xa;mkdir "Plugins\$(TargetName)"&#xd;&#xa;&#xd;&#xa;(cd "$(TargetDir)"&#xd;&#xa;tar c --exclude "*.bat" . ) | tar x%tarv% -C "Plugins"&#xd;&#xa;&#xd;&#xa;(cd ..&#xd;&#xa;tar c LICENSE.txt CHANGES.txt) | tar x%tarv% -C "Plugins\$(TargetName)"&#xd;&#xa;&#xd;&#xa;tar c Plugins | (cd ..\..\SimPe&#xd;&#xa;tar xv)&#xd;&#xa;&#xd;&#xa;del ..\"%base%-*"&#xd;&#xa;7za a -tzip -r -mx9 "..\%base%-%suffix%.zip" Plugins&#xd;&#xa;&#xd;&#xa;if not $(ConfigurationName)==Release goto skip&#xd;&#xa;&#xd;&#xa;tar cv Plugins | bzip2 > "..\%base%-%suffix%.tar.bz2"&#xd;&#xa;7za a -t7z -mx9 -ms "..\%base%-%suffix%.7z" Plugins&#xd;&#xa;&#xd;&#xa;cd "$(ProjectDir).."&#xd;&#xa;if exist "%src%" rmdir /s/q "%src%"&#xd;&#xa;del "%src%*"&#xd;&#xa;mkdir "%src%"&#xd;&#xa;&#xd;&#xa;tar c --exclude="%src%" --exclude=CVS --exclude=*.7z --exclude=*.zip --exclude=*.tar.bz2 --exclude=.project --exclude=.metadata --exclude=bin --exclude=obj --exclude=Plugins --exclude=*.suo --exclude=*.csproj.user --exclude=*.bak --exclude=.#* . | tar x%tarv% -C "%src%"&#xd;&#xa;7za a -tzip -r -mx9 "%src%-%suffix%.zip" "%src%"&#xd;&#xa;if exist "%src%" rmdir /s/q "%src%"&#xd;&#xa;&#xd;&#xa;:skip:&#xd;&#xa;'
+                RootNamespace = "pj"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE;NET1"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\NET1-Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE;NET1"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\NET1-Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "I:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "I:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "I:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "I:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "simpe.workspace"
+                    AssemblyName = "simpe.workspace"
+                    HintPath = "..\..\SimPe\simpe.workspace.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.3idr"
+                    AssemblyName = "simpe.3idr"
+                    HintPath = "..\..\SimPe\simpe.3idr.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.commonhandler"
+                    AssemblyName = "simpe.commonhandler"
+                    HintPath = "..\..\SimPe\simpe.commonhandler.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.filehandler"
+                    AssemblyName = "simpe.filehandler"
+                    HintPath = "..\..\SimPe\simpe.filehandler.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.helper"
+                    AssemblyName = "simpe.helper"
+                    HintPath = "..\..\SimPe\simpe.helper.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.interfaces"
+                    AssemblyName = "simpe.interfaces"
+                    HintPath = "..\..\SimPe\simpe.interfaces.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.package"
+                    AssemblyName = "simpe.package"
+                    HintPath = "..\..\SimPe\simpe.package.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "simpe.scenegraph"
+                    AssemblyName = "simpe.scenegraph"
+                    HintPath = "..\..\SimPe\simpe.scenegraph.dll"
+                    Private = "False"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "I:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BodyMeshExtractor.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BodyMeshHelp.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BodyMeshLinker.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "BodyMeshTool.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GetMeshName.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "GetMeshName.resx"
+                    DependentUpon = "GetMeshName.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Localization.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Localization.resx"
+                    DependentUpon = "Localization.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

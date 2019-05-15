@@ -1,0 +1,205 @@
+2008-08-17 10:46 Load / IsEnabled speed increases
+  pjBodyMeshTool\
+    BodyMeshExtractor.cs 1.5.4.1
+    BodyMeshLinker.cs 1.2.6.1
+
+2008-04-13 10:12 Increase use of SimPe filetable
+  pjBodyMeshTool\
+    BodyMeshExtractor.cs 1.5
+
+2008-01-19 18:00 Build-with-SimPe changes - Include the real help
+  Redirect_Content.htm 1.1.2.2
+
+2008-01-14 20:19 Build-with-SimPe changes - oops, rename help subdir
+  pjBodyMeshTool\
+    SimPe pjBodyMeshTool.csproj 1.1.2.3
+
+2008-01-13 18:28 Build-with-SimPe changes - package plugin subdir
+  pjBodyMeshTool\
+    SimPe pjBodyMeshTool.csproj 1.1.2.2
+  Redirect_Content.htm 1.1.2.1
+
+2008-01-13 16:40 Build-with-SimPe changes
+  * Also get rid of pdb files in Release builds
+  pjBodyMeshTool\
+    pjBodyMeshTool.csproj 1.1.2.17
+    SimPe pjBodyMeshTool.csproj 1.1.2.1
+
+2007-08-22 20:30 Split ObjKey tool off from Mesh tool and rename
+  * All components under pj3IDRTool removed
+
+2007-08-20 20:20 Enable with half an objkey in the package
+  pj3IDRTool/
+    c3IDRTool.cs 1.1.2.3
+
+2007-08-18 15:03 Rewrite post-build scripts
+  pj3IDRTool/
+    pj3IDRTool.csproj 1.1.2.3
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.15
+  .cvsignore 1.1.2.2
+  mknsis.nsi 1.1.2.2
+  pjBodyMeshTool.sln 1.1.2.3
+
+2007-08-18 13:25 No nsis for 3IDRTool yet, fix typo in post-build scripts
+  pj3IDRTool/
+    pj3IDRTool.csproj 1.1.2.2
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.14
+
+2007-07-27 22:38 Import TXTR and LIFO files into package
+  pj3IDRTool/
+    c3IDRTool.cs 1.1.2.2
+
+2007-07-24 16:33 Create 3IDR Tool
+  pj3IDRTool/
+    .cvsignore 1.1.2.1
+    c3IDRTool.cs 1.1.2.1
+    h3IDRHelp.cs 1.1.2.1
+    Localization.cs 1.1.2.1
+    Localization.resx 1.1.2.1
+    pj3IDRTool.csproj 1.1.2.1
+    t3IDRTool.cs 1.1.2.1
+  pj3IDRTool/Properties/
+    AssemblyInfo.cs 1.1.2.1
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.13
+  pjBodyMeshTool.sln 1.1.2.2
+
+2007-07-11 14:27 Suppress duplicates in extractor
+  pjBodyMeshTool/
+    BodyMeshExtractor.cs 1.1.2.8
+
+2007-03-12 15:31 Change to post-build script: better control of distros built
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.12
+
+2007-03-05 15:35 Change to post-build script: don't include installer .exe in src
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.11
+
+2007-02-03 21:21 Bug fix: allow paths not to exist
+  pjBodyMeshTool/
+    BodyMeshExtractor.cs 1.1.2.7
+
+2006-11-23 09:44 Include the Help in Release builds
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.10
+
+2006-11-22 17:59 Add Installer
+  pjBodyMeshTool/
+    pjBodyMeshTool.csproj 1.1.2.9
+  mknsis.nsi 1.1.2.1
+
+2006-10-15 13:26 Amend to use SimPe.PathProvider
+	pjBodyMeshTool/
+		BodyMeshExtractor.cs 1.1.2.6
+		
+2006-09-17 14:54 Oops, fix up NET1 help folder
+	pjBodyMeshTool/
+		BodyMeshHelp.cs 1.1.2.3
+
+2006-09-17 13:38 Oops, make menu entry localisable (and add "PJ")
+	pjBodyMeshTool/
+		BodyMeshHelp.cs 1.1.2.2
+		Localizatiom.resx 1.1.2.4
+
+2006-09-17 12:51 Add hook into help (Inge to supply help)
+	pjBodyMeshTool/
+		BodyMeshHelp.cs 1.1.2.1
+		BodyMeshTool.cs 1.1.2.10
+		pjBodyMeshTool_NET1.csproj 1.1.2.5
+		pjBodyMeshTool.csproj 1.1.2.8
+
+2006-09-10 14:05 Body Mesh Linker (NET1)
+	pjBodyMeshTool/
+		pjBodyMeshTool_NET1.csproj 1.1.2.4
+
+2006-09-10 13:58 Don't copy scenegraph DLL local
+	pjBodyMeshTool/
+		pjBodyMeshTool.csproj 1.1.2.7
+
+2006-09-10 13:13 Reintroduce/update Linker (NET2); make Extractor search in order
+	pjBodyMeshTool/
+		BodyMeshExtractor.cs 1.1.2.5
+		BodyMeshLinker.cs 1.1.2.3
+		BodyMeshTool.cs 1.1.2.9
+		Localization.resx 1.1.2.3
+
+2006-09-09 16:35 Body Mesh Linker (NET2) - disable for now
+	pjBodyMeshTool/
+		BodyMeshLinker.cs 1.1.2.2
+		BodyMeshTool.cs 1.1.2.8
+
+2006-09-07 21:56 Body Mesh Linker (NET2)
+	pjBodyMeshTool/
+		BodyMeshExtractor.cs 1.1.2.4
+		BodyMeshLinker.cs 1.1.2.1
+		BodyMeshTool.cs 1.1.2.7
+		Localization.cs 1.1.2.2
+		pjBodyMeshTool.csproj 1.1.2.6
+
+2006-09-07 14:56 Put SPs before EPs; try all resources
+	pjBodyMeshTool/
+		BodyMeshExtractor.cs 1.1.2.3
+
+2006-09-07 11:53 Redesign form to include guidance note; tiny fix
+	pjBodyMeshTool/
+		BodyMeshExtractor.cs 1.1.2.2
+		GetMeshName.cs 1.1.2.3
+		GetMeshName.resx 1.1.2.2
+
+2006-09-06 20:29 Localisation; change message; ym;yf->am/af; change menu; reorganise
+	pjBodyMeshTool/
+		BodyMeshExtractor.cs 1.1.2.1
+		BodyMeshTool.cs 1.1.2.6
+		GetMeshName.cs 1.1.2.2
+		GetMeshName.Designer.cs (deleted)
+		Localization.cs 1.1.2.1
+		Localization.resx 1.1.2.1
+		pjBodyMeshTool_NET1.csproj 1.1.2.3
+		pjBodyMeshTool.csproj 1.1.2.5
+
+2006-09-04 19:59 Prompt for mesh name; search Holiday pack; change name to Sim Mesh Extractor
+	pjBodyMeshTool/
+		BodyMeshTool.cs 1.1.2.5
+		GetMeshName.cs 1.1.2.1
+		GetMeshName.Designer.cs 1.1.2.1
+		GetMeshName.resx 1.1.2.1
+		pjBodyMeshTool.csproj 1.1.2.4
+
+2006-09-03 20:12 Dynamically detect game folders; NET1/NET2 tidy-ups
+	pjBodyMeshTool/
+		BodyMeshTool.cs 1.1.2.4
+		pjBodyMeshTool_NET1.csproj 1.1.2.2
+
+2006-09-03 18:13 Integrate NET1 and NET2 build folders; tidy up message boxes
+	pjBodyMeshTool/
+		AssemblyInfo.cs 1.1.2.1
+		BodyMeshTool.cs 1.1.2.3
+		pjBodyMeshTool_NET1.csproj 1.1.2.1
+	pjBodyMeshTool/Properties/
+		AssemblyInfo.cs 1.1.2.2
+	pjBodyMeshTool_NET1.sln 1.1.2.1
+
+2006-09-03 13:45 Be less fussy about dll versioning
+	pjBodyMeshTool/
+		pjBodyMeshTool.csproj 1.1.2.3
+
+2006-09-03 10:49 Import resources for all Property sets found
+	pjBodyMeshTool/
+		BodyMeshTool.cs 1.1.2.2
+		pjBodyMeshTool.csproj 1.1.2.2
+
+2006-09-02 17:37 Body Mesh Tool added to CVS PreRelease
+	pjBodyMeshTool/
+		.cvsignore
+		BodyMeshTool.cs
+		pjBodyMeshTool.csproj
+	pjBodyMeshTool/Properties/
+		AssemblyInfo.cs
+	.cvsignore
+	LICENCE.txt
+	pjBodyMeshTool.sln
+
+2006-09-02 17:33 Base line

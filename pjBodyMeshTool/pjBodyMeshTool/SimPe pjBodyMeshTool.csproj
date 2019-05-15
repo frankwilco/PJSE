@@ -1,0 +1,133 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E0A4A2C-1BAE-4659-9511-5C089FA4E154}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pj</RootNamespace>
+    <AssemblyName>pjBodyMeshTool.plugin</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\fullsimpe-svn\__Debug\Plugins</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\fullsimpe-svn\__Release\Plugins</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BodyMeshExtractor.cs" />
+    <Compile Include="BodyMeshHelp.cs" />
+    <Compile Include="BodyMeshLinker.cs" />
+    <Compile Include="BodyMeshTool.cs" />
+    <Compile Include="GetMeshName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Localization.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GetMeshName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>GetMeshName.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization.resx">
+      <DependentUpon>Localization.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe 3IDR\SimPe 3IDR.csproj">
+      <Project>{37D97490-DC9F-4DB7-9215-998C6BC06078}</Project>
+      <Name>SimPe 3IDR</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe FileHandler\SimPe FileHandlers.csproj">
+      <Project>{97551C0A-6295-4E32-8E15-A4FF456E65A6}</Project>
+      <Name>SimPe FileHandlers</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe HandlerCommon\SimPe HandlerCommon.csproj">
+      <Project>{A4CC48FD-9574-4F0B-B721-9E8C1B1E6A8A}</Project>
+      <Name>SimPe HandlerCommon</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Helper\SimPe Helper.csproj">
+      <Project>{59E3C353-1350-42D8-A045-CBBAD232F228}</Project>
+      <Name>SimPe Helper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Interfaces\SimPe Interfaces.csproj">
+      <Project>{74FCBBEC-105A-4006-A1FC-8EF4F80FD2D7}</Project>
+      <Name>SimPe Interfaces</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Packages\SimPe Packages.csproj">
+      <Project>{1C6C45BF-FE19-4C23-B327-01F45B0F269C}</Project>
+      <Name>SimPe Packages</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Scenegraph\SimPe Scenegraph.csproj">
+      <Project>{1151A88B-47AF-41DA-BCDF-DEFED0CC326E}</Project>
+      <Name>SimPe Scenegraph</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Workspace Helper\SimPe Workspace Helper.csproj">
+      <Project>{45021667-BAD2-4ECA-8423-F4734F914CBB}</Project>
+      <Name>SimPe Workspace Helper</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>set helpdir=\pjBodyMeshTool_Help
+if not exist "$(TargetDir)$(TargetName)\" mkdir "$(TargetDir)$(TargetName)"
+pushd $(ProjectDir)..\
+copy *.txt $(TargetDir)$(TargetName)\
+popd
+
+pushd $(TargetDir)$(TargetName)\
+echo $(TargetName)-$(ConfigurationName) &gt; version.txt
+echo yymmdd-hhmmss &gt;&gt; version.txt
+echo ___simperelease version="0"___ &gt;&gt; version.txt
+popd
+
+if not exist "$(TargetDir)$(TargetName)%25helpdir%25\" mkdir "$(TargetDir)$(TargetName)\%25helpdir%25"
+pushd $(TargetDir)$(TargetName)\%25helpdir%25\
+copy "$(ProjectDir)..\Redirect_Contents.htm" Contents.htm
+popd
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>
