@@ -14,7 +14,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\fullsimpe-svn\__Debug\Plugins</OutputPath>
+    <OutputPath>..\..\fullsimpe\__Debug\Plugins</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -22,7 +22,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\fullsimpe-svn\__Release\Plugins</OutputPath>
+    <OutputPath>..\..\fullsimpe\__Release\Plugins</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -54,17 +54,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Helper\SimPe Helper.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Helper\SimPe Helper.csproj">
       <Project>{59E3C353-1350-42D8-A045-CBBAD232F228}</Project>
       <Name>SimPe Helper</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Interfaces\SimPe Interfaces.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Interfaces\SimPe Interfaces.csproj">
       <Project>{74FCBBEC-105A-4006-A1FC-8EF4F80FD2D7}</Project>
       <Name>SimPe Interfaces</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Workspace Helper\SimPe Workspace Helper.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Workspace Helper\SimPe Workspace Helper.csproj">
       <Project>{45021667-BAD2-4ECA-8423-F4734F914CBB}</Project>
       <Name>SimPe Workspace Helper</Name>
       <Private>False</Private>

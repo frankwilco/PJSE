@@ -491,7 +491,7 @@ set srcDebug=no
 set srcInProgress=no
 
 set simpeDirRelease=SimPe
-set simpeDirDebug=fullsimpe-svn\__Debug
+set simpeDirDebug=fullsimpe\__Debug
 set simpeDirInProgress=SimPe
 
 

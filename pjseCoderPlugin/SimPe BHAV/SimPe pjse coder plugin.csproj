@@ -28,7 +28,7 @@
     </UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <OutputPath>..\..\fullsimpe-svn\__Debug\Plugins</OutputPath>
+    <OutputPath>..\..\fullsimpe\__Debug\Plugins</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -52,7 +52,7 @@
     <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <OutputPath>..\..\fullsimpe-svn\__Release\Plugins</OutputPath>
+    <OutputPath>..\..\fullsimpe\__Release\Plugins</OutputPath>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <BaseAddress>285212672</BaseAddress>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
@@ -113,37 +113,37 @@
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe FileHandler\SimPe FileHandlers.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe FileHandler\SimPe FileHandlers.csproj">
       <Project>{97551C0A-6295-4E32-8E15-A4FF456E65A6}</Project>
       <Name>SimPe FileHandlers</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe HandlerCommon\SimPe HandlerCommon.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe HandlerCommon\SimPe HandlerCommon.csproj">
       <Project>{A4CC48FD-9574-4F0B-B721-9E8C1B1E6A8A}</Project>
       <Name>SimPe HandlerCommon</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Helper\SimPe Helper.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Helper\SimPe Helper.csproj">
       <Project>{59E3C353-1350-42D8-A045-CBBAD232F228}</Project>
       <Name>SimPe Helper</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Interfaces\SimPe Interfaces.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Interfaces\SimPe Interfaces.csproj">
       <Project>{74FCBBEC-105A-4006-A1FC-8EF4F80FD2D7}</Project>
       <Name>SimPe Interfaces</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Name Provider\SimPe Name Provider.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Name Provider\SimPe Name Provider.csproj">
       <Project>{38259F2B-9C90-48BE-A519-E4EEC62C242C}</Project>
       <Name>SimPe Name Provider</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Packages\SimPe Packages.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Packages\SimPe Packages.csproj">
       <Project>{1C6C45BF-FE19-4C23-B327-01F45B0F269C}</Project>
       <Name>SimPe Packages</Name>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\..\fullsimpe-svn\SimPe Workspace Helper\SimPe Workspace Helper.csproj">
+    <ProjectReference Include="..\..\fullsimpe\SimPe Workspace Helper\SimPe Workspace Helper.csproj">
       <Project>{45021667-BAD2-4ECA-8423-F4734F914CBB}</Project>
       <Name>SimPe Workspace Helper</Name>
       <Private>False</Private>
